@@ -54,7 +54,10 @@ fi
 mkdir -p "$BACKUP_DIR"
 
 # ── Perform backup ──────────────────────────────────────────────────────────
-export PGPASSWORD="$PG_PASSWORD"
+# Use a temp file for password to avoid exposing it in `ps aux`
+PGPASSFILE=$(mktemp)
+chmod 600 "$PGPASSFILE"
+printf '%s:%s:%s:%s:%s\n' "$PG_HOST" "$PG_PORT" "$PG_DB" "$PG_USER" "$PG_PASSWORD" > "$PGPASSFILE"
 
 echo "Starting PostgreSQL backup..."
 echo "  Host:     $PG_HOST:$PG_PORT"
@@ -62,7 +65,7 @@ echo "  Database: $PG_DB"
 echo "  User:     $PG_USER"
 echo "  Output:   $BACKUP_DIR/$BACKUP_FILE"
 
-if pg_dump -h "$PG_HOST" -p "$PG_PORT" -U "$PG_USER" -d "$PG_DB" --format=custom --file="$BACKUP_DIR/$BACKUP_FILE" 2>/dev/null; then
+if pg_dump -h "$PG_HOST" -p "$PG_PORT" -U "$PG_USER" -d "$PG_DB" --format=custom --file="$BACKUP_DIR/$BACKUP_FILE" --no-password 2>/dev/null; then
     echo "Backup completed successfully."
 else
     # Fallback: SQL format
@@ -70,6 +73,9 @@ else
     pg_dump -h "$PG_HOST" -p "$PG_PORT" -U "$PG_USER" -d "$PG_DB" | gzip > "$BACKUP_DIR/$BACKUP_FILE"
     echo "Backup completed (SQL format)."
 fi
+
+# ── Cleanup temp PGPASSFILE ─────────────────────────────────────────────────
+rm -f "$PGPASSFILE" 2>/dev/null || true
 
 # ── Cleanup old backups ─────────────────────────────────────────────────────
 echo "Removing backups older than ${BACKUP_RETENTION} days..."
