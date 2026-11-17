@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "mimosa-finding-ledger-batch/v1",
+  "batchId": "stop-20261108T140613183Z-2308-df86710524d8",
+  "runId": "20261108T140613183Z-2308-df86710524d8",
+  "runStatus": "completed",
+  "coverage": {
+    "status": "complete",
+    "reasons": []
+  },
+  "source": {
+    "component": "zcode-hook",
+    "operationId": "Stop"
+  },
+  "revision": null,
+  "diffHash": "a99e294f40a649882c69509558916779b97031978f303593edb6b8e0ce6c5603",
+  "rulesVersion": "unavailable",
+  "sessionHash": "d40ce7f2c6a0cff47fb0e708d4ea31ae25a956287a0293c0a4e2afee7b17a9f7",
+  "reportRef": ".mimosa/reports/task-review-sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c-20261108T140613183Z-2308-df86710524d8.json",
+  "events": [],
+  "observedFindingIds": [],
+  "verifiedFiles": [
+    {
+      "file": "lib/seo.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "components/seo-jsonld.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "app/layout.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "app/sitemap.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "app/robots.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    }
+  ],
+  "recordedAt": "2026-11-08T14:06:14.382Z"
+}

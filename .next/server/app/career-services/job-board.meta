@@ -1,0 +1,18 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/career-services",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/career-services/layout,_N_T_/career-services/job-board/layout,_N_T_/career-services/job-board/page,_N_T_/career-services/job-board"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/career-services/job-board/__PAGE__",
+    "/career-services/job-board",
+    "/career-services",
+    "/_index",
+    "/_head"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "mimosa-finding-history/v1",
+  "runId": "20261109T182025962Z-41080-87a1abe1b370",
+  "runStatus": "inconclusive",
+  "errors": [
+    "baseline-read:app/de/programs/journalism-communication/page.tsx: baseline_snapshot_unreadable: file is missing from task baseline",
+    "baseline-read:app/de/programs/international-relations/page.tsx: baseline_snapshot_unreadable: file is missing from task baseline",
+    "baseline-read:app/de/programs/geological-civil-mining-engineering/page.tsx: baseline_snapshot_unreadable: file is missing from task baseline",
+    "baseline-read:app/ar/programs/journalism-communication/page.tsx: baseline_snapshot_unreadable: file is missing from task baseline",
+    "baseline-read:app/ar/programs/international-relations/page.tsx: baseline_snapshot_unreadable: file is missing from task baseline",
+    "scan:next-env.d.ts: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/de/programs/journalism-communication/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/de/programs/international-relations/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/de/programs/geological-civil-mining-engineering/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/ar/programs/journalism-communication/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/ar/programs/international-relations/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/admin/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+  ],
+  "target": ".",
+  "revision": null,
+  "diffHash": "252a94a231a30b6f7ed096b97761aebad58f61788b77acf4c5d834660bb89a19",
+  "rulesVersion": "unavailable",
+  "recordedAt": "2026-11-09T18:20:25.962Z",
+  "timing": {
+    "startedAt": "2026-11-09T18:20:21.659Z",
+    "completedAt": "2026-11-09T18:20:25.962Z",
+    "durationMs": 4303
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "total": 0,
+    "modelCalls": 0,
+    "measurement": "known-zero"
+  },
+  "findings": {
+    "total": 0,
+    "bySeverity": {},
+    "byStatus": {}
+  },
+  "coverage": {
+    "status": "partial",
+    "reasonCounts": {
+      "baseline_snapshot_unreadable": 5,
+      "scanner_failed": 7,
+      "project_check_failed": 12
+    }
+  },
+  "evidenceBoundary": "static_only",
+  "immutableReport": ".mimosa/reports/task-review-session_41257939fb9a5710318af9e3d5b8b321-20261109T182025962Z-41080-87a1abe1b370.json"
+}

@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/de/layout,_N_T_/de/contact/layout,_N_T_/de/contact/international-admissions/layout,_N_T_/de/contact/international-admissions/page,_N_T_/de/contact/international-admissions"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/de/contact/international-admissions/__PAGE__",
+    "/de/contact/international-admissions",
+    "/de/contact",
+    "/de",
+    "/_index",
+    "/_head"
+  ]
+}

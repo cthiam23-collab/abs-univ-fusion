@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/es/layout,_N_T_/es/e-campus/layout,_N_T_/es/e-campus/virtual-classrooms/layout,_N_T_/es/e-campus/virtual-classrooms/page,_N_T_/es/e-campus/virtual-classrooms"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/es/e-campus/virtual-classrooms/__PAGE__",
+    "/es/e-campus/virtual-classrooms",
+    "/es/e-campus",
+    "/es",
+    "/_index",
+    "/_head"
+  ]
+}

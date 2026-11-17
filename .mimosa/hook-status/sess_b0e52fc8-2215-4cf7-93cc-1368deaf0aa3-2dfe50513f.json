@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-11-14T23:02:50.012Z",
+  "sessionId": "sess_b0e52fc8-2215-4cf7-93cc-1368deaf0aa3",
+  "event": "PostToolUse",
+  "toolName": "Write",
+  "file": "H:/ILIAS_Financial_Plugin/deploy/ECAMPUS-SSO-GUIDE.md",
+  "outcome": "clear",
+  "coverage": "complete",
+  "findingCount": 0,
+  "durationMs": 13,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}

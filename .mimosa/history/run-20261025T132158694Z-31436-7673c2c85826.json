@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "mimosa-finding-history/v1",
+  "runId": "20261025T132158694Z-31436-7673c2c85826",
+  "runStatus": "inconclusive",
+  "errors": [
+    "scan:app/api/applications/route.ts: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:components/forms/application-form.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/apply/undergraduate/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/apply/international/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/apply/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:app/admissions/graduate/apply/page.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+    "scan:components/site-footer.tsx: scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+  ],
+  "target": ".",
+  "revision": null,
+  "diffHash": "1018d17799f5899860f6d57dbf7a7ee93b904fb43c05e49bb41f4a7af5ae35f9",
+  "rulesVersion": "unavailable",
+  "recordedAt": "2026-10-25T13:21:58.694Z",
+  "timing": {
+    "startedAt": "2026-10-25T13:21:53.589Z",
+    "completedAt": "2026-10-25T13:21:58.694Z",
+    "durationMs": 5105
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "total": 0,
+    "modelCalls": 0,
+    "measurement": "known-zero"
+  },
+  "findings": {
+    "total": 0,
+    "bySeverity": {},
+    "byStatus": {}
+  },
+  "coverage": {
+    "status": "partial",
+    "reasonCounts": {
+      "scanner_failed": 7,
+      "project_check_failed": 7
+    }
+  },
+  "evidenceBoundary": "static_only",
+  "immutableReport": ".mimosa/reports/task-review-session_41257939fb9a5710318af9e3d5b8b321-20261025T132158694Z-31436-7673c2c85826.json"
+}

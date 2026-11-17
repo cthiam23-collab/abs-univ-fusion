@@ -1,0 +1,777 @@
+{
+  "schema_version": "mimosa-task-review/v2",
+  "run_id": "20261024T003404879Z-67428-c5d2fd012454",
+  "run_status": "inconclusive",
+  "errors": [
+    {
+      "stage": "baseline",
+      "target": ".",
+      "reason": "baseline_partial: baseline capture had enumeration or snapshot errors"
+    },
+    {
+      "stage": "scan",
+      "target": "lib/db.ts",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/staff/dashboard/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/research/publications/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/mechanical-engineering/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/electrical-engineering/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/computer-science/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/parent/dashboard/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/international/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/external-partner/dashboard/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/e-campus/it-support/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/alumni/networking/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/admissions/graduate/apply/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/academics/course-catalog/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "supply-chain-check",
+      "target": ".",
+      "reason": "stop_budget_exhausted: focused supply-chain check was not run before the gate budget"
+    }
+  ],
+  "coverage": {
+    "schema_version": "mimosa-hook-coverage/v1",
+    "status": "partial",
+    "scope": "hook_observed_diff",
+    "baseline": {
+      "complete": false,
+      "captured_files": 474,
+      "candidate_limit": 5000,
+      "truncated": false,
+      "enumeration_error_count": 0,
+      "snapshot_error_count": 77,
+      "compensated_target_count": 15
+    },
+    "change_tracking": {
+      "touched_observed": 0,
+      "touched_retained": 0,
+      "truncated": false,
+      "bash_mutation": true,
+      "bash_discovered": 15,
+      "bash_discovery_limit": 80,
+      "bash_discovery_truncated": false
+    },
+    "candidates": {
+      "eligible_files": 15,
+      "selected_files": 15,
+      "limit": 20,
+      "truncated": false
+    },
+    "scanning": {
+      "required_files": 14,
+      "scanned_files": 0,
+      "skipped_files": 0,
+      "failed_files": 14,
+      "project_checks_required": 1,
+      "project_checks_completed": 0
+    },
+    "notification": {
+      "eligible_findings": 0,
+      "detailed_findings": 0,
+      "detail_limit": 3,
+      "truncated": false
+    },
+    "reason_counts": {
+      "baseline_partial": 1,
+      "scanner_failed": 14,
+      "stop_budget_exhausted": 1,
+      "project_check_failed": 16
+    },
+    "reasons": [
+      {
+        "code": "baseline_partial",
+        "stage": "baseline",
+        "target": ".",
+        "detail": "baseline capture had enumeration or snapshot errors",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "lib/db.ts",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/staff/dashboard/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/research/publications/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/mechanical-engineering/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/electrical-engineering/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/computer-science/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/parent/dashboard/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/international/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/external-partner/dashboard/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/e-campus/it-support/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/alumni/networking/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/admissions/graduate/apply/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/academics/course-catalog/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "stop_budget_exhausted",
+        "stage": "supply-chain-check",
+        "target": ".",
+        "detail": "focused supply-chain check was not run before the gate budget",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "baseline",
+        "target": ".",
+        "detail": "baseline_partial: baseline capture had enumeration or snapshot errors",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "lib/db.ts",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/staff/dashboard/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/research/publications/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/mechanical-engineering/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/electrical-engineering/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/computer-science/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/parent/dashboard/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/international/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/external-partner/dashboard/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/e-campus/it-support/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/alumni/networking/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/admissions/graduate/apply/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/academics/course-catalog/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "supply-chain-check",
+        "target": ".",
+        "detail": "stop_budget_exhausted: focused supply-chain check was not run before the gate budget",
+        "affects_completion": true
+      }
+    ],
+    "reasons_truncated": false
+  },
+  "generated_at": "2026-10-24T00:34:04.879Z",
+  "session_id": "session_5805b4d397d7817444c39e0870db1e48",
+  "target": ".",
+  "revision": null,
+  "rules_version": "unavailable",
+  "diff_hash": "4d19a9517f4b3dd6f653c161753ef8ac1bf05fc876534a0e9d1092d8fd5bc52e",
+  "diff": {
+    "algorithm": "sha256",
+    "changed_file_count": 15,
+    "changed_files": [
+      {
+        "file": "app/academics/course-catalog/page.tsx",
+        "ranges": [
+          {
+            "start": 11,
+            "end": 32
+          }
+        ],
+        "before_hash": "bbb19f12a7ef6d7a3f506dd6173cf3388d240807e46ca2fc98fcbcbf62678fd5",
+        "after_hash": "24d825b64aa5b33bdf4be3df7ab83bb5bb840387dd61ad0bb8de7fd8f9d40442"
+      },
+      {
+        "file": "app/admissions/graduate/apply/page.tsx",
+        "ranges": [
+          {
+            "start": 5,
+            "end": 10
+          }
+        ],
+        "before_hash": "f0594dd62bb42e9134ac011ecf90a8e675f3adeee4590c13547effa63ab25f71",
+        "after_hash": "54cbd279f414dbcfc8e3879e51ab059c6820c2822764f486ea85718df705bfa0"
+      },
+      {
+        "file": "app/alumni/networking/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          }
+        ],
+        "before_hash": "e2286abae9248fdf44240c373797f385f0146f3421b9c585e379d286d1a2d8df",
+        "after_hash": "8a85334cb96af3445f00feafe540e7eb587e4d1f2edc0f2f0c2f210097a5db86"
+      },
+      {
+        "file": "app/e-campus/it-support/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          },
+          {
+            "start": 29,
+            "end": 30
+          }
+        ],
+        "before_hash": "986595cbe3a26fb4608789cd4537b72b7b9cd77c7256b6517747e3c663b4e046",
+        "after_hash": "f8a482b5c985afd8c1d1ca9e686c147e68c09c36d3fb92462d8e59cbd049b13c"
+      },
+      {
+        "file": "app/external-partner/dashboard/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 11
+          }
+        ],
+        "before_hash": "9b3674c98d99737f9853ac6df3409c7e14c8dabe008192fe292d42da32315bdb",
+        "after_hash": "627cc4ebc60918410b615ffb00fbdbfe79313165368604f5a9e7d6cb01341414"
+      },
+      {
+        "file": "app/international/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          }
+        ],
+        "before_hash": "ccdd3ba102a68cec3757af310934fd54002ac864e50e4b0432cd80008936eda6",
+        "after_hash": "2c1730c031b3bb4c22b90b492a0b634d022556c800004160174f4c8df97becad"
+      },
+      {
+        "file": "app/parent/dashboard/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 11
+          }
+        ],
+        "before_hash": "b7e3ab4e99dc0316ba2fdec6b3921d2b8d903b83fbc0c4aad3315a994c8be1b9",
+        "after_hash": "10b5a9ae81bd57baacc22ea37b11a23654935b51fc73dd7aec0934411f48aa6e"
+      },
+      {
+        "file": "app/programs/engineering/computer-science/page.tsx",
+        "ranges": [
+          {
+            "start": 39,
+            "end": 39
+          },
+          {
+            "start": 147,
+            "end": 147
+          }
+        ],
+        "before_hash": "cea1efb184190acd32b325cd1c614cd8d05b1a815859daa89cc632649e9b2c55",
+        "after_hash": "27c9a1d61a315e0dfae8f912016e9ec8c3838ba32a5a7fcb046726b154a77e47"
+      },
+      {
+        "file": "app/programs/engineering/electrical-engineering/page.tsx",
+        "ranges": [
+          {
+            "start": 39,
+            "end": 39
+          },
+          {
+            "start": 147,
+            "end": 147
+          }
+        ],
+        "before_hash": "7c6d68061f498fb4d334bf23ed42dd51d87ade3a2796177b0399ead12fefee6e",
+        "after_hash": "56839c3aa72db5ac41970cdf9b62adb27ed06c739f07bf7e57624852151dc225"
+      },
+      {
+        "file": "app/programs/engineering/mechanical-engineering/page.tsx",
+        "ranges": [
+          {
+            "start": 39,
+            "end": 39
+          },
+          {
+            "start": 147,
+            "end": 147
+          }
+        ],
+        "before_hash": "2656e5643bb2ec8da29fcd63ef7abebd9be51c6a57e5175d7825aedf32e0f8e7",
+        "after_hash": "c773df2e61d2b809f8ba2f01b959a9adea1f79f9cb395e6e17c123efa2973f07"
+      },
+      {
+        "file": "app/programs/engineering/page.tsx",
+        "ranges": [
+          {
+            "start": 55,
+            "end": 55
+          }
+        ],
+        "before_hash": "effc16b6e054ca4997f8dafbfcda8a30d3d494f87f2488672542aca864c4b695",
+        "after_hash": "106c241247e0cdde7ca739ab53e11a2b191720f4c0f8e494f0e4844a4d241cf2"
+      },
+      {
+        "file": "app/research/publications/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          }
+        ],
+        "before_hash": "91b4df29776c811fb90054170f53e76b7200b2c88534f8a3f2a0557c8e96447d",
+        "after_hash": "3c2932566983a687770cc34813e9d210c937beba5674a9f3e6830c6a65fb2c1b"
+      },
+      {
+        "file": "app/staff/dashboard/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 11
+          }
+        ],
+        "before_hash": "b08a6d181c78317d969735a18971c760429115bf61929451a16041613eca8579",
+        "after_hash": "7f696e9f2fe8bc09dadaec728cadab3ef4b7623fe104d4a13762442a6881f92c"
+      },
+      {
+        "file": "lib/db.ts",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 7,
+            "end": 28
+          }
+        ],
+        "before_hash": "427f40a62b08da6abf42277a17688cd70192b0d28b470064861c5ee2dd423fc6",
+        "after_hash": "a5958ac3d79760d65632c38ec54d6b396fe525e8918a0a44e1500a62c5db91b9"
+      },
+      {
+        "file": "package.json",
+        "ranges": [
+          {
+            "start": 50,
+            "end": 50
+          },
+          {
+            "start": 61,
+            "end": 61
+          },
+          {
+            "start": 63,
+            "end": 63
+          },
+          {
+            "start": 92,
+            "end": 92
+          }
+        ],
+        "before_hash": "3be1efb4f680639e9ae0b0b87d0addad6c546c5260924b85b272dd24490e6442",
+        "after_hash": "38ebdd357cfbc3546a3d6ad138dc82109418a593bd12b843ca7f11e6d8485479"
+      }
+    ]
+  },
+  "timing": {
+    "started_at": "2026-10-24T00:34:02.349Z",
+    "completed_at": "2026-10-24T00:34:04.879Z",
+    "duration_ms": 2530,
+    "measurement": "hook_wall_clock"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "total": 0,
+    "model_calls": 0,
+    "measurement": "known-zero"
+  },
+  "telemetry": {
+    "schemaVersion": "mimosa-gate-telemetry/v1",
+    "profile": "gate",
+    "operation": "Stop",
+    "outcome": "partial/INCONCLUSIVE",
+    "latencyMs": 2530,
+    "peakMemoryBytes": 111239168,
+    "memoryMeasurement": "max-observed-process-rss",
+    "scannedFiles": 0,
+    "cache": {
+      "hits": 0,
+      "misses": 0,
+      "measurement": "not-applicable"
+    },
+    "denyCount": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "total": 0,
+      "modelCalls": 0,
+      "measurement": "known-zero"
+    }
+  },
+  "finding_count": 0,
+  "rewake_finding_count": 0,
+  "evidence_boundary": {
+    "scan": "candidate",
+    "static_fix_verification": "observed_static_only",
+    "runtime_verification": "not_performed"
+  },
+  "finding_events": [
+    {
+      "finding_id": "mimosa-da604ab911e658bb7590ca62",
+      "file": "",
+      "line": 280,
+      "rule_id": "security",
+      "severity": "high",
+      "category": "硬编码凭据",
+      "status": "blocked",
+      "decision": "deny",
+      "at": "2026-10-23T23:50:57.981Z",
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "d3e4d72760077d7d6715d9eb0dd7b6ed19232bb3b94a42550bfc746d33e1a2b4",
+        "runtime_oracle": false
+      }
+    },
+    {
+      "finding_id": "mimosa-5562b8a7976a8b836395b136",
+      "file": "",
+      "line": 281,
+      "rule_id": "security",
+      "severity": "high",
+      "category": "硬编码凭据",
+      "status": "blocked",
+      "decision": "deny",
+      "at": "2026-10-23T23:50:57.981Z",
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "15f4321ca7c6566a1576046d8c3ecf3fb5008f7a28766224a49a9a157912c9d2",
+        "runtime_oracle": false
+      }
+    },
+    {
+      "finding_id": "mimosa-da604ab911e658bb7590ca62",
+      "file": "",
+      "line": 280,
+      "rule_id": "security",
+      "severity": "high",
+      "category": "硬编码凭据",
+      "status": "fixed_candidate",
+      "decision": "repair_observed",
+      "at": "2026-10-23T23:52:57.630Z",
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "d3e4d72760077d7d6715d9eb0dd7b6ed19232bb3b94a42550bfc746d33e1a2b4",
+        "candidate_before_evidence_hash": "d3e4d72760077d7d6715d9eb0dd7b6ed19232bb3b94a42550bfc746d33e1a2b4",
+        "post_change_evidence_hash_at_previous_location": "f9511a6dfe4b69c5fa0c50b3a95c735c8d9e8ea382245d79e99010318a60b182",
+        "runtime_oracle": false,
+        "verification": {
+          "method": "mimosa-posttool-static-rescan",
+          "finding_absent": true,
+          "runtime_oracle": false
+        }
+      }
+    },
+    {
+      "finding_id": "mimosa-da604ab911e658bb7590ca62",
+      "file": "",
+      "line": 280,
+      "rule_id": "security",
+      "severity": "high",
+      "category": "硬编码凭据",
+      "status": "static_verified",
+      "decision": "static_rescan_passed",
+      "at": "2026-10-23T23:52:57.630Z",
+      "evidence": {
+        "kind": "static_scan",
+        "boundary": "observed",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "d3e4d72760077d7d6715d9eb0dd7b6ed19232bb3b94a42550bfc746d33e1a2b4",
+        "candidate_before_evidence_hash": "d3e4d72760077d7d6715d9eb0dd7b6ed19232bb3b94a42550bfc746d33e1a2b4",
+        "post_change_evidence_hash_at_previous_location": "f9511a6dfe4b69c5fa0c50b3a95c735c8d9e8ea382245d79e99010318a60b182",
+        "runtime_oracle": false,
+        "verification": {
+          "method": "mimosa-posttool-static-rescan",
+          "finding_absent": true,
+          "runtime_oracle": false
+        }
+      }
+    },
+    {
+      "finding_id": "mimosa-5562b8a7976a8b836395b136",
+      "file": "",
+      "line": 281,
+      "rule_id": "security",
+      "severity": "high",
+      "category": "硬编码凭据",
+      "status": "fixed_candidate",
+      "decision": "repair_observed",
+      "at": "2026-10-23T23:52:57.630Z",
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "15f4321ca7c6566a1576046d8c3ecf3fb5008f7a28766224a49a9a157912c9d2",
+        "candidate_before_evidence_hash": "15f4321ca7c6566a1576046d8c3ecf3fb5008f7a28766224a49a9a157912c9d2",
+        "post_change_evidence_hash_at_previous_location": "a22d53e3569ebeefb524fc522b5cf85e3737e38e9bf03c8e99256ebde7788157",
+        "runtime_oracle": false,
+        "verification": {
+          "method": "mimosa-posttool-static-rescan",
+          "finding_absent": true,
+          "runtime_oracle": false
+        }
+      }
+    },
+    {
+      "finding_id": "mimosa-5562b8a7976a8b836395b136",
+      "file": "",
+      "line": 281,
+      "rule_id": "security",
+      "severity": "high",
+      "category": "硬编码凭据",
+      "status": "static_verified",
+      "decision": "static_rescan_passed",
+      "at": "2026-10-23T23:52:57.630Z",
+      "evidence": {
+        "kind": "static_scan",
+        "boundary": "observed",
+        "producer": "deterministic",
+        "source": "semgrep",
+        "evidence_hash": "15f4321ca7c6566a1576046d8c3ecf3fb5008f7a28766224a49a9a157912c9d2",
+        "candidate_before_evidence_hash": "15f4321ca7c6566a1576046d8c3ecf3fb5008f7a28766224a49a9a157912c9d2",
+        "post_change_evidence_hash_at_previous_location": "a22d53e3569ebeefb524fc522b5cf85e3737e38e9bf03c8e99256ebde7788157",
+        "runtime_oracle": false,
+        "verification": {
+          "method": "mimosa-posttool-static-rescan",
+          "finding_absent": true,
+          "runtime_oracle": false
+        }
+      }
+    }
+  ],
+  "findings": [],
+  "artifacts": {
+    "immutable_report": ".mimosa/reports/task-review-session_5805b4d397d7817444c39e0870db1e48-20261024T003404879Z-67428-c5d2fd012454.json",
+    "latest_report": ".mimosa/reports/task-review-session_5805b4d397d7817444c39e0870db1e48.json",
+    "history_summary": ".mimosa/history/run-20261024T003404879Z-67428-c5d2fd012454.json"
+  }
+}

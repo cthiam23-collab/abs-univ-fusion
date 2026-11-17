@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/de/layout,_N_T_/de/student-resources/layout,_N_T_/de/student-resources/library/layout,_N_T_/de/student-resources/library/page,_N_T_/de/student-resources/library"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/de/student-resources/library/__PAGE__",
+    "/de/student-resources/library",
+    "/de/student-resources",
+    "/de",
+    "/_index",
+    "/_head"
+  ]
+}

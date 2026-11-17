@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/de/layout,_N_T_/de/campus-life/layout,_N_T_/de/campus-life/page,_N_T_/de/campus-life"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/de/campus-life/__PAGE__",
+    "/de/campus-life",
+    "/de",
+    "/_index",
+    "/_head"
+  ]
+}

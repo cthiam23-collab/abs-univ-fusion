@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/de/layout,_N_T_/de/events/layout,_N_T_/de/events/annual-career-fair/layout,_N_T_/de/events/annual-career-fair/page,_N_T_/de/events/annual-career-fair"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/de/events/annual-career-fair/__PAGE__",
+    "/de/events/annual-career-fair",
+    "/de/events",
+    "/de",
+    "/_index",
+    "/_head"
+  ]
+}

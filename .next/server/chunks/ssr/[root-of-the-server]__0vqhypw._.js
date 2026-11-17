@@ -1,0 +1,3 @@
+module.exports=[193695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},475743,a=>{"use strict";var b=a.i(530324),c=a.i(638914);a.s(["default",0,function(){return(0,b.jsx)(c.DetailPage,{title:"My Children",description:"Review your learner connections and access the academic services available to African Business School (ABS) families.",highlights:["Learner information","Academic support links","Family communication","Secure parent access"],primaryHref:"/parent/dashboard",primaryLabel:"Return to Parent Dashboard"})}])},546474,a=>{a.n(a.i(475743))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__0vqhypw._.js.map

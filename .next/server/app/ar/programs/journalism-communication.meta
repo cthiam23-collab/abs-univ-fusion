@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/ar/layout,_N_T_/ar/programs/layout,_N_T_/ar/programs/journalism-communication/layout,_N_T_/ar/programs/journalism-communication/page,_N_T_/ar/programs/journalism-communication"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/ar/programs/journalism-communication/__PAGE__",
+    "/ar/programs/journalism-communication",
+    "/ar/programs",
+    "/ar",
+    "/_index",
+    "/_head"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/apply/layout,_N_T_/apply/undergraduate/layout,_N_T_/apply/undergraduate/page,_N_T_/apply/undergraduate"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/apply/undergraduate/__PAGE__",
+    "/apply/undergraduate",
+    "/apply",
+    "/_index",
+    "/_head"
+  ]
+}

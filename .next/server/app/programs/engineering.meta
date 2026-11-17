@@ -1,0 +1,18 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/programs/engineering/computer-science",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/programs/layout,_N_T_/programs/engineering/layout,_N_T_/programs/engineering/page,_N_T_/programs/engineering"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/programs/engineering/__PAGE__",
+    "/programs/engineering",
+    "/programs",
+    "/_index",
+    "/_head"
+  ]
+}

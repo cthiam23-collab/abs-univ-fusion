@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/admissions/layout,_N_T_/admissions/graduate/layout,_N_T_/admissions/graduate/apply/layout,_N_T_/admissions/graduate/apply/page,_N_T_/admissions/graduate/apply"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/admissions/graduate/apply/__PAGE__",
+    "/admissions/graduate/apply",
+    "/admissions/graduate",
+    "/admissions",
+    "/_index",
+    "/_head"
+  ]
+}

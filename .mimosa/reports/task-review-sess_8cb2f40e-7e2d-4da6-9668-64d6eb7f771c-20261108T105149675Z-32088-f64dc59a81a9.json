@@ -1,0 +1,681 @@
+{
+  "schema_version": "mimosa-task-review/v2",
+  "run_id": "20261108T105149675Z-32088-f64dc59a81a9",
+  "run_status": "inconclusive",
+  "errors": [
+    {
+      "stage": "candidate-select",
+      "target": "scripts/fix-image-refs.py",
+      "reason": "changed_file_unreadable: observed changed file no longer exists or cannot be read"
+    },
+    {
+      "stage": "scan",
+      "target": "app/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/about/mot-de-la-directrice/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/about/faculty-staff/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "components/common/logo.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "components/site-footer.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/international-relations/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/computer-science/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/international/partnerships/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/innovation/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/campus-life/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/academics/pedagogy/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/academics/departments/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/about/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/about/values/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/about/mission/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/about/history/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/about/governance/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    }
+  ],
+  "coverage": {
+    "schema_version": "mimosa-hook-coverage/v1",
+    "status": "partial",
+    "scope": "hook_observed_diff",
+    "baseline": {
+      "complete": true,
+      "captured_files": 495,
+      "candidate_limit": 5000,
+      "truncated": false,
+      "enumeration_error_count": 0,
+      "snapshot_error_count": 0,
+      "compensated_target_count": 17
+    },
+    "change_tracking": {
+      "touched_observed": 6,
+      "touched_retained": 6,
+      "truncated": false,
+      "bash_mutation": true,
+      "bash_discovered": 17,
+      "bash_discovery_limit": 80,
+      "bash_discovery_truncated": false
+    },
+    "candidates": {
+      "eligible_files": 17,
+      "selected_files": 17,
+      "limit": 20,
+      "truncated": false
+    },
+    "scanning": {
+      "required_files": 17,
+      "scanned_files": 0,
+      "skipped_files": 0,
+      "failed_files": 17,
+      "project_checks_required": 0,
+      "project_checks_completed": 0
+    },
+    "notification": {
+      "eligible_findings": 0,
+      "detailed_findings": 0,
+      "detail_limit": 3,
+      "truncated": false
+    },
+    "reason_counts": {
+      "changed_file_unreadable": 1,
+      "scanner_failed": 17,
+      "project_check_failed": 18
+    },
+    "reasons": [
+      {
+        "code": "changed_file_unreadable",
+        "stage": "candidate-select",
+        "target": "scripts/fix-image-refs.py",
+        "detail": "observed changed file no longer exists or cannot be read",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/about/mot-de-la-directrice/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/about/faculty-staff/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "components/common/logo.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "components/site-footer.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/international-relations/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/computer-science/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/international/partnerships/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/innovation/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/campus-life/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/academics/pedagogy/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/academics/departments/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/about/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/about/values/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/about/mission/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/about/history/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/about/governance/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "candidate-select",
+        "target": "scripts/fix-image-refs.py",
+        "detail": "changed_file_unreadable: observed changed file no longer exists or cannot be read",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/about/mot-de-la-directrice/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/about/faculty-staff/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "components/common/logo.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "components/site-footer.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/international-relations/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/computer-science/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/international/partnerships/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/innovation/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/campus-life/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/academics/pedagogy/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/academics/departments/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/about/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/about/values/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/about/mission/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/about/history/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/about/governance/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      }
+    ],
+    "reasons_truncated": false
+  },
+  "generated_at": "2026-11-08T10:51:49.675Z",
+  "session_id": "sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c",
+  "target": ".",
+  "revision": null,
+  "rules_version": "unavailable",
+  "diff_hash": "205d29c988448345fee824defce2f9e20ba5bd7085ada87dab57940fbc8d4f13",
+  "diff": {
+    "algorithm": "sha256",
+    "changed_file_count": 17,
+    "changed_files": [
+      {
+        "file": "app/about/faculty-staff/page.tsx",
+        "ranges": [
+          {
+            "start": 162,
+            "end": 162
+          },
+          {
+            "start": 203,
+            "end": 203
+          }
+        ],
+        "before_hash": "32e745783f0b7d98bc86048f20bca29f71af00415b842fb4c144fbee39fdd720",
+        "after_hash": "6762426e0ff1463c1c78b200a63f166e83758e37680c038d525ef19aed9753d0"
+      },
+      {
+        "file": "app/about/governance/page.tsx",
+        "ranges": [
+          {
+            "start": 158,
+            "end": 158
+          }
+        ],
+        "before_hash": "527001c1ff924a66d49c157f48fef55f0f4cc5aee69d3b13a449bd8652f60912",
+        "after_hash": "9c290393534efa8f054bb706ebb7461b5d63462939e0bc0ca41b4f9bef9fda28"
+      },
+      {
+        "file": "app/about/history/page.tsx",
+        "ranges": [
+          {
+            "start": 83,
+            "end": 84
+          }
+        ],
+        "before_hash": "284a21282ac38912c70e97d80514fe8c8f36ad25480c227222d452f9a3434105",
+        "after_hash": "a1d7b184f51b16fd122087815dad66203d22cc93f9d2f5f893643640590f7e79"
+      },
+      {
+        "file": "app/about/mission/page.tsx",
+        "ranges": [
+          {
+            "start": 67,
+            "end": 68
+          },
+          {
+            "start": 173,
+            "end": 173
+          }
+        ],
+        "before_hash": "ae96aa92352f3659a04b8ae056626925993a63f82055423433dad4f72222a474",
+        "after_hash": "fbb02876515ddd92108e99131443cef4cb9f7448b9adf534e50e09d60f378cf0"
+      },
+      {
+        "file": "app/about/mot-de-la-directrice/page.tsx",
+        "ranges": [
+          {
+            "start": 50,
+            "end": 50
+          }
+        ],
+        "before_hash": "e6509191014e54058a728db024fd8238a7a5e43d833ebc518de45fd6ec5b4724",
+        "after_hash": "911693e40415e0aec6ae19cb32ee16dedc705b09487af163e7ae4169e54677cb"
+      },
+      {
+        "file": "app/about/page.tsx",
+        "ranges": [
+          {
+            "start": 93,
+            "end": 94
+          },
+          {
+            "start": 120,
+            "end": 120
+          },
+          {
+            "start": 123,
+            "end": 123
+          }
+        ],
+        "before_hash": "66d59acb37eb8c23fc0caceff51234920b2a5fa37c90008b1a0c980f9e9f50e3",
+        "after_hash": "1954b660909ad5750f96960f17d16d8a9b3bca4454913f39e779532ef35ac3a4"
+      },
+      {
+        "file": "app/about/values/page.tsx",
+        "ranges": [
+          {
+            "start": 111,
+            "end": 112
+          }
+        ],
+        "before_hash": "6e24cb27a6661bcfe0c703443e1f3eb6b38b835856dccf7f5ab55a4d2d8277c2",
+        "after_hash": "5acc222d3299daa9403f4666647a3e3c38528ec179697b9985151a2ef4cc32b1"
+      },
+      {
+        "file": "app/academics/departments/page.tsx",
+        "ranges": [
+          {
+            "start": 36,
+            "end": 36
+          }
+        ],
+        "before_hash": "f80a5eb170d1b110e2e3b7d46e7824332133073b6887f6f6c0cdd330cfe8948a",
+        "after_hash": "989c566bc19b1d9cb10273eb6f55bc5a0705442774fdc8114714393a201d5d22"
+      },
+      {
+        "file": "app/academics/pedagogy/page.tsx",
+        "ranges": [
+          {
+            "start": 93,
+            "end": 94
+          },
+          {
+            "start": 254,
+            "end": 254
+          }
+        ],
+        "before_hash": "48f30e2f8abcc9cbdddabd06fb44a8eb865bacbe3009ab38817ff7ff70bf8bc2",
+        "after_hash": "65e6952b7d036b0a1d6c766314747f5bfebe7713906b1d8b5eca878cb12f3e4d"
+      },
+      {
+        "file": "app/campus-life/page.tsx",
+        "ranges": [
+          {
+            "start": 77,
+            "end": 78
+          }
+        ],
+        "before_hash": "c5983273bea07190f413d351dbea271408f044b8c0c0ad985f1ef398231b49de",
+        "after_hash": "8f34d9b8df4fc5e2686ab56156c559fe26d7259c78cc997cad2ce3c772f67dec"
+      },
+      {
+        "file": "app/innovation/page.tsx",
+        "ranges": [
+          {
+            "start": 38,
+            "end": 39
+          },
+          {
+            "start": 119,
+            "end": 120
+          }
+        ],
+        "before_hash": "91ea068fe58a5e45ed5244a8d8618218b7eb41a931b44a339b3d16cda8370962",
+        "after_hash": "81483c6135ce3e24c6ee922e370dccd339b63b0e80fe62b1e345b0d4b7e94142"
+      },
+      {
+        "file": "app/international/partnerships/page.tsx",
+        "ranges": [
+          {
+            "start": 112,
+            "end": 113
+          }
+        ],
+        "before_hash": "1fd12a64513aa5fc660cce7bb8f81bb78b25ed284bd0b32229f461ab2dc554ed",
+        "after_hash": "e7bd5903f49f394c3ec70980e8233ba36e59bb6dd3284f9e1c3d8fbe34c49632"
+      },
+      {
+        "file": "app/page.tsx",
+        "ranges": [
+          {
+            "start": 12,
+            "end": 12
+          },
+          {
+            "start": 67,
+            "end": 67
+          }
+        ],
+        "before_hash": "baff44a7cc4610368f514b045521d032a742b224a28ac9692e303fd1c09e93dc",
+        "after_hash": "859658a9287d01373eea2383fa94e28a00991267bf55eb6449c07632c64b8ecd"
+      },
+      {
+        "file": "app/programs/engineering/computer-science/page.tsx",
+        "ranges": [
+          {
+            "start": 466,
+            "end": 467
+          }
+        ],
+        "before_hash": "9ef9f9f8ca6a77d4e6c0c4e4246b5767f3d98c0c51f70c8ec295f415704dc4b1",
+        "after_hash": "805edcc20ec17be76098e71135bd1d404132e814de10d10d733d4e5225e263e0"
+      },
+      {
+        "file": "app/programs/international-relations/page.tsx",
+        "ranges": [
+          {
+            "start": 470,
+            "end": 470
+          }
+        ],
+        "before_hash": "4e0034455d7bd19f60a6159712336dcf68b4e52f8ec081b7f2596a8ef4bc835c",
+        "after_hash": "00f14085c7a9d98640a8365e277b147e0121cc8077a73c672001765b6fec3510"
+      },
+      {
+        "file": "components/common/logo.tsx",
+        "ranges": [
+          {
+            "start": 31,
+            "end": 33
+          },
+          {
+            "start": 39,
+            "end": 39
+          }
+        ],
+        "before_hash": "88ebf25204343bb9ea5c78ca63df292c34db510ecadeeaa7e82011a2a1632b67",
+        "after_hash": "90ab6ab6d5ce920038a43ad169fa3af863b74146cfc95d010fe1aef2a59852ed"
+      },
+      {
+        "file": "components/site-footer.tsx",
+        "ranges": [
+          {
+            "start": 74,
+            "end": 74
+          }
+        ],
+        "before_hash": "4b5a587477d4befd0079f141e2f79fb824a5418638233fc0552cf6052a3cc50a",
+        "after_hash": "5086aa5519430c65b839c9fb8cf15257b53eca781ef4397a2fb9615b1f167d91"
+      }
+    ]
+  },
+  "timing": {
+    "started_at": "2026-11-08T10:51:45.867Z",
+    "completed_at": "2026-11-08T10:51:49.675Z",
+    "duration_ms": 3808,
+    "measurement": "hook_wall_clock"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "total": 0,
+    "model_calls": 0,
+    "measurement": "known-zero"
+  },
+  "telemetry": {
+    "schemaVersion": "mimosa-gate-telemetry/v1",
+    "profile": "gate",
+    "operation": "Stop",
+    "outcome": "partial/INCONCLUSIVE",
+    "latencyMs": 3808,
+    "peakMemoryBytes": 114012160,
+    "memoryMeasurement": "max-observed-process-rss",
+    "scannedFiles": 0,
+    "cache": {
+      "hits": 0,
+      "misses": 0,
+      "measurement": "not-applicable"
+    },
+    "denyCount": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "total": 0,
+      "modelCalls": 0,
+      "measurement": "known-zero"
+    }
+  },
+  "finding_count": 0,
+  "rewake_finding_count": 0,
+  "evidence_boundary": {
+    "scan": "candidate",
+    "static_fix_verification": "observed_static_only",
+    "runtime_verification": "not_performed"
+  },
+  "finding_events": [],
+  "findings": [],
+  "artifacts": {
+    "immutable_report": ".mimosa/reports/task-review-sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c-20261108T105149675Z-32088-f64dc59a81a9.json",
+    "latest_report": ".mimosa/reports/task-review-sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c.json",
+    "history_summary": ".mimosa/history/run-20261108T105149675Z-32088-f64dc59a81a9.json"
+  }
+}

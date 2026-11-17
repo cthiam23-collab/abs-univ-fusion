@@ -1,0 +1,13 @@
+User-Agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /student-portal
+Disallow: /student/
+Disallow: /staff/
+Disallow: /parent/
+Disallow: /external-partner/
+Disallow: /auth/
+Disallow: /components
+
+Sitemap: https://abs-univ.com/sitemap.xml

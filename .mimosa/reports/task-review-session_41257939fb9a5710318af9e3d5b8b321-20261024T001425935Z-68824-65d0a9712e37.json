@@ -1,0 +1,264 @@
+{
+  "schema_version": "mimosa-task-review/v2",
+  "run_id": "20261024T001425935Z-68824-65d0a9712e37",
+  "run_status": "inconclusive",
+  "errors": [
+    {
+      "stage": "supply-chain-check",
+      "target": ".",
+      "reason": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    }
+  ],
+  "coverage": {
+    "schema_version": "mimosa-hook-coverage/v1",
+    "status": "partial",
+    "scope": "hook_observed_diff",
+    "baseline": {
+      "complete": true,
+      "captured_files": 476,
+      "candidate_limit": 5000,
+      "truncated": false,
+      "enumeration_error_count": 0,
+      "snapshot_error_count": 0,
+      "compensated_target_count": 10
+    },
+    "change_tracking": {
+      "touched_observed": 8,
+      "touched_retained": 8,
+      "truncated": false,
+      "bash_mutation": true,
+      "bash_discovered": 10,
+      "bash_discovery_limit": 80,
+      "bash_discovery_truncated": false
+    },
+    "candidates": {
+      "eligible_files": 10,
+      "selected_files": 10,
+      "limit": 20,
+      "truncated": false
+    },
+    "scanning": {
+      "required_files": 8,
+      "scanned_files": 8,
+      "skipped_files": 0,
+      "failed_files": 0,
+      "project_checks_required": 1,
+      "project_checks_completed": 0
+    },
+    "notification": {
+      "eligible_findings": 0,
+      "detailed_findings": 0,
+      "detail_limit": 3,
+      "truncated": false
+    },
+    "reason_counts": {
+      "project_check_failed": 1
+    },
+    "reasons": [
+      {
+        "code": "project_check_failed",
+        "stage": "supply-chain-check",
+        "target": ".",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      }
+    ],
+    "reasons_truncated": false
+  },
+  "generated_at": "2026-10-24T00:14:25.935Z",
+  "session_id": "session_41257939fb9a5710318af9e3d5b8b321",
+  "target": ".",
+  "revision": null,
+  "rules_version": "unavailable",
+  "diff_hash": "6ab23178db0b1962efddd36f2e9a80eeb58710a295f7ff563079707107d01aa2",
+  "diff": {
+    "algorithm": "sha256",
+    "changed_file_count": 10,
+    "changed_files": [
+      {
+        "file": "app/alumni/networking/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          }
+        ],
+        "before_hash": "e2286abae9248fdf44240c373797f385f0146f3421b9c585e379d286d1a2d8df",
+        "after_hash": "8a85334cb96af3445f00feafe540e7eb587e4d1f2edc0f2f0c2f210097a5db86"
+      },
+      {
+        "file": "app/e-campus/it-support/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          },
+          {
+            "start": 29,
+            "end": 30
+          }
+        ],
+        "before_hash": "986595cbe3a26fb4608789cd4537b72b7b9cd77c7256b6517747e3c663b4e046",
+        "after_hash": "f8a482b5c985afd8c1d1ca9e686c147e68c09c36d3fb92462d8e59cbd049b13c"
+      },
+      {
+        "file": "app/external-partner/dashboard/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 11
+          }
+        ],
+        "before_hash": "9b3674c98d99737f9853ac6df3409c7e14c8dabe008192fe292d42da32315bdb",
+        "after_hash": "627cc4ebc60918410b615ffb00fbdbfe79313165368604f5a9e7d6cb01341414"
+      },
+      {
+        "file": "app/international/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          }
+        ],
+        "before_hash": "ccdd3ba102a68cec3757af310934fd54002ac864e50e4b0432cd80008936eda6",
+        "after_hash": "2c1730c031b3bb4c22b90b492a0b634d022556c800004160174f4c8df97becad"
+      },
+      {
+        "file": "app/parent/dashboard/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 11
+          }
+        ],
+        "before_hash": "b7e3ab4e99dc0316ba2fdec6b3921d2b8d903b83fbc0c4aad3315a994c8be1b9",
+        "after_hash": "10b5a9ae81bd57baacc22ea37b11a23654935b51fc73dd7aec0934411f48aa6e"
+      },
+      {
+        "file": "app/research/publications/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          }
+        ],
+        "before_hash": "91b4df29776c811fb90054170f53e76b7200b2c88534f8a3f2a0557c8e96447d",
+        "after_hash": "3c2932566983a687770cc34813e9d210c937beba5674a9f3e6830c6a65fb2c1b"
+      },
+      {
+        "file": "app/staff/dashboard/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 11
+          }
+        ],
+        "before_hash": "b08a6d181c78317d969735a18971c760429115bf61929451a16041613eca8579",
+        "after_hash": "7f696e9f2fe8bc09dadaec728cadab3ef4b7623fe104d4a13762442a6881f92c"
+      },
+      {
+        "file": "lib/db.ts",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 7,
+            "end": 28
+          }
+        ],
+        "before_hash": "427f40a62b08da6abf42277a17688cd70192b0d28b470064861c5ee2dd423fc6",
+        "after_hash": "a5958ac3d79760d65632c38ec54d6b396fe525e8918a0a44e1500a62c5db91b9"
+      },
+      {
+        "file": "package-lock.json",
+        "ranges": [
+          {
+            "start": 59,
+            "end": 59
+          },
+          {
+            "start": 11090,
+            "end": 11102
+          }
+        ],
+        "before_hash": "64bae251e4e5760d3499498b885aea83e2c85ce0e95be1f2d648aaa156359ff6",
+        "after_hash": "6f769f2e7be193095d4a029bb0977ceb88a40bd394098de0a2a52548f3ddfe8a"
+      },
+      {
+        "file": "package.json",
+        "ranges": [
+          {
+            "start": 61,
+            "end": 61
+          }
+        ],
+        "before_hash": "f3d0ab0697ef50b350cc2dc082ac4887867aa125fc289551aa337de4f1391c42",
+        "after_hash": "38ebdd357cfbc3546a3d6ad138dc82109418a593bd12b843ca7f11e6d8485479"
+      }
+    ]
+  },
+  "timing": {
+    "started_at": "2026-10-24T00:14:23.301Z",
+    "completed_at": "2026-10-24T00:14:25.935Z",
+    "duration_ms": 2634,
+    "measurement": "hook_wall_clock"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "total": 0,
+    "model_calls": 0,
+    "measurement": "known-zero"
+  },
+  "telemetry": {
+    "schemaVersion": "mimosa-gate-telemetry/v1",
+    "profile": "gate",
+    "operation": "Stop",
+    "outcome": "partial/INCONCLUSIVE",
+    "latencyMs": 2634,
+    "peakMemoryBytes": 153939968,
+    "memoryMeasurement": "max-observed-process-rss",
+    "scannedFiles": 8,
+    "cache": {
+      "hits": 0,
+      "misses": 0,
+      "measurement": "not-applicable"
+    },
+    "denyCount": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "total": 0,
+      "modelCalls": 0,
+      "measurement": "known-zero"
+    }
+  },
+  "finding_count": 0,
+  "rewake_finding_count": 0,
+  "evidence_boundary": {
+    "scan": "candidate",
+    "static_fix_verification": "observed_static_only",
+    "runtime_verification": "not_performed"
+  },
+  "finding_events": [],
+  "findings": [],
+  "artifacts": {
+    "immutable_report": ".mimosa/reports/task-review-session_41257939fb9a5710318af9e3d5b8b321-20261024T001425935Z-68824-65d0a9712e37.json",
+    "latest_report": ".mimosa/reports/task-review-session_41257939fb9a5710318af9e3d5b8b321.json",
+    "history_summary": ".mimosa/history/run-20261024T001425935Z-68824-65d0a9712e37.json"
+  }
+}

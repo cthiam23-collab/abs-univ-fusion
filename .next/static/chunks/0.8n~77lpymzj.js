@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,750659,e=>{"use strict";var t=e.i(260503),u=e.i(124083);e.s(["LocaleSync",0,function({locale:e}){let{language:c,setLanguage:n}=(0,u.useLanguage)();return(0,t.useEffect)(()=>{c!==e&&n(e)},[e]),null}])}]);

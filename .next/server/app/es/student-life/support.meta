@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/es/layout,_N_T_/es/student-life/layout,_N_T_/es/student-life/support/layout,_N_T_/es/student-life/support/page,_N_T_/es/student-life/support"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/es/student-life/support/__PAGE__",
+    "/es/student-life/support",
+    "/es/student-life",
+    "/es",
+    "/_index",
+    "/_head"
+  ]
+}

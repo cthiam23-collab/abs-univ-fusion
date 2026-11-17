@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/programs/layout,_N_T_/programs/masters/layout,_N_T_/programs/masters/international-business/layout,_N_T_/programs/masters/international-business/page,_N_T_/programs/masters/international-business"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/programs/masters/international-business/__PAGE__",
+    "/programs/masters/international-business",
+    "/programs/masters",
+    "/programs",
+    "/_index",
+    "/_head"
+  ]
+}

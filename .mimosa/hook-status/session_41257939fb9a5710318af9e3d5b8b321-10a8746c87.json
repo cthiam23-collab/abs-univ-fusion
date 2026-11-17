@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-11-09T18:13:30.118Z",
+  "sessionId": "session_41257939fb9a5710318af9e3d5b8b321",
+  "event": "PostToolUse",
+  "toolName": "Write",
+  "file": "DEV-HYDRATION-NOTE.md",
+  "outcome": "clear",
+  "coverage": "complete",
+  "findingCount": 0,
+  "durationMs": 5,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}

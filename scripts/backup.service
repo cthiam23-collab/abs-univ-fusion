@@ -1,0 +1,10 @@
+[Unit]
+Description=ABS University PostgreSQL Backup Service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/abs-university/scripts/backup-postgres.sh
+EnvironmentFile=/opt/abs-university/.env
+
+[Install]
+WantedBy=multi-user.target

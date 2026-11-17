@@ -1,0 +1,100 @@
+# =============================================================================
+# ABS University — Release Gate
+# =============================================================================
+# Required status check on main branch.
+# Validates environment variables and build artifacts before merge.
+#
+# Enable this as a required check in GitHub settings:
+#   Settings → Branches → Branch protection rules → Required status checks
+#   Add: "release-gate / release-gate"
+# =============================================================================
+
+name: Release Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  release-gate:
+    name: Release Gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "12.3.4"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # ── Validate required env vars ────────────────────────────────────────
+      - name: Validate environment template
+        run: |
+          echo "Checking .env.production.template..."
+          REQUIRED_VARS=(
+            "abs_DATABASE_URL"
+            "NEXT_PUBLIC_SUPABASE_URL"
+            "NEXT_PUBLIC_SUPABASE_ANON_KEY"
+            "SUPABASE_URL"
+            "SUPABASE_KEY"
+            "NEXTAUTH_SECRET"
+            "NEXTAUTH_URL"
+            "ADMIN_API_KEY"
+          )
+
+          TEMPLATE=".env.production.template"
+          MISSING=0
+
+          for var in "${REQUIRED_VARS[@]}"; do
+            if ! grep -q "^${var}=" "$TEMPLATE"; then
+              echo "ERROR: Missing required variable: $var in $TEMPLATE"
+              MISSING=$((MISSING + 1))
+            else
+              echo "OK: $var found in template"
+            fi
+          done
+
+          if [ $MISSING -gt 0 ]; then
+            echo "FAIL: $MISSING required variable(s) missing from .env.production.template"
+            exit 1
+          fi
+
+          echo "All required variables present in template."
+
+      # ── Build with production-like env ────────────────────────────────────
+      - name: Production build
+        run: pnpm build
+        env:
+          NODE_ENV: production
+          abs_DATABASE_URL: "postgresql://user:password@localhost/absuniv"
+          NEXT_PUBLIC_SUPABASE_URL: "https://dummy.supabase.co"
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: "dummy-key"
+          SUPABASE_URL: "https://dummy.supabase.co"
+          SUPABASE_KEY: "dummy-key"
+          NEXTAUTH_SECRET: "release-gate-secret"
+          NEXTAUTH_URL: "https://abs-univ.com"
+          ADMIN_API_KEY: "dummy-key"
+
+      # ── Verify standalone output ─────────────────────────────────────────
+      - name: Verify Docker output
+        run: |
+          if [ ! -d ".next/standalone" ]; then
+            echo "ERROR: Standalone output missing — set output: 'standalone' in next.config.js"
+            exit 1
+          fi
+          echo "Build artifacts ready for Docker."
+
+      # ── Summary ───────────────────────────────────────────────────────────
+      - name: Release gate passed
+        run: echo "Release gate passed (production build verified)."

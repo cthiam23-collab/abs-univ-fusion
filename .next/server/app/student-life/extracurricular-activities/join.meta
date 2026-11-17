@@ -1,0 +1,19 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/student-life/extracurricular-activities",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/student-life/layout,_N_T_/student-life/extracurricular-activities/layout,_N_T_/student-life/extracurricular-activities/join/layout,_N_T_/student-life/extracurricular-activities/join/page,_N_T_/student-life/extracurricular-activities/join"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/student-life/extracurricular-activities/join/__PAGE__",
+    "/student-life/extracurricular-activities/join",
+    "/student-life/extracurricular-activities",
+    "/student-life",
+    "/_index",
+    "/_head"
+  ]
+}

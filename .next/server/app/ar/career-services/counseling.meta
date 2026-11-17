@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/ar/layout,_N_T_/ar/career-services/layout,_N_T_/ar/career-services/counseling/layout,_N_T_/ar/career-services/counseling/page,_N_T_/ar/career-services/counseling"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/ar/career-services/counseling/__PAGE__",
+    "/ar/career-services/counseling",
+    "/ar/career-services",
+    "/ar",
+    "/_index",
+    "/_head"
+  ]
+}

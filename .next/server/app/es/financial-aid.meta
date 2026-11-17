@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/es/layout,_N_T_/es/financial-aid/layout,_N_T_/es/financial-aid/page,_N_T_/es/financial-aid"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/es/financial-aid/__PAGE__",
+    "/es/financial-aid",
+    "/es",
+    "/_index",
+    "/_head"
+  ]
+}

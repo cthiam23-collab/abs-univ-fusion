@@ -1,0 +1,67 @@
+[
+ {
+  "slug": "finance-entreprise-ingenierie-financiere",
+  "title": "Finance d'Entreprise et Ingénierie Financière",
+  "tagline": "Concevoir la politique de financement, structurer les opérations financières et piloter les risques de l'entreprise."
+ },
+ {
+  "slug": "finance-islamique",
+  "title": "Finance Islamique",
+  "tagline": "Maîtriser les produits, la gouvernance et le développement de la finance conforme à la Charia en Afrique."
+ },
+ {
+  "slug": "audit-controle-gestion",
+  "title": "Audit et Contrôle de Gestion",
+  "tagline": "Sécuriser les organisations par l'audit, le contrôle interne et le pilotage de la performance."
+ },
+ {
+  "slug": "supply-chain-management",
+  "title": "Supply Chain Management",
+  "tagline": "Orchestrer les flux de l'approvisionnement à la livraison dans un environnement ouest-africain en pleine intégration."
+ },
+ {
+  "slug": "developpement-durable-rse",
+  "title": "Développement Durable et RSE",
+  "tagline": "Piloter la transition durable des organisations : stratégie RSE, reporting extra-financier et impact réel."
+ },
+ {
+  "slug": "gouvernance-marches-publics",
+  "title": "Gouvernance et Management des Marchés Publics",
+  "tagline": "Maîtriser la commande publique : passation, exécution, contrôle et gouvernance au service de l'intérêt général."
+ },
+ {
+  "slug": "management-rh",
+  "title": "Management des Ressources Humaines",
+  "tagline": "Développer le capital humain : talents, droit du travail, rémunération, compétences et dialogue social."
+ },
+ {
+  "slug": "ingenierie-informatique",
+  "title": "Ingénierie Informatique",
+  "tagline": "Concevoir les systèmes numériques de demain : architectures, développement, données et IA, cybersécurité et cloud."
+ },
+ {
+  "slug": "genie-minier",
+  "title": "Génie Minier",
+  "tagline": "Former les ingénieurs du secteur minier malien et ouest-africain : exploration, exploitation, traitement et responsabilité environnementale."
+ },
+ {
+  "slug": "journalisme",
+  "title": "Journalisme",
+  "tagline": "Exercer un journalisme d'investigation à l'ère numérique : données, fact-checking, éthique et innovation."
+ },
+ {
+  "slug": "relations-affaires-internationales",
+  "title": "Relations et Affaires Internationales",
+  "tagline": "Comprendre et agir dans le système international : diplomatie économique, intégration africaine et négociation multilatérale."
+ },
+ {
+  "slug": "entrepreneuriat",
+  "title": "Entrepreneuriat",
+  "tagline": "De l'idée à l'entreprise qui grandit : modèle économique, financement, cadre juridique malien et pilotage de la croissance."
+ },
+ {
+  "slug": "strategie-politique-defense",
+  "title": "Stratégie et Politique de Défense",
+  "tagline": "Analyser les menaces, piloter les organisations de défense et exercer le leadership stratégique."
+ }
+]

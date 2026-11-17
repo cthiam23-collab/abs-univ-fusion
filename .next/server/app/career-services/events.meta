@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/career-services/layout,_N_T_/career-services/events/layout,_N_T_/career-services/events/page,_N_T_/career-services/events"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/career-services/events/__PAGE__",
+    "/career-services/events",
+    "/career-services",
+    "/_index",
+    "/_head"
+  ]
+}

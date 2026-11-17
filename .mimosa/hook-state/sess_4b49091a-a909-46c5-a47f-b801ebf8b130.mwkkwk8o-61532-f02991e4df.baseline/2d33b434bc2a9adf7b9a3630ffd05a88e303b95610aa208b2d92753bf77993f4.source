@@ -1,0 +1,1073 @@
+import type { LucideIcon } from "lucide-react"
+import {
+  Boxes,
+  ClipboardCheck,
+  Coins,
+  Cpu,
+  Globe2,
+  Leaf,
+  MoonStar,
+  Mountain,
+  Newspaper,
+  Rocket,
+  Scale,
+  Shield,
+  Users,
+} from "lucide-react"
+
+/**
+ * Données éditoriales des 13 Masters d'ABS dotés d'une page dédiée générée
+ * dynamiquement (route app/programs/masters/[slug]). Les 3 Masters déjà dotés
+ * de pages statiques (mba, project-management, international-business) ne sont
+ * PAS inclus ici : ils conservent leur propre dossier sous app/programs/masters/.
+ */
+
+export type MasterCourse = {
+  /** Intitulé du module d'enseignement. */
+  title: string
+  /** Sous-thèmes traités dans le module. */
+  topics: string[]
+}
+
+export type MasterProgram = {
+  slug: string
+  /** Code officiel du parcours (ex. M-FIF). */
+  code: string
+  title: string
+  /** Phrase d'accroche affichée sous le titre dans le héros. */
+  tagline: string
+  duration: string
+  /** Deux paragraphes de présentation issus des thèmes de la brochure. */
+  description: string[]
+  /** Objectifs de la formation (5 à 6). */
+  objectives: string[]
+  /** Maquette indicative : modules et sous-thèmes (8 à 10). */
+  courses: MasterCourse[]
+  /** Compétences à acquérir (5 à 6). */
+  skills: string[]
+  /** Débouchés professionnels (6 à 8). */
+  careers: string[]
+  /** Visuel du héros (image du campus). */
+  image: string
+}
+
+export const mastersData: Record<string, MasterProgram> = {
+  "finance-entreprise-ingenierie-financiere": {
+    slug: "finance-entreprise-ingenierie-financiere",
+    code: "M-FIF",
+    title: "Finance d'Entreprise et Ingénierie Financière",
+    tagline:
+      "Concevoir la politique de financement, structurer les opérations financières et piloter les risques de l'entreprise.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master forme des spécialistes capables de définir la politique de financement et la structure du capital optimale d'une organisation, puis de concevoir des opérations d'ingénierie financière sophistiquées : options, futures, swaps et dette hybride. Les étudiants apprennent à arbitrer entre les différentes sources de financement, à mesurer le coût du capital et à structurer des montages adaptés aux besoins de développement des entreprises et des projets.",
+      "Le parcours couvre également la gestion des risques financiers — risque de marché, de crédit, de liquidité, de devises et de taux — ainsi que les fusions-acquisitions, de la valorisation des cibles à la structuration juridique et financière des opérations. Une place importante est donnée à la modélisation financière sous Excel et VBA et à la théorie du portefeuille, afin de préparer les diplômés aux fonctions financières à haute responsabilité.",
+    ],
+    objectives: [
+      "Définir la politique de financement et la structure du capital optimales d'une organisation",
+      "Maîtriser les techniques d'ingénierie financière : options, futures, swaps et dette hybride",
+      "Identifier et couvrir les risques de marché, de crédit, de liquidité, de devises et de taux",
+      "Valoriser des entreprises et structurer des opérations de fusions-acquisitions",
+      "Construire des modèles financiers opérationnels sous Excel et VBA",
+      "Appliquer la théorie du portefeuille à la gestion et à l'allocation d'actifs",
+    ],
+    courses: [
+      {
+        title: "Politique de financement et structure du capital",
+        topics: ["Arbitrage dette / fonds propres", "Coût moyen pondéré du capital", "Effet de levier", "Théorèmes de Modigliani-Miller"],
+      },
+      {
+        title: "Ingénierie financière et produits dérivés",
+        topics: ["Options", "Futures et forwards", "Swaps", "Dette hybride et financements structurés"],
+      },
+      {
+        title: "Gestion des risques financiers",
+        topics: ["Risque de marché", "Risque de crédit", "Risque de liquidité", "Risques de devises et de taux", "Value at Risk"],
+      },
+      {
+        title: "Fusions-acquisitions",
+        topics: ["Valorisation (DCF, multiples)", "Structuration des opérations", "Due diligence", "LBO et financement de l'acquisition"],
+      },
+      {
+        title: "Modélisation financière",
+        topics: ["Modèles de prévision sous Excel", "Automatisation VBA", "Business plans financiers", "Analyse de scénarios et sensibilité"],
+      },
+      {
+        title: "Théorie du portefeuille",
+        topics: ["Diversification et frontière efficiente", "Modèle de Markowitz", "MEDAF (CAPM)", "Allocation d'actifs"],
+      },
+      {
+        title: "Analyse financière approfondie",
+        topics: ["Lecture des états financiers", "Diagnostics financiers", "Ratios et signaux d'alerte", "Notes annuelles"],
+      },
+      {
+        title: "Marchés de capitaux et financement bancaire",
+        topics: ["Émissions de titres", "Financements syndiqués", "Covenants bancaires", "Marchés régionaux UMOA"],
+      },
+      {
+        title: "Éthique et conformité financière",
+        topics: ["Gouvernance financière", "Réglementation bancaire UEMOA", "Lutte anti-blanchiment", "Compliance"],
+      },
+    ],
+    skills: [
+      "Élaborer une politique de financement adaptée à la stratégie de l'entreprise",
+      "Valoriser une entreprise, une cible ou un projet d'investissement",
+      "Concevoir des couvertures des risques financiers (marché, crédit, devises, taux)",
+      "Structurer des opérations d'ingénierie financière et de fusions-acquisitions",
+      "Construire et automatiser des modèles financiers sous Excel et VBA",
+      "Gérer et optimiser un portefeuille d'actifs financiers",
+    ],
+    careers: [
+      "Directeur Financier (CFO)",
+      "Analyste Financier Senior",
+      "Consultant M&A",
+      "Spécialiste Ingénierie Financière",
+      "Gestionnaire de portefeuille",
+      "Risk manager",
+      "Trésorier d'entreprise",
+    ],
+    image: "/images/campus/IMG-20250212-WA0003.jpg",
+  },
+
+  "finance-islamique": {
+    slug: "finance-islamique",
+    code: "M-FIN-ISL",
+    title: "Finance Islamique",
+    tagline:
+      "Maîtriser les produits, la gouvernance et le développement de la finance conforme à la Charia en Afrique.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master approfondit les principes fondamentaux de la finance islamique : l'interdiction du riba (intérêt usuraire) et des spéculations excessives, ainsi que les grands contrats de la discipline — moudaraba, mousharaka, mourabaha, ijara et sukuk. Les étudiants étudient la structuration de produits bancaires islamiques conformes, depuis la conception contractuelle jusqu'à la distribution commerciale.",
+      "Le parcours traite la gouvernance et la conformité Charia (comités Charia, audit de conformité, référentiels AAOIFI et IFSB), la gestion des risques spécifiques à la finance islamique, le takaful (assurance islamique) et le rôle de la finance islamique dans le financement du développement en Afrique. Les débouchés s'étendent des banques islamiques et des fenêtres islamiques aux organismes de régulation, au conseil et à la fintech islamique.",
+    ],
+    objectives: [
+      "Maîtriser les principes et les interdits de la finance islamique (riba, gharar, maysir)",
+      "Structurer les grands contrats : moudaraba, mousharaka, mourabaha, ijara, sukuk",
+      "Mettre en œuvre la gouvernance et la conformité Charia d'une institution",
+      "Concevoir des produits bancaires islamiques adaptés au marché",
+      "Gérer les risques spécifiques aux institutions financières islamiques",
+      "Analyser le potentiel de la finance islamique pour le développement en Afrique",
+    ],
+    courses: [
+      {
+        title: "Fondamentaux et principes de la finance islamique",
+        topics: ["Interdiction du riba", "Prohibition du gharar et du maysir", "Sources : Coran et Sunna", "Économie islamique"],
+      },
+      {
+        title: "Contrats et produits islamiques",
+        topics: ["Moudaraba", "Mousharaka", "Mourabaha", "Ijara", "Sukuk et titrisation islamique"],
+      },
+      {
+        title: "Gouvernance et conformité Charia",
+        topics: ["Comités Charia", "Audit de conformité Charia", "Référentiels AAOIFI et IFSB", "Fatwas et structuration"],
+      },
+      {
+        title: "Banques islamiques et fenêtres islamiques",
+        topics: ["Modèles d'exploitation", "Collecte et emplois des dépôts", "Financement commercial", "Windows islamiques"],
+      },
+      {
+        title: "Takaful : assurance islamique",
+        topics: ["Principes du takaful", "Modèles mudaraba et wakala", "Réassurance islamique (retakaful)", "Produits famille et dommages"],
+      },
+      {
+        title: "Gestion des risques spécifiques",
+        topics: ["Risques de conformité Charia", "Risque de contrepartie", "Risque de taux de profit", "Fonds de réserve"],
+      },
+      {
+        title: "Finance islamique et développement en Afrique",
+        topics: ["Financement de l'investissement productif", "Instruments de la ZLECAf", "Sukuk souverains", "Inclusion financière"],
+      },
+      {
+        title: "Régulation et normalisation",
+        topics: ["Paysage réglementaire régional", "Rôle de la BCEAO et de la CIMA", "Standards internationaux", "Reporting islamique"],
+      },
+      {
+        title: "Fintech islamique et innovation",
+        topics: ["Paiements conformes", "Crowdfunding islamique", "Robo-advisors Charia-compatibles", "Cas d'usage africains"],
+      },
+    ],
+    skills: [
+      "Qualifier la conformité Charia d'un produit ou d'une opération financière",
+      "Structurer des financements selon les contrats islamiques (mourabaha, ijara, sukuk…)",
+      "Mettre en place une gouvernance Charia (comité, audit de conformité)",
+      "Concevoir une gamme de produits bancaires ou d'assurance islamique",
+      "Évaluer et couvrir les risques spécifiques aux institutions islamiques",
+      "Analyser les marchés de la finance islamique en Afrique de l'Ouest",
+    ],
+    careers: [
+      "Analyste ou chargé de clientèle en banque islamique",
+      "Chargé d'affaires des fenêtres islamiques",
+      "Cadre d'organisme de régulation",
+      "Consultant en conformité Charia",
+      "Chargé de produits takaful",
+      "Entrepreneur en fintech islamique",
+      "Gestionnaire de fonds conformes",
+    ],
+    image: "/images/campus/IMG-20250212-WA0004.jpg",
+  },
+
+  "audit-controle-gestion": {
+    slug: "audit-controle-gestion",
+    code: "M-ACG",
+    title: "Audit et Contrôle de Gestion",
+    tagline:
+      "Sécuriser les organisations par l'audit, le contrôle interne et le pilotage de la performance.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master développe une double expertise : l'audit financier et opérationnel, et le contrôle de gestion. Les étudiants apprennent à conduire des missions d'audit selon les normes professionnelles, à maîtriser les risques internes des organisations et à mobiliser les normes IFRS et le cadre de l'audit légal. La démarche d'audit — planification, programmes de travail, collecte de preuves, rapport — est travaillée sur des cas réels.",
+      "Le volet contrôle de gestion couvre la construction des budgets, des tableaux de bord et des indicateurs clés de performance (KPI), le pilotage de la performance globale ainsi que l'articulation entre systèmes d'information, contrôle interne et mesure des résultats. Les diplômés préparent des fonctions d'auditeur interne ou externe, de contrôleur de gestion, de responsable contrôle interne ou de DAF junior.",
+    ],
+    objectives: [
+      "Conduire des missions d'audit financier et opérationnel selon les normes professionnelles",
+      "Concevoir budgets, tableaux de bord et KPI au service du pilotage",
+      "Évaluer et maîtriser les risques internes des organisations",
+      "Appliquer les normes IFRS et le cadre de l'audit légal et contractuel",
+      "Sécuriser les systèmes d'information et le contrôle interne",
+      "Piloter la performance économique, sociale et organisationnelle",
+    ],
+    courses: [
+      {
+        title: "Audit financier",
+        topics: ["Normes d'audit", "Cycle d'audit des états financiers", "Preuves d'audit", "Rapport d'audit"],
+      },
+      {
+        title: "Audit opérationnel",
+        topics: ["Audit des processus", "Audit de conformité", "Audit de l'efficience", "Recommandations et suivi"],
+      },
+      {
+        title: "Contrôle de gestion et budgets",
+        topics: ["Construction budgétaire", "Budgets flexibles", "Écarts et analyse", "Reporting de gestion"],
+      },
+      {
+        title: "Tableaux de bord et KPI",
+        topics: ["Indicateurs clés de performance", "Tableaux de bord stratégiques", "Balanced scorecard", "Visualisation des données"],
+      },
+      {
+        title: "Maîtrise des risques internes",
+        topics: ["Cartographie des risques", "Dispositif de contrôle interne", "COSO", "Prévention de la fraude"],
+      },
+      {
+        title: "Normes IFRS et audit légal",
+        topics: ["Référentiel IFRS", "Normes d'exercice professionnel", "Commissariat aux comptes", "Événements post-clôture"],
+      },
+      {
+        title: "Systèmes d'information et contrôle interne",
+        topics: ["Sécurité des SI", "Contrôle des applications", "Audit informatique", "Piste d'audit"],
+      },
+      {
+        title: "Pilotage de la performance",
+        topics: ["Analyse de la rentabilité", "Coûts et marges", "Performance opérationnelle", "Amélioration continue"],
+      },
+      {
+        title: "Méthodologie et éthique de l'audit",
+        topics: ["Planification de mission", "Programme de travail", "Dossier de travail", "Code d'éthique"],
+      },
+    ],
+    skills: [
+      "Planifier et exécuter une mission d'audit financier ou opérationnel",
+      "Concevoir et exploiter des tableaux de bord et des KPI pertinents",
+      "Élaborer et contrôler un dispositif de contrôle interne efficace",
+      "Rédiger des comptes conformes aux normes IFRS et des rapports d'audit",
+      "Identifier, évaluer et traiter les risques internes",
+      "Rendre compte à la direction et aux gouvernants avec pertinence",
+    ],
+    careers: [
+      "Auditeur interne",
+      "Auditeur externe",
+      "Contrôleur de gestion",
+      "Responsable contrôle interne",
+      "Commissaire aux comptes adjoint",
+      "Consultant en organisation",
+      "DAF junior",
+    ],
+    image: "/images/campus/IMG-20250212-WA0006.jpg",
+  },
+
+  "supply-chain-management": {
+    slug: "supply-chain-management",
+    code: "M-SCM",
+    title: "Supply Chain Management",
+    tagline:
+      "Orchestrer les flux de l'approvisionnement à la livraison dans un environnement ouest-africain en pleine intégration.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master forme des gestionnaires de la chaîne logistique globale capables de piloter les flux physiques et d'information, de l'approvisionnement chez les fournisseurs jusqu'à la livraison finale chez le client. Le programme couvre les achats et la gestion des fournisseurs, la logistique et le transport international, la planification des opérations (S&OP, prévisions de la demande) ainsi que la gestion des stocks et des entrepôts.",
+      "Une spécialisation régionale distingue ce parcours : la logistique portuaire et douanière en Afrique de l'Ouest, les opportunités ouvertes par la ZLECAf et la maîtrise des systèmes d'information logistiques (WMS, TMS, ERP). Les méthodes Lean d'amélioration continue complètent la boîte à outils des diplômés, préparés aux fonctions de responsable supply chain, directeur logistique, acheteur international ou consultant SCM.",
+    ],
+    objectives: [
+      "Piloter les flux physiques et d'information de l'approvisionnement à la livraison",
+      "Structurer une fonction achats et gérer la relation fournisseurs",
+      "Organiser la logistique et le transport international multimodal",
+      "Construire des plans de demande et des processus S&OP",
+      "Exploiter les systèmes WMS, TMS et ERP de la chaîne logistique",
+      "Appliquer le Lean à l'amélioration continue de la supply chain",
+    ],
+    courses: [
+      {
+        title: "Gestion des flux et de la chaîne logistique",
+        topics: ["Typologie des flux", "Flux poussés et flux tirés", "Synchronisation amont-aval", "Mesure de la performance logistique"],
+      },
+      {
+        title: "Achats et gestion des fournisseurs",
+        topics: ["Processus achats", "Sourcing et appel d'offres", "Négociation fournisseurs", "Performance et développement fournisseurs"],
+      },
+      {
+        title: "Logistique et transport international",
+        topics: ["Incoterms", "Transit et douane", "Transport multimodal", "Assurance et documents de transport"],
+      },
+      {
+        title: "Planification et prévisions (S&OP)",
+        topics: ["Prévision de la demande", "Planification des ventes et opérations (S&OP)", "Plan directeur de production", "Gestion des capacités"],
+      },
+      {
+        title: "Logistique portuaire et douanière en Afrique de l'Ouest",
+        topics: ["Corridors logistiques régionaux", "Opérations portuaires", "Régimes douaniers", "Facilitation du commerce"],
+      },
+      {
+        title: "ZLECAf et opportunités régionales",
+        topics: ["Cadre de la ZLECAf", "Chaînes de valeur régionales", "Commerce transfrontalier", "Logistique du e-commerce africain"],
+      },
+      {
+        title: "Systèmes d'information logistiques",
+        topics: ["WMS (gestion d'entrepôt)", "TMS (gestion du transport)", "ERP et intégration", "Traçabilité et data logistique"],
+      },
+      {
+        title: "Gestion des stocks et des entrepôts",
+        topics: ["Politiques de réapprovisionnement", "Stocks de sécurité", "Conception d'entrepôts", "Inventaires et fiabilité"],
+      },
+      {
+        title: "Lean et amélioration continue",
+        topics: ["Chasse aux gaspillages (muda)", "Kaizen", "VSM (Value Stream Mapping)", "Lean supply chain"],
+      },
+    ],
+    skills: [
+      "Concevoir et piloter une chaîne logistique performante de bout en bout",
+      "Mener des processus achats et négocier avec des fournisseurs internationaux",
+      "Organiser un transport international et gérer les opérations douanières",
+      "Construire des prévisions et animer un processus S&OP",
+      "Paramétrer et exploiter les SI logistiques (WMS, TMS, ERP)",
+      "Déployer une démarche Lean sur les opérations logistiques",
+    ],
+    careers: [
+      "Responsable supply chain",
+      "Directeur logistique",
+      "Acheteur international",
+      "Responsable approvisionnement",
+      "Consultant SCM",
+      "Gestionnaire de transport",
+      "Responsable entrepôt et distribution",
+    ],
+    image: "/images/campus/IMG-20250212-WA0007.jpg",
+  },
+
+  "developpement-durable-rse": {
+    slug: "developpement-durable-rse",
+    code: "M-DDRSE",
+    title: "Développement Durable et RSE",
+    tagline:
+      "Piloter la transition durable des organisations : stratégie RSE, reporting extra-financier et impact réel.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master prépare les étudiants à intégrer les Objectifs de Développement Durable (ODD) dans la stratégie des organisations et à conduire des démarches de Responsabilité Sociétale des Entreprises abouties : éthique des affaires, dialogue avec les parties prenantes, et reporting extra-financier selon les référentiels GRI et CSRD. La question de la mesure — indicateurs, données, vérification — occupe une place centrale.",
+      "Le parcours accorde une attention particulière à l'évaluation d'impact environnemental et social des grands projets, notamment dans les secteurs minier et énergétique, structurants pour l'économie malienne et ouest-africaine. Les étudiants découvrent aussi la finance verte et les instruments de financement de la transition, qui ouvrent des débouchés de responsable RSE, consultant développement durable, chargé de mission environnement ou analyste ESG.",
+    ],
+    objectives: [
+      "Traduire les ODD en feuilles de route opérationnelles pour une organisation",
+      "Élaborer une stratégie RSE cohérente avec le modèle d'affaires",
+      "Produire un reporting extra-financier selon les référentiels GRI et CSRD",
+      "Conduire des évaluations d'impact environnemental et social (mines, énergie)",
+      "Structurer le dialogue et la materialité avec les parties prenantes",
+      "Mobiliser les instruments de finance verte pour financer la transition",
+    ],
+    courses: [
+      {
+        title: "Objectifs de Développement Durable et agenda 2030",
+        topics: ["Panorama des 17 ODD", "Déclinaison nationale", "Contribution des entreprises", "Indicateurs ODD"],
+      },
+      {
+        title: "Stratégie RSE",
+        topics: ["ISO 26000", "Matérialité", "Feuille de route RSE", "Ancrage dans la stratégie"],
+      },
+      {
+        title: "Reporting extra-financier (GRI, CSRD)",
+        topics: ["Standards GRI", "Directive CSRD et ESRS", "Collecte et fiabilité des données", "Vérification (assurance)"],
+      },
+      {
+        title: "Éthique des affaires",
+        topics: ["Prise de décision éthique", "Codes de conduite", "Anti-corruption", "Culture d'intégrité"],
+      },
+      {
+        title: "Évaluation d'impact environnemental et social",
+        topics: ["Cadres EIES", "Études d'impact (mines, énergie)", "Plans de gestion environnementale et sociale", "Consultation des communautés"],
+      },
+      {
+        title: "Analyse des parties prenantes",
+        topics: ["Cartographie des parties prenantes", "Engagement et dialogue", "Gestion des attentes", "Conflits et médiation"],
+      },
+      {
+        title: "Finance verte",
+        topics: ["Obligations vertes", "Financement climat", "Taxonomies", "Projets et mécanismes carbone"],
+      },
+      {
+        title: "Management environnemental et chaînes de valeur durables",
+        topics: ["ISO 14001", "Économie circulaire", "Achats durables", "Empreinte carbone"],
+      },
+    ],
+    skills: [
+      "Élaborer et déployer une stratégie RSE et de développement durable",
+      "Produire un reporting extra-financier conforme aux référentiels GRI et CSRD",
+      "Réaliser ou superviser une évaluation d'impact environnemental et social",
+      "Animer la relation avec les parties prenantes d'un projet ou d'une organisation",
+      "Structurer un financement vert pour un projet de transition",
+      "Évaluer la performance ESG d'une organisation ou d'un actif",
+    ],
+    careers: [
+      "Responsable RSE",
+      "Consultant développement durable",
+      "Chargé de mission environnement",
+      "Responsable QHSE",
+      "Analyste ESG",
+      "Chargé de projets ONG",
+      "Coordinateur de projets bailleurs",
+    ],
+    image: "/images/campus/IMG-20250212-WA0009.jpg",
+  },
+
+  "gouvernance-marches-publics": {
+    slug: "gouvernance-marches-publics",
+    code: "M-GMP",
+    title: "Gouvernance et Management des Marchés Publics",
+    tagline:
+      "Maîtriser la commande publique : passation, exécution, contrôle et gouvernance au service de l'intérêt général.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master forme des professionnels de la commande publique capables de maîtriser le cadre juridique des marchés publics — code malien et directives UEMOA — et de conduire les procédures de passation et d'exécution des marchés dans les règles. Les étudiants apprennent à sécuriser chaque étape de la chaîne : définition du besoin, appel d'offres, évaluation des offres, notification, exécution et règlement.",
+      "Le parcours traite aussi le contrôle et l'audit des marchés publics, la gouvernance publique et la lutte contre la corruption, dimensions essentielles de la confiance dans l'action publique. Une attention spécifique est portée à la gestion des projets financés par les bailleurs internationaux — Banque mondiale, BAD, Union européenne — et à leurs règles de passation, qui constituent un fort gisement d'emploi pour les diplômés.",
+    ],
+    objectives: [
+      "Maîtriser le cadre juridique des marchés publics (code malien, directives UEMOA)",
+      "Conduire les procédures de passation et d'exécution des marchés",
+      "Mettre en place le contrôle et l'audit des marchés publics",
+      "Contribuer à une gouvernance publique transparente et redevable",
+      "Prévenir et traiter les situations de corruption et de conflits d'intérêts",
+      "Gérer les projets financés par les bailleurs (Banque mondiale, BAD, UE)",
+    ],
+    courses: [
+      {
+        title: "Cadre juridique des marchés publics",
+        topics: ["Code des marchés publics du Mali", "Directives UEMOA", "Institutions de régulation", "Jurisprudence"],
+      },
+      {
+        title: "Passation des marchés",
+        topics: ["Modes de passation", "Appels d'offres et consultations", "Évaluation et attribution", "Notification et contrats"],
+      },
+      {
+        title: "Exécution et règlement des marchés",
+        topics: ["Ordres de service", "Avenants et révisions", "Réception provisoire et définitive", "Règlement financier et délais de paiement"],
+      },
+      {
+        title: "Contrôle et audit des marchés publics",
+        topics: ["Contrôle a priori et a posteriori", "Audit de régularité", "Audit de performance", "Organes de contrôle"],
+      },
+      {
+        title: "Gouvernance publique",
+        topics: ["Transparence et redevabilité", "Gestion des finances publiques", "Déconcentration et décentralisation", "Numérisation de la commande publique"],
+      },
+      {
+        title: "Lutte contre la corruption",
+        topics: ["Typologie des fraudes", "Dispositifs de prévention", "Déclarations et conflits d'intérêts", "Signalement et sanctions"],
+      },
+      {
+        title: "Projets financés par les bailleurs",
+        topics: ["Procédures Banque mondiale", "Procédures BAD", "Règles UE", "Gestion des missions de supervision"],
+      },
+      {
+        title: "Contentieux et règlement des différends",
+        topics: ["Recours des soumissionnaires", "Comités de règlement des différends", "Arbitrage", "Gestion des ruptures"],
+      },
+    ],
+    skills: [
+      "Qualifier juridiquement une opération et choisir le mode de passation adapté",
+      "Instruire et évaluer des offres dans le respect des principes de la commande publique",
+      "Piloter l'exécution d'un marché jusqu'à sa réception et son règlement",
+      "Auditer la régularité et la performance d'une opération de commande publique",
+      "Appliquer les procédures de passation des principaux bailleurs internationaux",
+      "Contribuer à la prévention de la corruption dans les achats publics",
+    ],
+    careers: [
+      "Cadre de l'administration publique",
+      "Régisseur de marchés",
+      "Consultant en passation",
+      "Auditeur public",
+      "Responsable achats publics",
+      "Chargé de programmes bailleurs",
+      "Contrôleur des services publics",
+    ],
+    image: "/images/campus/IMG-20250212-WA0010.jpg",
+  },
+
+  "management-rh": {
+    slug: "management-rh",
+    code: "M-MRH",
+    title: "Management des Ressources Humaines",
+    tagline:
+      "Développer le capital humain : talents, droit du travail, rémunération, compétences et dialogue social.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master forme des managers des ressources humaines capables d'aligner la politique RH sur la stratégie de l'organisation. Le parcours couvre la gestion des talents et le recrutement, l'administration du personnel avec une connaissance approfondie du droit du travail malien, ainsi que la conception des politiques de rémunération et de gestion de la performance.",
+      "Les étudiants apprennent à organiser le développement des compétences (plans de formation, GPEC), à animer le dialogue social et les relations de travail, et à mobiliser les SIRH pour digitaliser la fonction RH. Les débouchés couvrent l'ensemble des métiers RH : responsable RH, DRH junior, chargé de recrutement, responsable formation, consultant RH ou gestionnaire de paie.",
+    ],
+    objectives: [
+      "Aligner la stratégie RH sur la stratégie globale de l'organisation",
+      "Gérer les talents : recrutement, intégration, mobilité et fidélisation",
+      "Appliquer l'administration du personnel et le droit du travail malien",
+      "Concevoir des politiques de rémunération et de gestion de la performance",
+      "Organiser le développement des compétences et le plan de formation",
+      "Animer le dialogue social et exploiter un SIRH",
+    ],
+    courses: [
+      {
+        title: "Stratégie RH et gestion des talents",
+        topics: ["Planification des effectifs", "Marque employeur", "Recrutement et sélection", "Onboarding et fidélisation"],
+      },
+      {
+        title: "Administration du personnel et droit du travail malien",
+        topics: ["Code du travail malien", "Contrats de travail", "Réglementation sociale", "Contentieux du travail"],
+      },
+      {
+        title: "Rémunération et performance",
+        topics: ["Structure salariale", "Primes et avantages", "Évaluation de la performance", "Variable et incentive"],
+      },
+      {
+        title: "Développement des compétences",
+        topics: ["GPEC", "Plan de formation", "Ingénierie de formation", "Évaluation des acquis"],
+      },
+      {
+        title: "Dialogue social et relations de travail",
+        topics: ["Négociation collective", "Représentation du personnel", "Gestion des conflits", "Rôle des syndicats"],
+      },
+      {
+        title: "SIRH et digitalisation RH",
+        topics: ["Fonctionnalités d'un SIRH", "Paie et administration numérique", "Analytics RH", "e-recrutement"],
+      },
+      {
+        title: "Gestion de la paie",
+        topics: ["Bulletins et charges sociales", "CNSS et obligations sociales", "Contrôles et fiabilité", "Cas pratiques maliens"],
+      },
+      {
+        title: "Qualité de vie au travail et management des équipes",
+        topics: ["Prévention des risques professionnels", "QVT", "Management d'équipe", "Culture d'entreprise"],
+      },
+    ],
+    skills: [
+      "Concevoir une politique RH alignée sur la stratégie de l'organisation",
+      "Gérer un processus complet de recrutement et de gestion des talents",
+      "Appliquer le droit du travail malien à l'administration du personnel",
+      "Construire une grille de rémunération et un dispositif de performance",
+      "Élaborer et piloter un plan de développement des compétences",
+      "Exploiter un SIRH et produire des indicateurs sociaux fiables",
+    ],
+    careers: [
+      "Responsable RH",
+      "DRH junior",
+      "Chargé de recrutement",
+      "Responsable formation",
+      "Consultant RH",
+      "Gestionnaire de paie",
+      "Chargé des relations sociales",
+    ],
+    image: "/images/campus/IMG-20250212-WA0011.jpg",
+  },
+
+  "ingenierie-informatique": {
+    slug: "ingenierie-informatique",
+    code: "M-INFO",
+    title: "Ingénierie Informatique",
+    tagline:
+      "Concevoir les systèmes numériques de demain : architectures, développement, données et IA, cybersécurité et cloud.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master forme des ingénieurs capables de concevoir des architectures logicielles robustes et évolutives, de développer des applications full-stack et de gérer des projets numériques de bout en bout. Les étudiants consolident leurs compétences en programmation, en conception d'API et en qualité logicielle, sur des projets réels menés en équipe.",
+      "Le parcours couvre également les données et l'intelligence artificielle appliquée, la cybersécurité (menaces, défense, cryptographie) et les pratiques cloud et DevOps — conteneurs, pipelines CI/CD, infrastructure as code. Les diplômés accèdent aux fonctions d'architecte logiciel, de lead développeur, d'ingénieur data/IA, de consultant cybersécurité, de chef de projet digital ou se lancent dans l'entrepreneuriat tech.",
+    ],
+    objectives: [
+      "Concevoir des architectures logicielles robustes, évolutives et maintenables",
+      "Développer des applications full-stack modernes (front, back, API)",
+      "Exploiter les données et mettre en œuvre l'IA appliquée aux métiers",
+      "Sécuriser les systèmes : analyse des menaces, défense, cryptographie",
+      "Déployer et opérer des applications sur le cloud avec des pratiques DevOps",
+      "Gérer des projets numériques selon les méthodes agiles",
+    ],
+    courses: [
+      {
+        title: "Architectures logicielles",
+        topics: ["Patterns d'architecture", "Microservices", "Conception d'API", "Architecture hexagonale"],
+      },
+      {
+        title: "Développement full-stack",
+        topics: ["Développement front-end", "Développement back-end", "Bases de données", "Tests et qualité logicielle"],
+      },
+      {
+        title: "Données et IA appliquée",
+        topics: ["Bases de données avancées", "Data engineering", "Machine learning appliqué", "Mise en production de modèles"],
+      },
+      {
+        title: "Cybersécurité",
+        topics: ["Menaces et vecteurs d'attaque", "Cryptographie appliquée", "Sécurité des applications", "Réponse aux incidents"],
+      },
+      {
+        title: "Cloud et DevOps",
+        topics: ["Conteneurs et orchestration", "CI/CD", "Infrastructure as code", "Observabilité"],
+      },
+      {
+        title: "Gestion de projets numériques",
+        topics: ["Méthodes agiles (Scrum)", "Cadrage et spécifications", "Gestion des équipes", "Roadmap produit"],
+      },
+      {
+        title: "Systèmes distribués et réseaux",
+        topics: ["Communication inter-services", "Files de messages", "Résilience et tolérance aux pannes", "Réseaux et protocoles"],
+      },
+      {
+        title: "Qualité logicielle et maintenance",
+        topics: ["Revue de code", "Refactoring", "Couverture de tests", "Dette technique"],
+      },
+      {
+        title: "Projets intégrateurs",
+        topics: ["Cahier des charges", "Développement en équipe", "Livraison continue", "Soutenance technique"],
+      },
+    ],
+    skills: [
+      "Concevoir l'architecture d'un système logiciel complexe",
+      "Développer, tester et déployer une application full-stack",
+      "Construire un pipeline de données et entraîner des modèles d'IA applicatifs",
+      "Évaluer et renforcer la sécurité d'un système d'information",
+      "Automatiser les déploiements et opérer une infrastructure cloud",
+      "Piloter un projet numérique en méthodologie agile",
+    ],
+    careers: [
+      "Architecte logiciel",
+      "Lead développeur",
+      "Ingénieur data / IA",
+      "Consultant cybersécurité",
+      "Chef de projet digital",
+      "Entrepreneur tech",
+      "Ingénieur DevOps",
+    ],
+    image: "/images/campus/IMG-20250212-WA0012.jpg",
+  },
+
+  "genie-minier": {
+    slug: "genie-minier",
+    code: "M-GMIN",
+    title: "Génie Minier",
+    tagline:
+      "Former les ingénieurs du secteur minier malien et ouest-africain : exploration, exploitation, traitement et responsabilité environnementale.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master forme des ingénieurs miniers pour un secteur majeur de l'économie malienne et ouest-africaine — l'or, la bauxite et les autres ressources du sous-sol. Le programme couvre la connaissance des gisements et les techniques d'exploration, les méthodes d'exploitation à ciel ouvert et souterraines, ainsi que le traitement et la valorisation du minerai jusqu'aux opérations métallurgiques.",
+      "Une part essentielle du cursus est consacrée à la gestion environnementale et sociale des projets miniers, à la législation minière malienne et ouest-africaine et au contenu local, sans oublier la sécurité des personnes et des installations. Les diplômés accèdent aux fonctions d'ingénieur mines, de superviseur d'exploitation, de responsable HSE minier ou de consultant environnement minier, dans les entreprises minières comme dans les administrations.",
+    ],
+    objectives: [
+      "Caractériser des gisements et conduire des campagnes d'exploration (or, bauxite au Mali)",
+      "Choisir et mettre en œuvre les méthodes d'exploitation adaptées",
+      "Organiser le traitement et la valorisation du minerai",
+      "Gérer les enjeux environnementaux et sociaux des projets miniers",
+      "Appliquer la législation minière malienne et ouest-africaine et le contenu local",
+      "Garantir la sécurité des opérations et la santé des travailleurs",
+    ],
+    courses: [
+      {
+        title: "Gisements et exploration minière",
+        topics: ["Géologie des gisements (or, bauxite)", "Campagnes d'exploration", "Sondages et échantillonnage", "Estimation des ressources"],
+      },
+      {
+        title: "Méthodes d'exploitation",
+        topics: ["Exploitation à ciel ouvert", "Exploitation souterraine", "Forage et dynamitage", "Planification des opérations"],
+      },
+      {
+        title: "Traitement du minerai",
+        topics: ["Concassage et broyage", "Flottation et gravimétrie", "Hydrométallurgie (cyanuration)", "Récupération et raffinage"],
+      },
+      {
+        title: "Gestion environnementale et sociale des projets miniers",
+        topics: ["Études d'impact minier", "Gestion des effluents et des déchets", "Réhabilitation des sites", "Relations communautaires"],
+      },
+      {
+        title: "Législation minière et contenu local",
+        topics: ["Code minier malien", "Cadres régionaux", "Convention minière", "Contenu local et retombées économiques"],
+      },
+      {
+        title: "Sécurité et santé minières",
+        topics: ["Analyse des risques miniers", "Sécurité des installations", "Santé au travail", "Culture HSE"],
+      },
+      {
+        title: "Planification minière et modèles de blocs",
+        topics: ["Modèles géologiques et de blocs", "Séquences d'extraction", "Optimisation de fosses", "Logistique minière"],
+      },
+      {
+        title: "Économie et gestion de projet minier",
+        topics: ["Études de faisabilité", "Coûts et CAPEX/OPEX", "Financement de projets miniers", "Marchés des matières premières"],
+      },
+    ],
+    skills: [
+      "Interpréter des données géologiques et contribuer à l'estimation des ressources",
+      "Dimensionner et superviser une exploitation à ciel ouvert ou souterraine",
+      "Piloter une chaîne de traitement du minerai",
+      "Conduire les volets environnementaux et sociaux d'un projet minier",
+      "Appliquer le cadre légal et conventionnel du secteur minier",
+      "Mettre en œuvre un système de sécurité et de santé au travail minier",
+    ],
+    careers: [
+      "Ingénieur mines",
+      "Superviseur d'exploitation",
+      "Responsable HSE minier",
+      "Consultant environnement minier",
+      "Cadre de l'administration des mines",
+      "Entrepreneur de services miniers",
+      "Planificateur minier",
+    ],
+    image: "/images/campus/IMG-20250212-WA0013.jpg",
+  },
+
+  journalisme: {
+    slug: "journalisme",
+    code: "M-JOU",
+    title: "Journalisme",
+    tagline:
+      "Exercer un journalisme d'investigation à l'ère numérique : données, fact-checking, éthique et innovation.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master perfectionne la pratique professionnelle du journalisme autour de trois piliers : l'investigation, le journalisme de données et le fact-checking. Les étudiants apprennent à documenter, vérifier et raconter des informations complexes, avec une exigence d'éthique et de déontologie permanente, dans un contexte médiatique marqué par la désinformation.",
+      "Le parcours couvre aussi les médias numériques et les réseaux sociaux, la gestion de crise et la communication de proximité, ainsi que l'IA appliquée aux médias — automatisation de la production, vérification assistée, nouveaux formats. Les diplômés préparent des fonctions de journaliste senior, rédacteur en chef, reporter d'investigation, responsable communication, community manager senior, consultant médias ou producteur de contenu.",
+    ],
+    objectives: [
+      "Conduire des enquêtes journalistiques rigoureuses et sourcées",
+      "Pratiquer le journalisme de données et le fact-checking",
+      "Exploiter les médias numériques et les réseaux sociaux avec stratégie",
+      "Gérer la communication de crise et les situations sensibles",
+      "Respecter et faire respecter l'éthique et la déontologie du journalisme",
+      "Mobiliser l'IA appliquée aux médias de façon responsable",
+    ],
+    courses: [
+      {
+        title: "Journalisme d'investigation",
+        topics: ["Méthodologie d'enquête", "Sources et protection des sources", "Documents et enquête de terrain", "Récit d'investigation"],
+      },
+      {
+        title: "Journalisme de données et fact-checking",
+        topics: ["Collecte et nettoyage de données", "Visualisation de données", "Techniques de vérification", "Désinformation et rumeurs"],
+      },
+      {
+        title: "Médias numériques et réseaux sociaux",
+        topics: ["Écosystème des médias numériques", "Community management éditorial", "Formats courts et vidéo", "Mesure d'audience"],
+      },
+      {
+        title: "Gestion de crise et communication",
+        topics: ["Communication de crise", "Relations médias", "Porte-parolat", "Veille et alerte"],
+      },
+      {
+        title: "Éthique et déontologie du journalisme",
+        topics: ["Chartes professionnelles", "Pluralisme et équité", "Protection des sources", "Responsabilité juridique"],
+      },
+      {
+        title: "IA appliquée aux médias",
+        topics: ["Automatisation de la production", "Vérification assistée par IA", "Détection des contenus générés", "Enjeux éthiques"],
+      },
+      {
+        title: "Production multimédia",
+        topics: ["Écriture multimédia", "Réalisation audiovisuelle", "Podcasting", "Infographie"],
+      },
+      {
+        title: "Droit des médias",
+        topics: ["Cadre légal de la presse", "Diffamation et droit de réponse", "Liberté de la presse", "Régulation des médias"],
+      },
+    ],
+    skills: [
+      "Concevoir et réaliser une enquête journalistique complète",
+      "Vérifier une information et produire un fact-checking documenté",
+      "Analyser et visualiser des données pour les raconter",
+      "Déployer une stratégie éditoriale numérique multi-plateformes",
+      "Gérer la communication d'une organisation en situation de crise",
+      "Exploiter les outils d'IA de production et de vérification de manière responsable",
+    ],
+    careers: [
+      "Journaliste senior / rédacteur en chef",
+      "Reporter d'investigation",
+      "Responsable communication",
+      "Community manager senior",
+      "Consultant médias",
+      "Producteur de contenu",
+      "Animateur de rédaction numérique",
+    ],
+    image: "/images/campus/IMG-20250212-WA0014.jpg",
+  },
+
+  "relations-affaires-internationales": {
+    slug: "relations-affaires-internationales",
+    code: "M-RI",
+    title: "Relations et Affaires Internationales",
+    tagline:
+      "Comprendre et agir dans le système international : diplomatie économique, intégration africaine et négociation multilatérale.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master approfondit les théories des relations internationales et leur application concrète aux affaires du monde : diplomatie économique, négociation multilatérale et droit international des affaires. Les étudiants analysent les acteurs, les institutions et les dynamiques du système international, avec un accent sur les intérêts économiques et commerciaux des États et des entreprises.",
+      "Une dimension africaine forte structure le parcours : l'intégration régionale et continentale à travers la CEDEAO, la ZLECAf et l'Union africaine, ainsi que la coopération au développement et le travail au sein des organisations internationales. Les diplômés se préparent à des carrières de diplomate, de chargé de programme au sein d'institutions (ONU, UE, ONG), de consultant en affaires internationales ou d'analyste géopolitique.",
+    ],
+    objectives: [
+      "Mobiliser les théories des relations internationales pour analyser les crises et les coopérations",
+      "Conduire une négociation diplomatique, multilatérale ou économique",
+      "Analyser les dynamiques d'intégration africaine (CEDEAO, ZLECAf, Union africaine)",
+      "Appliquer le droit international des affaires aux opérations transfrontalières",
+      "Concevoir et gérer des projets de coopération au développement",
+      "Produire des analyses géopolitiques et des notes de risque exploitables",
+    ],
+    courses: [
+      {
+        title: "Théories des relations internationales",
+        topics: ["Réalistes, libéraux et constructivistes", "Acteurs du système international", "Équilibres et déséquilibres de puissance", "Études de cas"],
+      },
+      {
+        title: "Diplomatie économique",
+        topics: ["Diplomatie commerciale", "Promotion des investissements", "Négociations commerciales", "Sanctions et incitations"],
+      },
+      {
+        title: "Intégration africaine (CEDEAO, ZLECAf, Union africaine)",
+        topics: ["Institutions de la CEDEAO", "Zone de libre-échange continentale africaine", "Agenda 2063 de l'Union africaine", "Libre circulation et monnaie unique"],
+      },
+      {
+        title: "Négociation multilatérale",
+        topics: ["Techniques de négociation", "Protocole et usage diplomatique", "Coalitions et blocs négociateurs", "Simulation de sommets"],
+      },
+      {
+        title: "Droit international des affaires",
+        topics: ["Contrats internationaux", "Arbitrage commercial international", "OMC et accords commerciaux", "Protection des investissements"],
+      },
+      {
+        title: "Coopération au développement",
+        topics: ["Architecture de l'aide", "Cycle de projet", "Financements bilatéraux et multilatéraux", "Suivi-évaluation"],
+      },
+      {
+        title: "Géopolitique de l'Afrique de l'Ouest",
+        topics: ["Enjeux sécuritaires régionaux", "Rivalités et partenariats", "Ressources et transitions", "Migrations"],
+      },
+      {
+        title: "Sécurité internationale",
+        topics: ["Système de sécurité collective", "Prévention des conflits", "Opérations de paix", "Cybersécurité internationale"],
+      },
+    ],
+    skills: [
+      "Analyser une situation internationale avec les grilles théoriques pertinentes",
+      "Préparer et conduire une négociation multilatérale",
+      "Rédiger des analyses géopolitiques et des notes de stratégie",
+      "Mobiliser le droit international des affaires dans une opération transfrontalière",
+      "Concevoir et suivre un projet de coopération au développement",
+      "Représenter une institution ou une entreprise dans une enceinte internationale",
+    ],
+    careers: [
+      "Diplomate",
+      "Chargé de programme (ONU, UE, ONG)",
+      "Consultant affaires internationales",
+      "Analyste géopolitique",
+      "Cadre de chambre de commerce",
+      "Responsable coopération",
+      "Attaché commercial",
+    ],
+    image: "/images/campus/IMG-20250212-WA0015.jpg",
+  },
+
+  entrepreneuriat: {
+    slug: "entrepreneuriat",
+    code: "M-ENT",
+    title: "Entrepreneuriat",
+    tagline:
+      "De l'idée à l'entreprise qui grandit : modèle économique, financement, cadre juridique malien et pilotage de la croissance.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master accompagne les étudiants de l'idée d'entreprise jusqu'au pilotage de la croissance. Le parcours couvre la transformation d'une idée en modèle économique solide (Business Model Canvas, Lean Startup), l'étude de marché et la validation client, puis le pitch et la construction du plan d'affaires. Les étudiants travaillent sur leurs propres projets ou sur des projets d'entreprise réels.",
+      "Le programme traite le financement de l'entreprise sous toutes ses formes — business angels, capital-risque, microfinance — ainsi que le cadre juridique et fiscal de la création au Mali. Une dernière séquence porte sur la croissance et le pilotage (indicateurs, tableaux de bord) et sur l'innovation digitale des PME. Les débouchés vont de la création ou reprise d'entreprise au management d'incubateur, du conseil en création à l'investissement early-stage.",
+    ],
+    objectives: [
+      "Transformer une idée en modèle économique validé (Business Model Canvas, Lean)",
+      "Conduire une étude de marché et valider les hypothèses clients",
+      "Structurer le financement d'un projet : business angels, capital-risque, microfinance",
+      "Maîtriser les aspects juridiques et fiscaux de la création au Mali",
+      "Piloter la croissance avec des indicateurs et des tableaux de bord adaptés",
+      "Accompagner la transformation digitale et l'innovation des PME",
+    ],
+    courses: [
+      {
+        title: "De l'idée au modèle économique",
+        topics: ["Business Model Canvas", "Lean Startup", "Proposition de valeur", "Itération et pivot"],
+      },
+      {
+        title: "Étude de marché",
+        topics: ["Segmentation et cibles", "Études quantitatives et qualitatives", "Validation client (MVP)", "Analyse concurrentielle"],
+      },
+      {
+        title: "Financement de l'entreprise",
+        topics: ["Business angels", "Capital-risque", "Microfinance", "Subventions et concours"],
+      },
+      {
+        title: "Pitch et plan d'affaires",
+        topics: ["Pitch investisseur", "Business plan", "Prévisionnels financiers", "Négociation avec les financeurs"],
+      },
+      {
+        title: "Juridique et fiscalité de l'entreprise au Mali",
+        topics: ["Formes juridiques", "Formalités de création", "Fiscalité des entreprises", "Régimes des PME"],
+      },
+      {
+        title: "Croissance et pilotage",
+        topics: ["Indicateurs de croissance", "Tableaux de bord du dirigeant", "Organisation et recrutement", "Gestion des risques"],
+      },
+      {
+        title: "Innovation digitale des PME",
+        topics: ["Transformation numérique", "Outils de gestion en ligne", "E-commerce", "Data des PME"],
+      },
+      {
+        title: "Projets entrepreneuriaux",
+        topics: ["Incubation", "Mentorat", "Écosystème entrepreneurial malien", "Retour d'expérience d'entrepreneurs"],
+      },
+    ],
+    skills: [
+      "Construire et itérer un modèle économique viable",
+      "Mener une étude de marché et tester ses hypothèses sur le terrain",
+      "Préparer et négocier un tour de financement (equity, dette, microfinance)",
+      "Créer une entreprise dans le cadre juridique et fiscal malien",
+      "Piloter la croissance d'une PME avec des indicateurs pertinents",
+      "Accompagner l'innovation digitale d'une petite ou moyenne entreprise",
+    ],
+    careers: [
+      "Entrepreneur",
+      "Dirigeant de PME",
+      "Manager d'incubateur",
+      "Consultant en création d'entreprise",
+      "Chargé de mission développement",
+      "Investisseur early-stage",
+      "Responsable innovation",
+    ],
+    image: "/images/campus/IMG-20250212-WA0016.jpg",
+  },
+
+  "strategie-politique-defense": {
+    slug: "strategie-politique-defense",
+    code: "M-DEF",
+    title: "Stratégie et Politique de Défense",
+    tagline:
+      "Analyser les menaces, piloter les organisations de défense et exercer le leadership stratégique.",
+    duration: "2 ans (4 semestres)",
+    description: [
+      "Ce Master approfondit les théories stratégiques et la géopolitique appliquées à la politique de défense et à la sécurité nationale. Les étudiants apprennent à analyser l'environnement stratégique, à comprendre l'élaboration des politiques de défense et à manager les organisations de défense : structure, processus, ressources humaines et coordination interministérielle.",
+      "Le parcours traite les risques transnationaux contemporains — terrorisme, cybermenaces, trafics illicites — ainsi que le pilotage budgétaire de la défense et l'éthique et le leadership dans les organisations de sécurité. Il s'adresse aux cadres des ministères de la Défense et de l'Intérieur, aux officiers supérieurs en formation continue et aux professionnels de l'analyse et du conseil en sécurité.",
+    ],
+    objectives: [
+      "Mobiliser les théories stratégiques et la géopolitique pour analyser les menaces",
+      "Comprendre et contribuer à l'élaboration de la politique de défense et de sécurité nationale",
+      "Manager les organisations de défense et leurs ressources",
+      "Évaluer les risques transnationaux : terrorisme, cybermenaces, trafics",
+      "Piloter le budget et les programmes de la défense",
+      "Exercer un leadership éthique dans les organisations de sécurité",
+    ],
+    courses: [
+      {
+        title: "Théories stratégiques et géopolitique",
+        topics: ["Grands auteurs stratégiques", "Stratégie classique et moderne", "Géopolitique des régions", "Stratégies hybrides"],
+      },
+      {
+        title: "Politique de défense et sécurité nationale",
+        topics: ["Livres blancs et stratégies nationales", "Architecture institutionnelle", "Défense et sécurité intérieure", "Planification stratégique"],
+      },
+      {
+        title: "Management des organisations de défense",
+        topics: ["Organisation et processus", "Ressources humaines de défense", "Coordination interministérielle", "Modernisation"],
+      },
+      {
+        title: "Risques transnationaux",
+        topics: ["Terrorisme et extrémisme violent", "Cybermenaces", "Trafics illicites", "Insécurité alimentaire et climatique"],
+      },
+      {
+        title: "Pilotage budgétaire de la défense",
+        topics: ["Programmation budgétaire", "Coûts des programmes d'équipement", "Audit et performance", "Économie de la défense"],
+      },
+      {
+        title: "Éthique et leadership",
+        topics: ["Éthique militaire", "Leadership des organisations", "Droit des conflits armés", "Culture de responsabilité"],
+      },
+      {
+        title: "Sécurité régionale et coopération internationale",
+        topics: ["Organisations régionales de sécurité", "Coopération bilatérale et multilatérale", "Opérations de paix", "Assistance et formation"],
+      },
+      {
+        title: "Renseignement et analyse stratégique",
+        topics: ["Cycle du renseignement", "Analyse de menaces", "Anticipation et prospective", "Gestion de crise"],
+      },
+    ],
+    skills: [
+      "Produire une analyse stratégique d'un environnement de menaces",
+      "Contribuer à l'élaboration d'une politique de défense ou de sécurité nationale",
+      "Manager une organisation ou un programme de défense",
+      "Évaluer des risques transnationaux et proposer des réponses",
+      "Élaborer et suivre un budget et des programmes de défense",
+      "Exercer un leadership éthique en situation complexe",
+    ],
+    careers: [
+      "Cadre des ministères de la Défense et de l'Intérieur",
+      "Officier supérieur (formation continue)",
+      "Analyste sécurité",
+      "Consultant risques",
+      "Cadre d'organisations internationales de sécurité",
+      "Manager de la sécurité privée",
+      "Chargé d'études prospective",
+    ],
+    image: "/images/campus/IMG-20250212-WA0017.jpg",
+  },
+}
+
+/** Ordre canonique des 13 slugs (affichage et navigation précédent/suivant). */
+export const DYNAMIC_MASTER_SLUGS = [
+  "finance-entreprise-ingenierie-financiere",
+  "finance-islamique",
+  "audit-controle-gestion",
+  "supply-chain-management",
+  "developpement-durable-rse",
+  "gouvernance-marches-publics",
+  "management-rh",
+  "ingenierie-informatique",
+  "genie-minier",
+  "journalisme",
+  "relations-affaires-internationales",
+  "entrepreneuriat",
+  "strategie-politique-defense",
+] as const
+
+export type DynamicMasterSlug = (typeof DYNAMIC_MASTER_SLUGS)[number]
+
+/** Les 13 Masters, dans l'ordre canonique d'affichage. */
+export const dynamicMasters: MasterProgram[] = DYNAMIC_MASTER_SLUGS.map(
+  (slug) => mastersData[slug],
+)
+
+/** Récupère un Master par slug ; undefined si le slug est inconnu. */
+export function getMasterBySlug(slug: string): MasterProgram | undefined {
+  return mastersData[slug]
+}
+
+/**
+ * Carte compagnon des icônes lucide-react pour chaque Master (composants
+ * typés LucideIcon, jamais des chaînes). Les identifiants sont importés
+ * sous leur forme capitale depuis lucide-react.
+ */
+export const masterIcons: Record<DynamicMasterSlug, LucideIcon> = {
+  "finance-entreprise-ingenierie-financiere": Coins,
+  "finance-islamique": MoonStar,
+  "audit-controle-gestion": ClipboardCheck,
+  "supply-chain-management": Boxes,
+  "developpement-durable-rse": Leaf,
+  "gouvernance-marches-publics": Scale,
+  "management-rh": Users,
+  "ingenierie-informatique": Cpu,
+  "genie-minier": Mountain,
+  journalisme: Newspaper,
+  "relations-affaires-internationales": Globe2,
+  entrepreneuriat: Rocket,
+  "strategie-politique-defense": Shield,
+}

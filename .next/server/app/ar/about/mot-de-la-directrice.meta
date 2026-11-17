@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/ar/layout,_N_T_/ar/about/layout,_N_T_/ar/about/mot-de-la-directrice/layout,_N_T_/ar/about/mot-de-la-directrice/page,_N_T_/ar/about/mot-de-la-directrice"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/ar/about/mot-de-la-directrice/__PAGE__",
+    "/ar/about/mot-de-la-directrice",
+    "/ar/about",
+    "/ar",
+    "/_index",
+    "/_head"
+  ]
+}

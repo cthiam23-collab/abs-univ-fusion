@@ -1,0 +1,181 @@
+# =============================================================================
+# ABS University — Production Stack (Coolify / VPS)
+# =============================================================================
+# Services:
+#   nextjs       — Next.js 16 (public website + admin portal)
+#   platform-api — FastAPI platform backend
+#   ilias        — ILIAS 11 eCampus (ecampus.abs-univ.com)
+#   postgres     — PostgreSQL 17 (shared database)
+#
+# Coolify will:
+#   - Build images from the Dockerfiles in each directory
+#   - Provision PostgreSQL and expose DATABASE_URL
+#   - Manage SSL, domains, and environment variables
+#   - Run health checks on /health and /health/ready
+#
+# Usage (manual VPS deployment):
+#   cp .env.production .env
+#   docker compose build --no-cache
+#   docker compose up -d
+# =============================================================================
+
+services:
+
+  # ── Next.js App (main website + admin) ─────────────────────────────────────
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: abs-nextjs
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - abs-network
+    expose:
+      - "3000"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 40s
+      retries: 3
+    # depends_on will be set by Coolify based on PostgreSQL readiness
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ── FastAPI Platform Backend ───────────────────────────────────────────────
+  platform-api:
+    build:
+      context: ../WWW.ABS-UNIV.com
+      dockerfile: Dockerfile.backend
+    container_name: abs-platform-api
+    restart: unless-stopped
+    env_file:
+      - ../WWW.ABS-UNIV.com/.env
+    networks:
+      - abs-network
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+      retries: 3
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ── ILIAS 11 eCampus (ecampus.abs-univ.com) ────────────────────────────────
+  ilias:
+    build:
+      context: ../ILIAS_Financial_Plugin/deploy
+      dockerfile: Dockerfile
+    container_name: abs-ilias
+    restart: unless-stopped
+    environment:
+      ILIAS_AUTO_SETUP: "1"
+      ILIAS_AUTO_UPDATE: "0"
+      ILIAS_DUMP_AUTOLOAD: "0"
+      ILIAS_DB_HOST: postgres
+      ILIAS_DB_USER: ${POSTGRES_USER:-abs_univ}
+      ILIAS_DB_PASSWORD: ${POSTGRES_PASSWORD:-change_me_in_production}
+      ILIAS_DB_NAME: ${ILIAS_DB_NAME:-ilias}
+      ILIAS_CLIENT: ${ILIAS_CLIENT:-default}
+      ILIAS_ROOT_PASSWORD: ${ILIAS_ROOT_PASSWORD:-abs_univ_root}
+      ILIAS_HTTP_PATH: /ilias
+      ILIAS_SUPABASE_URL: ${ILIAS_SUPABASE_URL:-https://YOUR-PROJECT.supabase.co}
+      ILIAS_SUPABASE_ANON_KEY: ${ILIAS_SUPABASE_ANON_KEY:-}
+      ILIAS_REST_BRIDGE_API_KEY: ${ILIAS_REST_BRIDGE_API_KEY:-change_me_rest_bridge_key}
+      # SAML / SSO environment variables
+      ILIAS_SAML_IDP_ENTITY_ID: ${ILIAS_SAML_IDP_ENTITY_ID:-https://YOUR-PROJECT.supabase.co}
+      ILIAS_SAML_IDP_SSO_URL: ${ILIAS_SAML_IDP_SSO_URL:-https://YOUR-PROJECT.supabase.co/identity/v1/oidc/authorize}
+      ILIAS_SAML_IDP_CERT: ${ILIAS_SAML_IDP_CERT:-}
+      ILIAS_SAML_IDP_LOGOUT_URL: ${ILIAS_SAML_IDP_LOGOUT_URL:-https://YOUR-PROJECT.supabase.co/identity/v1/oidc/logout}
+      ILIAS_SAML_SP_PRIVATE_KEY: ${ILIAS_SAML_SP_PRIVATE_KEY:-}
+      ILIAS_SAML_SP_CERTIFICATE: ${ILIAS_SAML_SP_CERTIFICATE:-}
+      ILIAS_SAML_NAMEID_FORMAT: emailAddress
+      ILIAS_SAML_ATTR_MAP_EMAIL: sub
+      ILIAS_SAML_ATTR_MAP_FIRST_NAME: given_name
+      ILIAS_SAML_ATTR_MAP_LAST_NAME: family_name
+      ILIAS_SAML_ATTR_MAP_LOGIN: email
+      ILIAS_SAML_DEFAULT_ROLE: member
+      ILIAS_SAML_CREATE_USER: "1"
+    volumes:
+      - ilias-data:/var/iliasdata/ilias
+    networks:
+      - abs-network
+    expose:
+      - "80"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/ilias/login.php"]
+      interval: 30s
+      timeout: 10s
+      start_period: 120s
+      retries: 5
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ── PostgreSQL (shared database) ───────────────────────────────────────────
+  postgres:
+    image: postgres:17-alpine
+    container_name: abs-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-abs_univ}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change_me_in_production}
+      POSTGRES_DB: ${POSTGRES_DB:-absuniv}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      # Mount init scripts (run once on first start)
+      - ./scripts:/docker-entrypoint-initdb.d:ro
+    networks:
+      - abs-network
+    expose:
+      - "5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-abs_univ} -d ${POSTGRES_DB:-absuniv}"]
+      interval: 10s
+      timeout: 5s
+      start_period: 20s
+      retries: 5
+
+  # ── Nginx Reverse Proxy (HTTP baseline) ────────────────────────────────────
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: abs-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "81:81"
+    volumes:
+      - ./nginx-proxy.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - abs-network
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    depends_on:
+      nextjs:
+        condition: service_healthy
+      platform-api:
+        condition: service_healthy
+      ilias:
+        condition: service_healthy
+
+# ── Volumes ──────────────────────────────────────────────────────────────────
+volumes:
+  postgres-data:
+    driver: local
+  ilias-data:
+    driver: local
+
+# ── Networks ─────────────────────────────────────────────────────────────────
+networks:
+  abs-network:
+    driver: bridge

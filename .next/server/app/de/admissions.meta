@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/de/layout,_N_T_/de/admissions/layout,_N_T_/de/admissions/page,_N_T_/de/admissions"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/de/admissions/__PAGE__",
+    "/de/admissions",
+    "/de",
+    "/_index",
+    "/_head"
+  ]
+}

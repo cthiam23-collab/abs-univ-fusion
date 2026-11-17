@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/en/layout,_N_T_/en/programs/layout,_N_T_/en/programs/masters/layout,_N_T_/en/programs/masters/[slug]/layout,_N_T_/en/programs/masters/[slug]/page,_N_T_/en/programs/masters/relations-affaires-internationales"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/en/programs/masters/$d$slug/__PAGE__",
+    "/en/programs/masters/$d$slug",
+    "/en/programs/masters",
+    "/en/programs",
+    "/en",
+    "/_index",
+    "/_head"
+  ]
+}

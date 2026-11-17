@@ -1,0 +1,41 @@
+{
+  "node": {
+    "404f49c7db579cb0ac89acd973af371531b5e68dfe": {
+      "workers": {
+        "app/admin/admissions/page": {
+          "moduleId": 341352,
+          "async": false,
+          "exportedName": "updateApplicationStatus",
+          "filename": "app/admin/admissions/actions.ts"
+        }
+      },
+      "exportedName": "updateApplicationStatus",
+      "filename": "app/admin/admissions/actions.ts"
+    },
+    "408b579ed0a93cafcc4f41d81de49e4cb5294b43f9": {
+      "workers": {
+        "app/admin/admissions/page": {
+          "moduleId": 341352,
+          "async": false,
+          "exportedName": "updateApplicationNotes",
+          "filename": "app/admin/admissions/actions.ts"
+        }
+      },
+      "exportedName": "updateApplicationNotes",
+      "filename": "app/admin/admissions/actions.ts"
+    },
+    "40cc52043567d8ea09b6b5e18b542064f3c9d79fd1": {
+      "workers": {
+        "app/admin/admissions/page": {
+          "moduleId": 341352,
+          "async": false,
+          "exportedName": "updateMessageStatus",
+          "filename": "app/admin/admissions/actions.ts"
+        }
+      },
+      "exportedName": "updateMessageStatus",
+      "filename": "app/admin/admissions/actions.ts"
+    }
+  },
+  "edge": {}
+}

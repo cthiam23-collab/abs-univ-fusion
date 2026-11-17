@@ -1,0 +1,18 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/library",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/library/layout,_N_T_/library/online-resources/layout,_N_T_/library/online-resources/page,_N_T_/library/online-resources"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/library/online-resources/__PAGE__",
+    "/library/online-resources",
+    "/library",
+    "/_index",
+    "/_head"
+  ]
+}

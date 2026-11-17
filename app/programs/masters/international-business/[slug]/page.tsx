@@ -1,0 +1,2 @@
+import { CtaDestination } from "@/components/content/cta-destination"
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; return <CtaDestination title={slug.replaceAll("-", " ")} description="Explore international business learning grounded in Mali, Africa, and global markets." primaryHref="/programs/masters/international-business" /> }

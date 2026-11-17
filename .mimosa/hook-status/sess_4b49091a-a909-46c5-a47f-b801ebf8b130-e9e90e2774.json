@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-11-17T08:43:59.376Z",
+  "sessionId": "sess_4b49091a-a909-46c5-a47f-b801ebf8b130",
+  "event": "PostToolUse",
+  "toolName": "Edit",
+  "file": "C:/Users/tapha/.zcode/cli/memories/projects/abs-universite-2-1026-fd5b5d7b00f81e71/memory/hostinger-api-plugin.md",
+  "outcome": "clear",
+  "coverage": "complete",
+  "findingCount": 0,
+  "durationMs": 7,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}

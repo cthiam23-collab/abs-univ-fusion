@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/en/layout,_N_T_/en/programs/layout,_N_T_/en/programs/geological-civil-mining-engineering/layout,_N_T_/en/programs/geological-civil-mining-engineering/page,_N_T_/en/programs/geological-civil-mining-engineering"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/en/programs/geological-civil-mining-engineering/__PAGE__",
+    "/en/programs/geological-civil-mining-engineering",
+    "/en/programs",
+    "/en",
+    "/_index",
+    "/_head"
+  ]
+}

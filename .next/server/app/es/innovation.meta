@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/es/layout,_N_T_/es/innovation/layout,_N_T_/es/innovation/page,_N_T_/es/innovation"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/es/innovation/__PAGE__",
+    "/es/innovation",
+    "/es",
+    "/_index",
+    "/_head"
+  ]
+}

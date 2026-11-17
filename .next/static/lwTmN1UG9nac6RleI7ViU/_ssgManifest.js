@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Far\u002Fprograms\u002Fmasters\u002F[slug]","\u002Fde\u002Fprograms\u002Fmasters\u002F[slug]","\u002Fen\u002Fprograms\u002Fmasters\u002F[slug]","\u002Fes\u002Fprograms\u002Fmasters\u002F[slug]","\u002Fprograms\u002Fmasters\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

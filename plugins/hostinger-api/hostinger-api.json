@@ -1,0 +1,7 @@
+{
+  "hostinger-api": {
+    "command": "npx",
+    "args": ["-y", "@hostinger/mcp", "--stdio"],
+    "env": {}
+  }
+}

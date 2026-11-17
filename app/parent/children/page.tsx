@@ -1,0 +1,2 @@
+import { DetailPage } from "@/components/content/detail-page"
+export default function ParentChildrenPage() { return <DetailPage title="My Children" description="Review your learner connections and access the academic services available to African Business School (ABS) families." highlights={["Learner information", "Academic support links", "Family communication", "Secure parent access"]} primaryHref="/parent/dashboard" primaryLabel="Return to Parent Dashboard" /> }

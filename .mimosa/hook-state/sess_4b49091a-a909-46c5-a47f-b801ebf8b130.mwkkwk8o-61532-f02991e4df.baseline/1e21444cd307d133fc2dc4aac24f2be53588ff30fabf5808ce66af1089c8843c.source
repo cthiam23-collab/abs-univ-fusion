@@ -1,0 +1,361 @@
+import type { Metadata } from "next"
+import { buildMetadata } from "@/lib/seo"
+import Image from "next/image"
+import Link from "next/link"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { ORGANIZATION } from "@/lib/constants"
+import {
+  GraduationCap,
+  Users,
+  CalendarClock,
+  MessagesSquare,
+  ClipboardCheck,
+  LineChart,
+  Globe2,
+  Briefcase,
+  CheckCircle2,
+  ArrowRight,
+  FlaskConical,
+  Trophy,
+} from "lucide-react"
+
+export const metadata: Metadata = buildMetadata({
+  title: "English Academy | جامعة ABS — الإنجليزية في قلب نجاحكم",
+  description: "الأكاديمية الإنجليزية (English Academy) في جامعة ABS — African Business School بباماكو: برامج مرنة، ممارسة نشطة، تقييم منتظم ومجتمع متعلمين لإتقان الإنجليزية.",
+  path: "/english-academy",
+  locale: "ar",
+})
+
+const contact = ORGANIZATION.contact
+
+const objectifs = [
+  {
+    icon: MessagesSquare,
+    title: "تعزيز الكفايات اللغوية",
+    description:
+      "تنمية إتقان الإنجليزية كتابةً ومحادثةً، من أجل الدراسة والعمل والتبادل بكل ثقة.",
+  },
+  {
+    icon: CalendarClock,
+    title: "برامج مرنة",
+    description:
+      "صيغ تتلاءم مع جداول الجميع: الطلبة، المهنيون العاملون، الجمهور في مرحلة إعادة التأهيل.",
+  },
+  {
+    icon: FlaskConical,
+    title: "الممارسة قبل كل شيء",
+    description:
+      "ورشات، محاكاة، مواقف واقعية وتبادلات لغوية: الإنجليزية تُتعلم بالمحادثة.",
+  },
+  {
+    icon: LineChart,
+    title: "تقييم وتتبّع منتظم",
+    description:
+      "تقييمات دورية ومسار تقدّم فردي لقياس تقدّمكم خطوة بخطوة.",
+  },
+  {
+    icon: Users,
+    title: "مجتمع من المتعلمين",
+    description:
+      "فعاليات ثقافية، أنشطة اجتماعية وتبادلات بين المتعلمين: تعيش الإنجليزية أيضاً خارج القاعة الدراسية.",
+  },
+]
+
+const programmes = [
+  {
+    icon: GraduationCap,
+    title: "الإنجليزية للطلبة",
+    description:
+      "مسار صُمم لطلبة ABS وغيرهم: تدعيم الأساسات، الإنجليزية الأكاديمية والتحضير للمحاضرات الملقّاة بالإنجليزية.",
+    points: [
+      "تدعيم المحاور الشفهية والكتابية",
+      "الإنجليزية الأكاديمية: العروض، التحرير، فهم الوثائق",
+      "أوقات متوافقة مع دروسكم في الجامعة",
+    ],
+  },
+  {
+    icon: Briefcase,
+    title: "الإنجليزية للمهنيين",
+    description:
+      "للعاملين الراغبين في مزيد من الفعالية: الإنجليزية التجارية، الاجتماعات، الرسائل الإلكترونية، التفاوض والعروض المهنية.",
+    points: [
+      "الإنجليزية المهنية اليومية وفي بيئة الشركة",
+      "محاكاة الاجتماعات والمقابلات والمفاوضات",
+      "مواعيد تلائم الجداول المزدحمة",
+    ],
+  },
+  {
+    icon: Globe2,
+    title: "الإنجليزية العامة والمحادثة",
+    description:
+      "برنامج مفتوح لجميع المستويات، مركز على الطلاقة الشفهية والثقة بالنفس في مواقف الحياة اليومية.",
+    points: [
+      "مجموعات حسب المستوى تُحدَّد بعد التقييم",
+      "تبادلات لغوية وورشات محادثة",
+      "انغماس عبر أنشطة ثقافية",
+    ],
+  },
+]
+
+export default function EnglishAcademyPage() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      {/* Hero */}
+      <section className="relative flex min-h-[65vh] items-center justify-center text-white">
+        <Image
+          src="/images/gallery/IMG-20250216-WA0015.jpg"
+          alt="طلبة الأكاديمية الإنجليزية (English Academy) في جامعة ABS"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/90 via-blue-900/80 to-blue-950/90" />
+        <div className="relative z-10 max-w-4xl px-4 py-20 text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+            جامعة ABS — African Business School — باماكو
+          </p>
+          <h1 className="mb-6 text-4xl font-bold leading-tight md:text-6xl">أكاديمية الإنجليزية في ABS</h1>
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-200 md:text-xl">
+            محيط تعلّم دينامي مخصص بالكامل للإنجليزية. لأنه في عالم معولّم، تبحث الشركات والجامعات عن كفاءات
+            ناطقة بالإنجليزية.
+          </p>
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <Button asChild size="lg" className="bg-cyan-400 font-semibold text-slate-950 hover:bg-cyan-300">
+              <Link href="/apply">
+                التسجيل في English Academy <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white font-semibold text-white hover:bg-white hover:text-blue-900"
+            >
+              <Link href="/contact">طرح سؤال</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Pourquoi l'anglais */}
+      <section className="border-b border-slate-200 bg-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <h2 className="mb-3 text-3xl font-bold text-blue-900 md:text-4xl">
+              الإنجليزية، كفاية حاسمة لمستقبلكم
+            </h2>
+            <p className="text-lg text-slate-600">
+              نتطوّر في محيط معولّم: تبحث الشركات والجامعات اليوم عن كفاءات قادرة على العمل بالإنجليزية. لهذا تحتل
+              الإنجليزية مكانة محورية في التكوين بـ ABS — ولهذا فإن English Academy مفتوحة للجميع.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {objectifs.map((item) => (
+              <Card key={item.title} className="border-t-4 border-t-cyan-400 shadow-md">
+                <CardHeader>
+                  <item.icon className="mb-2 h-9 w-9 text-blue-700" />
+                  <CardTitle className="text-lg text-blue-900">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-slate-600">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tabs */}
+      <section className="bg-slate-50 py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <Tabs defaultValue="programmes" className="w-full">
+            <TabsList className="mb-8 grid w-full grid-cols-1 md:grid-cols-3">
+              <TabsTrigger value="programmes">برامجنا</TabsTrigger>
+              <TabsTrigger value="methode">المنهجية</TabsTrigger>
+              <TabsTrigger value="suivi">اختبار المستوى والتتبّع</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="programmes">
+              <div className="grid gap-6 lg:grid-cols-3">
+                {programmes.map((programme) => (
+                  <Card key={programme.title} className="flex flex-col shadow-md hover:shadow-xl">
+                    <CardHeader>
+                      <programme.icon className="mb-2 h-9 w-9 text-blue-700" />
+                      <CardTitle className="text-xl text-blue-900">{programme.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex flex-grow flex-col">
+                      <p className="mb-4 text-slate-600">{programme.description}</p>
+                      <ul className="mt-auto space-y-2">
+                        {programme.points.map((point) => (
+                          <li key={point} className="flex items-start gap-2 text-sm text-slate-700">
+                            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-700" />
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              <div className="mx-auto mt-10 max-w-3xl rounded-xl border border-cyan-200 bg-cyan-50 p-5 text-center text-slate-700">
+                تُعدّل الأوقات والمجموعات والمحتوى حسب التسجيلات والمستويات. اتصلوا بالرقم{" "}
+                <span className="font-semibold text-blue-900">{contact.phone}</span> لمعرفة الدورات القادمة.
+              </div>
+            </TabsContent>
+
+            <TabsContent value="methode">
+              <div className="grid items-center gap-8 lg:grid-cols-2">
+                <div className="overflow-hidden rounded-2xl shadow-lg">
+                  <Image
+                    src="/images/campus/IMG-20250212-WA0016.jpg"
+                    alt="ورشة إنجليزية في الأكاديمية الإنجليزية بـ ABS"
+                    width={720}
+                    height={520}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h2 className="mb-4 text-2xl font-bold text-blue-900 md:text-3xl">
+                    منهجية عملية بنسبة 100 في المائة، بروح ABS
+                  </h2>
+                  <p className="mb-6 text-slate-700">
+                    كما هو الحال في جميع مسارات الجامعة — 80 في المائة ممارسة و20 في المائة نظرية — تُعطي English
+                    Academy الأولوية للاستخدام النشط للغة بدلاً عن ترديد القواعد.
+                  </p>
+                  <ul className="mb-8 space-y-4">
+                    {[
+                      {
+                        title: "الورشات",
+                        text: "عمل في مجموعات صغيرة حول التعبير الشفهي والنطق والكتابة.",
+                      },
+                      {
+                        title: "المحاكاة",
+                        text: "مواقف واقعية: مقابلة توظيف، اجتماع مهني، عرض شفهي.",
+                      },
+                      {
+                        title: "التبادلات اللغوية",
+                        text: "لقاءات ومحادثات منتظمة لممارسة الإنجليزية في جوّ مريح.",
+                      },
+                      {
+                        title: "الأنشطة الثقافية والاجتماعية",
+                        text: "فعاليات تُحيي اللغة وتخلق مجتمعاً حقيقياً من المتعلمين.",
+                      },
+                    ].map((item) => (
+                      <li key={item.title} className="flex items-start gap-3">
+                        <Trophy className="mt-0.5 h-5 w-5 shrink-0 text-blue-700" />
+                        <span>
+                          <span className="font-semibold text-blue-900">{item.title} — </span>
+                          <span className="text-slate-700">{item.text}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button asChild className="bg-blue-700 font-semibold text-white hover:bg-blue-900">
+                    <Link href="/apply">
+                      انضموا إلى الدورة القادمة <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="suivi">
+              <div className="mx-auto max-w-4xl">
+                <div className="mb-10 text-center">
+                  <h2 className="mb-3 text-2xl font-bold text-blue-900 md:text-3xl">
+                    نقطة انطلاق واضحة وتقدّم قابل للقياس
+                  </h2>
+                  <p className="text-lg text-slate-600">
+                    كل متعلم يعرف نقطة انطلاقه ويتبع مساراً موسوماً: هذا هو ضمان تقدّم ملموس، دورة بعد دورة.
+                  </p>
+                </div>
+                <div className="grid gap-6 md:grid-cols-2">
+                  <Card className="shadow-md">
+                    <CardHeader>
+                      <ClipboardCheck className="mb-2 h-9 w-9 text-blue-700" />
+                      <CardTitle className="text-lg text-blue-900">اختبار المستوى عند الالتحاق</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="mb-3 text-slate-600">
+                        يحدد اختبار الإنجليزية مستواكم ومجموعتكم لحظة التسجيل. ويتيح الالتحاق بمسار ملائم، لا
+                        سهلاً إلى حدّ الملل ولا صعباً إلى حدّ الإرهاق.
+                      </p>
+                      <p className="rounded-lg border border-cyan-200 bg-cyan-50 p-4 text-sm text-slate-700">
+                        معلومة مفيدة: يشكّل اختبار الإنجليزية جزءاً لا يتجزأ من عملية القبول في جامعة ABS. فبمجرد
+                        الانضمام إلى أحد برامج الجامعة، يُقيَّم مستواكم في الإنجليزية منذ الولوج.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="shadow-md">
+                    <CardHeader>
+                      <LineChart className="mb-2 h-9 w-9 text-blue-700" />
+                      <CardTitle className="text-lg text-blue-900">التقييم ومسار التقدّم</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-3">
+                        {[
+                          "تقييمات منتظمة كتابياً وشفهياً",
+                          "حصائل فردية: تعرفون دائماً أين أنتم",
+                          "مسار تقدّم منظّم، مرحلة بعد مرحلة",
+                          "شهادة متابعة عند نهاية مساركم",
+                        ].map((point) => (
+                          <li key={point} className="flex items-start gap-2 text-slate-700">
+                            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-700" />
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+                <div className="mt-8 overflow-hidden rounded-2xl shadow-lg">
+                  <Image
+                    src="/images/gallery/IMG-20250216-WA0067.jpg"
+                    alt="مجتمع متعلمي الأكاديمية الإنجليزية (English Academy)"
+                    width={960}
+                    height={420}
+                    className="h-72 w-full object-cover"
+                  />
+                </div>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-800 py-16 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="mb-4 text-3xl font-bold md:text-4xl">انتقلوا إلى الإنجليزية، منذ الآن</h2>
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-200">
+            طالب أو مهني أو شغوف باللغة ببساطة: تفتح لكم English Academy في ABS أبوابها في حرم حمدلاي ACI 2000،
+            باماكو. اتصلوا بالرقم {contact.phone} أو راسلونا على {contact.email}.
+          </p>
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <Button asChild size="lg" className="bg-cyan-400 font-semibold text-slate-950 hover:bg-cyan-300">
+              <Link href="/apply">التسجيل</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white font-semibold text-white hover:bg-white hover:text-blue-900"
+            >
+              <Link href="/admissions">قبول ABS</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white font-semibold text-white hover:bg-white hover:text-blue-900"
+            >
+              <Link href="/international">البُعد الدولي</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}

@@ -1,0 +1,22 @@
+import type React from "react"
+import type { Metadata } from "next"
+import "./globals.css"
+
+export const metadata: Metadata = {
+  title: "Université ABS — African Business University",
+  description: "African Business University à Bamako, Mali — formations professionnalisantes, programmes de licence et de master, et communauté panafricaine.",
+  icons: { icon: "/icon.png" },
+}
+
+// TEMPORARY minimal layout — bisecting a truncated RSC stream issue.
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body>{children}</body>
+    </html>
+  )
+}

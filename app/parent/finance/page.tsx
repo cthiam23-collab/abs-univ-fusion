@@ -1,0 +1,2 @@
+import { DetailPage } from "@/components/content/detail-page"
+export default function ParentFinancePage() { return <DetailPage title="Parent Finance" description="Review tuition and payment information in West African CFA francs (FCFA) through the parent portal." highlights={["Tuition overview in FCFA", "Payment history", "Outstanding balances", "Finance support contacts"]} primaryHref="/parent/dashboard" primaryLabel="Return to Parent Dashboard" /> }

@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/en/layout,_N_T_/en/e-campus/layout,_N_T_/en/e-campus/lms/layout,_N_T_/en/e-campus/lms/page,_N_T_/en/e-campus/lms"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/en/e-campus/lms/__PAGE__",
+    "/en/e-campus/lms",
+    "/en/e-campus",
+    "/en",
+    "/_index",
+    "/_head"
+  ]
+}

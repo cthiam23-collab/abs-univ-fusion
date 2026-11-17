@@ -1,0 +1,19 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/programs",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/programs/layout,_N_T_/programs/engineering/layout,_N_T_/programs/engineering/electrical-engineering/layout,_N_T_/programs/engineering/electrical-engineering/page,_N_T_/programs/engineering/electrical-engineering"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/programs/engineering/electrical-engineering/__PAGE__",
+    "/programs/engineering/electrical-engineering",
+    "/programs/engineering",
+    "/programs",
+    "/_index",
+    "/_head"
+  ]
+}

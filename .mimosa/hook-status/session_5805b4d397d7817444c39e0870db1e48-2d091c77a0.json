@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-11-10T17:35:28.863Z",
+  "sessionId": "session_5805b4d397d7817444c39e0870db1e48",
+  "event": "PostToolUse",
+  "toolName": "Edit",
+  "file": "H:\\abs-univ-fusion\\app\\international-students\\visa-support\\page.tsx",
+  "outcome": "inconclusive",
+  "coverage": "partial",
+  "findingCount": 0,
+  "durationMs": 13,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}

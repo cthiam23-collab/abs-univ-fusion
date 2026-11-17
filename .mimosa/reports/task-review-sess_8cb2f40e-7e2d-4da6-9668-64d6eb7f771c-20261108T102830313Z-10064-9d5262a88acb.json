@@ -1,0 +1,1287 @@
+{
+  "schema_version": "mimosa-task-review/v2",
+  "run_id": "20261108T102830313Z-10064-9d5262a88acb",
+  "run_status": "inconclusive",
+  "errors": [
+    {
+      "stage": "candidate-select",
+      "target": "app/programs/business/page.tsx",
+      "reason": "candidate_limit_exceeded: 27 changed reviewable file(s) were not scanned because the limit is 20"
+    },
+    {
+      "stage": "scan",
+      "target": "lib/constants.ts",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "components/site-footer.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "components/site-header.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/layout.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/masters/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/masters/project-management/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/masters/project-management/certifications/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/masters/mba/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/masters/international-business/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/journalism-communication/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/journalism/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/international-relations/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/geological-civil-mining-engineering/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/mechanical-engineering/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/electrical-engineering/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/engineering/computer-science/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/programs/business-administration/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    }
+  ],
+  "coverage": {
+    "schema_version": "mimosa-hook-coverage/v1",
+    "status": "partial",
+    "scope": "hook_observed_diff",
+    "baseline": {
+      "complete": true,
+      "captured_files": 488,
+      "candidate_limit": 5000,
+      "truncated": false,
+      "enumeration_error_count": 0,
+      "snapshot_error_count": 0,
+      "compensated_target_count": 41
+    },
+    "change_tracking": {
+      "touched_observed": 0,
+      "touched_retained": 0,
+      "truncated": false,
+      "bash_mutation": true,
+      "bash_discovered": 47,
+      "bash_discovery_limit": 80,
+      "bash_discovery_truncated": false
+    },
+    "candidates": {
+      "eligible_files": 47,
+      "selected_files": 20,
+      "limit": 20,
+      "truncated": true
+    },
+    "scanning": {
+      "required_files": 20,
+      "scanned_files": 0,
+      "skipped_files": 0,
+      "failed_files": 20,
+      "project_checks_required": 0,
+      "project_checks_completed": 0
+    },
+    "notification": {
+      "eligible_findings": 0,
+      "detailed_findings": 0,
+      "detail_limit": 3,
+      "truncated": false
+    },
+    "reason_counts": {
+      "candidate_limit_exceeded": 1,
+      "scanner_failed": 20,
+      "project_check_failed": 21
+    },
+    "reasons": [
+      {
+        "code": "candidate_limit_exceeded",
+        "stage": "candidate-select",
+        "target": "app/programs/business/page.tsx",
+        "detail": "27 changed reviewable file(s) were not scanned because the limit is 20",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "lib/constants.ts",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "components/site-footer.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "components/site-header.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/layout.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/project-management/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/project-management/certifications/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/mba/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/international-business/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/journalism-communication/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/journalism/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/international-relations/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/geological-civil-mining-engineering/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/mechanical-engineering/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/electrical-engineering/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/computer-science/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/programs/business-administration/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "candidate-select",
+        "target": "app/programs/business/page.tsx",
+        "detail": "candidate_limit_exceeded: 27 changed reviewable file(s) were not scanned because the limit is 20",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "lib/constants.ts",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "components/site-footer.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "components/site-header.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/layout.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/project-management/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/project-management/certifications/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/mba/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/masters/international-business/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/journalism-communication/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/journalism/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/international-relations/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/geological-civil-mining-engineering/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/mechanical-engineering/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/electrical-engineering/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/engineering/computer-science/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/programs/business-administration/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      }
+    ],
+    "reasons_truncated": false
+  },
+  "generated_at": "2026-11-08T10:28:30.313Z",
+  "session_id": "sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c",
+  "target": ".",
+  "revision": null,
+  "rules_version": "unavailable",
+  "diff_hash": "d9e8fcddfd86d77402cca9172b3bde998e9dbe52eebcc81e9f0acc898e6a9605",
+  "diff": {
+    "algorithm": "sha256",
+    "changed_file_count": 20,
+    "changed_files": [
+      {
+        "file": "app/layout.tsx",
+        "ranges": [
+          {
+            "start": 12,
+            "end": 14
+          }
+        ],
+        "before_hash": "41feff00c6b81b41b119753f9d9ed490a79a5dbcde9e81a2a81159fcb84a1d83",
+        "after_hash": "c63117fabb4ac00025bc4102911218a3f23158603d6b7ce675799df38d95c668"
+      },
+      {
+        "file": "app/page.tsx",
+        "ranges": [
+          {
+            "start": 7,
+            "end": 7
+          },
+          {
+            "start": 12,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 39
+          },
+          {
+            "start": 42,
+            "end": 47
+          },
+          {
+            "start": 53,
+            "end": 53
+          },
+          {
+            "start": 60,
+            "end": 60
+          },
+          {
+            "start": 62,
+            "end": 62
+          },
+          {
+            "start": 68,
+            "end": 68
+          },
+          {
+            "start": 70,
+            "end": 77
+          },
+          {
+            "start": 83,
+            "end": 88
+          },
+          {
+            "start": 90,
+            "end": 90
+          },
+          {
+            "start": 92,
+            "end": 92
+          },
+          {
+            "start": 95,
+            "end": 96
+          },
+          {
+            "start": 100,
+            "end": 121
+          },
+          {
+            "start": 123,
+            "end": 124
+          },
+          {
+            "start": 126,
+            "end": 127
+          }
+        ],
+        "before_hash": "1010889083b2b9821983bb844954e2d6bb7bc2f844660a85be5ea671b59fd99f",
+        "after_hash": "baff44a7cc4610368f514b045521d032a742b224a28ac9692e303fd1c09e93dc"
+      },
+      {
+        "file": "app/programs/business-administration/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 3,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 169
+          },
+          {
+            "start": 173,
+            "end": 191
+          },
+          {
+            "start": 193,
+            "end": 576
+          },
+          {
+            "start": 579,
+            "end": 579
+          }
+        ],
+        "before_hash": "d95ac0d9d4edb6e805bea41c74969882a79e5f95040c12516e35375b47429274",
+        "after_hash": "b3df17730af6db281b3451a8f18c72b63d219ff2e8d2d2afb373b6699573ac0c"
+      },
+      {
+        "file": "app/programs/engineering/computer-science/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 3
+          },
+          {
+            "start": 5,
+            "end": 5
+          },
+          {
+            "start": 7,
+            "end": 32
+          },
+          {
+            "start": 34,
+            "end": 104
+          },
+          {
+            "start": 106,
+            "end": 147
+          },
+          {
+            "start": 149,
+            "end": 169
+          },
+          {
+            "start": 172,
+            "end": 457
+          },
+          {
+            "start": 461,
+            "end": 472
+          },
+          {
+            "start": 474,
+            "end": 486
+          },
+          {
+            "start": 492,
+            "end": 565
+          }
+        ],
+        "before_hash": "27c9a1d61a315e0dfae8f912016e9ec8c3838ba32a5a7fcb046726b154a77e47",
+        "after_hash": "9ef9f9f8ca6a77d4e6c0c4e4246b5767f3d98c0c51f70c8ec295f415704dc4b1"
+      },
+      {
+        "file": "app/programs/engineering/electrical-engineering/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 3,
+            "end": 5
+          }
+        ],
+        "before_hash": "56839c3aa72db5ac41970cdf9b62adb27ed06c739f07bf7e57624852151dc225",
+        "after_hash": "e65a454f5689c4a375ab23b8e5aa57c325e54960dd234c6beb7aeb34e76b2af1"
+      },
+      {
+        "file": "app/programs/engineering/mechanical-engineering/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 3,
+            "end": 5
+          }
+        ],
+        "before_hash": "c773df2e61d2b809f8ba2f01b959a9adea1f79f9cb395e6e17c123efa2973f07",
+        "after_hash": "e65a454f5689c4a375ab23b8e5aa57c325e54960dd234c6beb7aeb34e76b2af1"
+      },
+      {
+        "file": "app/programs/engineering/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 3,
+            "end": 5
+          }
+        ],
+        "before_hash": "106c241247e0cdde7ca739ab53e11a2b191720f4c0f8e494f0e4844a4d241cf2",
+        "after_hash": "8e1e3b29bbf9033f69cb3b86baaa16eccbf934c7a3f8e5d73dbdf362a97450a7"
+      },
+      {
+        "file": "app/programs/geological-civil-mining-engineering/page.tsx",
+        "ranges": [
+          {
+            "start": 3,
+            "end": 3
+          },
+          {
+            "start": 5,
+            "end": 5
+          },
+          {
+            "start": 7,
+            "end": 31
+          },
+          {
+            "start": 34,
+            "end": 34
+          },
+          {
+            "start": 36,
+            "end": 36
+          },
+          {
+            "start": 39,
+            "end": 103
+          },
+          {
+            "start": 105,
+            "end": 123
+          },
+          {
+            "start": 125,
+            "end": 476
+          },
+          {
+            "start": 478,
+            "end": 482
+          },
+          {
+            "start": 484,
+            "end": 502
+          },
+          {
+            "start": 505,
+            "end": 534
+          },
+          {
+            "start": 537,
+            "end": 583
+          }
+        ],
+        "before_hash": "e4b5ef2f2dbf0baa31ac94060d4dde0cc53f13ef5345c1c9d6df2a7ac99b8339",
+        "after_hash": "4de29660032383a8140b3b0b0c30b23cb69e7d812f7294fd04c574f6bcf2de20"
+      },
+      {
+        "file": "app/programs/international-relations/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 3,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 147
+          },
+          {
+            "start": 151,
+            "end": 492
+          },
+          {
+            "start": 494,
+            "end": 572
+          },
+          {
+            "start": 575,
+            "end": 575
+          }
+        ],
+        "before_hash": "7b31f91066cb3a970aa06968900f9442c9beca524eb9cd2f3ad938679b498a38",
+        "after_hash": "4e0034455d7bd19f60a6159712336dcf68b4e52f8ec081b7f2596a8ef4bc835c"
+      },
+      {
+        "file": "app/programs/journalism-communication/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 3,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 150
+          },
+          {
+            "start": 154,
+            "end": 172
+          },
+          {
+            "start": 174,
+            "end": 567
+          },
+          {
+            "start": 570,
+            "end": 570
+          }
+        ],
+        "before_hash": "3440d1e85cb14a9d6afd3d21d3a86eca08f4a53f617f11b2fc12a110ba791787",
+        "after_hash": "b003d1f29212d106b35f982bfa80b2d8263ba71264e353d29b9ed8b8975e1db3"
+      },
+      {
+        "file": "app/programs/journalism/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 3,
+            "end": 5
+          }
+        ],
+        "before_hash": "eaa7a48bf4c7be2e0ab730ff675b0141aa8d60016ce349c81f0a074f4f6e1178",
+        "after_hash": "78e1db7a64964f6c49c6e23ca9a88e7628679e64566c945610788cc799b4e0c1"
+      },
+      {
+        "file": "app/programs/masters/international-business/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          },
+          {
+            "start": 5,
+            "end": 38
+          },
+          {
+            "start": 43,
+            "end": 61
+          },
+          {
+            "start": 63,
+            "end": 84
+          },
+          {
+            "start": 86,
+            "end": 86
+          },
+          {
+            "start": 89,
+            "end": 90
+          },
+          {
+            "start": 93,
+            "end": 101
+          },
+          {
+            "start": 107,
+            "end": 108
+          },
+          {
+            "start": 112,
+            "end": 116
+          },
+          {
+            "start": 118,
+            "end": 121
+          },
+          {
+            "start": 126,
+            "end": 148
+          },
+          {
+            "start": 150,
+            "end": 167
+          },
+          {
+            "start": 170,
+            "end": 204
+          }
+        ],
+        "before_hash": "db14f16db16448a393a6790968fb489ff95b8205e7305429e0c5014313109d42",
+        "after_hash": "29b2faf99187edd9608301f6c75e094fbcbab50328d7e9810efaea0741989b3d"
+      },
+      {
+        "file": "app/programs/masters/mba/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          },
+          {
+            "start": 5,
+            "end": 38
+          },
+          {
+            "start": 43,
+            "end": 63
+          },
+          {
+            "start": 65,
+            "end": 86
+          },
+          {
+            "start": 88,
+            "end": 88
+          },
+          {
+            "start": 91,
+            "end": 92
+          },
+          {
+            "start": 95,
+            "end": 102
+          },
+          {
+            "start": 108,
+            "end": 109
+          },
+          {
+            "start": 113,
+            "end": 117
+          },
+          {
+            "start": 119,
+            "end": 122
+          },
+          {
+            "start": 127,
+            "end": 149
+          },
+          {
+            "start": 151,
+            "end": 167
+          },
+          {
+            "start": 170,
+            "end": 204
+          }
+        ],
+        "before_hash": "052aa585a0ad0b864215041d4d5ce33d6ca5510e4cbb5b9b1336c7ccc40d7789",
+        "after_hash": "9e385a2a2a1ba68a74f1f49018be0d67e8659f145996958094aa1a3e7a269a29"
+      },
+      {
+        "file": "app/programs/masters/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          },
+          {
+            "start": 4,
+            "end": 107
+          },
+          {
+            "start": 112,
+            "end": 128
+          },
+          {
+            "start": 133,
+            "end": 164
+          },
+          {
+            "start": 166,
+            "end": 194
+          },
+          {
+            "start": 197,
+            "end": 198
+          },
+          {
+            "start": 201,
+            "end": 205
+          },
+          {
+            "start": 211,
+            "end": 212
+          },
+          {
+            "start": 215,
+            "end": 222
+          },
+          {
+            "start": 228,
+            "end": 229
+          },
+          {
+            "start": 232,
+            "end": 243
+          },
+          {
+            "start": 249,
+            "end": 278
+          }
+        ],
+        "before_hash": "0d2019023f3adf257d883d962cf505a5acde091c2a5e3c8732bc09398afa6bd9",
+        "after_hash": "b92e76366196e20b4c77a83bce298db075296505279558deb3bea097d4317055"
+      },
+      {
+        "file": "app/programs/masters/project-management/certifications/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 37
+          }
+        ],
+        "before_hash": "3514d95ceaf8d9451f571d4eb91a400486ae0c0816de0b2f3599bbf158b8e8b1",
+        "after_hash": "13a641d885179038b69666d7873d620f2b1b61446c268a2e6fa655acae27edca"
+      },
+      {
+        "file": "app/programs/masters/project-management/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 2
+          },
+          {
+            "start": 5,
+            "end": 38
+          },
+          {
+            "start": 43,
+            "end": 60
+          },
+          {
+            "start": 62,
+            "end": 83
+          },
+          {
+            "start": 85,
+            "end": 85
+          },
+          {
+            "start": 88,
+            "end": 89
+          },
+          {
+            "start": 92,
+            "end": 101
+          },
+          {
+            "start": 107,
+            "end": 108
+          },
+          {
+            "start": 112,
+            "end": 118
+          },
+          {
+            "start": 120,
+            "end": 122
+          },
+          {
+            "start": 127,
+            "end": 149
+          },
+          {
+            "start": 151,
+            "end": 167
+          },
+          {
+            "start": 170,
+            "end": 204
+          }
+        ],
+        "before_hash": "2f9d0594d0134c8e25bc52ad8cbc81be53ff0dd57af8539b22c98268fe5deb2c",
+        "after_hash": "7d438f9a910bb1a6bc6774eb5f8c2f0053513c1e793c4860a08a5d5201682ab5"
+      },
+      {
+        "file": "app/programs/page.tsx",
+        "ranges": [
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 5,
+            "end": 13
+          },
+          {
+            "start": 15,
+            "end": 21
+          },
+          {
+            "start": 23,
+            "end": 40
+          },
+          {
+            "start": 43,
+            "end": 49
+          },
+          {
+            "start": 53,
+            "end": 60
+          },
+          {
+            "start": 63,
+            "end": 69
+          },
+          {
+            "start": 73,
+            "end": 80
+          },
+          {
+            "start": 83,
+            "end": 114
+          },
+          {
+            "start": 116,
+            "end": 117
+          },
+          {
+            "start": 119,
+            "end": 128
+          },
+          {
+            "start": 130,
+            "end": 131
+          },
+          {
+            "start": 133,
+            "end": 141
+          },
+          {
+            "start": 147,
+            "end": 168
+          }
+        ],
+        "before_hash": "f33614acdb343c0ae223dc696b56bed0dae2d6d304863c2be98631f39b5863e7",
+        "after_hash": "fb249df4cd6de435c82bdcf96ab0c5320a7834f4b1ff36a616b9dfce8d2d40e2"
+      },
+      {
+        "file": "components/site-footer.tsx",
+        "ranges": [
+          {
+            "start": 3,
+            "end": 4
+          },
+          {
+            "start": 21,
+            "end": 22
+          },
+          {
+            "start": 48,
+            "end": 48
+          },
+          {
+            "start": 63,
+            "end": 63
+          },
+          {
+            "start": 72,
+            "end": 72
+          },
+          {
+            "start": 74,
+            "end": 74
+          },
+          {
+            "start": 79,
+            "end": 79
+          },
+          {
+            "start": 123,
+            "end": 123
+          }
+        ],
+        "before_hash": "e62485647280de8a982820dd745a4c19085a18f509966ac59cd4da8ca8ffa64b",
+        "after_hash": "4b5a587477d4befd0079f141e2f79fb824a5418638233fc0552cf6052a3cc50a"
+      },
+      {
+        "file": "components/site-header.tsx",
+        "ranges": [
+          {
+            "start": 19,
+            "end": 20
+          },
+          {
+            "start": 45,
+            "end": 45
+          },
+          {
+            "start": 49,
+            "end": 49
+          },
+          {
+            "start": 115,
+            "end": 115
+          }
+        ],
+        "before_hash": "37b182d9d307add19eef626f3ca408a9b070a04b3cc97f376975e29443c75ac2",
+        "after_hash": "22af6fe87979483798d178d60c9a282731d647c341d2ebce0783514d8bbb2f0b"
+      },
+      {
+        "file": "lib/constants.ts",
+        "ranges": [
+          {
+            "start": 2,
+            "end": 3
+          },
+          {
+            "start": 7,
+            "end": 11
+          },
+          {
+            "start": 15,
+            "end": 15
+          },
+          {
+            "start": 20,
+            "end": 20
+          },
+          {
+            "start": 22,
+            "end": 26
+          },
+          {
+            "start": 31,
+            "end": 32
+          },
+          {
+            "start": 37,
+            "end": 37
+          },
+          {
+            "start": 42,
+            "end": 42
+          },
+          {
+            "start": 47,
+            "end": 47
+          },
+          {
+            "start": 52,
+            "end": 52
+          },
+          {
+            "start": 57,
+            "end": 57
+          },
+          {
+            "start": 62,
+            "end": 62
+          },
+          {
+            "start": 68,
+            "end": 73
+          },
+          {
+            "start": 92,
+            "end": 95
+          }
+        ],
+        "before_hash": "87fce1566b8a67df1b99ed7c741ab9e1533005d22a497d01a2ffb389cf0f198f",
+        "after_hash": "08cc5931f42d9ae60e2cb10326739cec7b3f76246f0214884e1bef7c51bace62"
+      }
+    ]
+  },
+  "timing": {
+    "started_at": "2026-11-08T10:28:27.106Z",
+    "completed_at": "2026-11-08T10:28:30.313Z",
+    "duration_ms": 3207,
+    "measurement": "hook_wall_clock"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "total": 0,
+    "model_calls": 0,
+    "measurement": "known-zero"
+  },
+  "telemetry": {
+    "schemaVersion": "mimosa-gate-telemetry/v1",
+    "profile": "gate",
+    "operation": "Stop",
+    "outcome": "partial/INCONCLUSIVE",
+    "latencyMs": 3207,
+    "peakMemoryBytes": 113455104,
+    "memoryMeasurement": "max-observed-process-rss",
+    "scannedFiles": 0,
+    "cache": {
+      "hits": 0,
+      "misses": 0,
+      "measurement": "not-applicable"
+    },
+    "denyCount": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "total": 0,
+      "modelCalls": 0,
+      "measurement": "known-zero"
+    }
+  },
+  "finding_count": 0,
+  "rewake_finding_count": 0,
+  "evidence_boundary": {
+    "scan": "candidate",
+    "static_fix_verification": "observed_static_only",
+    "runtime_verification": "not_performed"
+  },
+  "finding_events": [],
+  "findings": [],
+  "artifacts": {
+    "immutable_report": ".mimosa/reports/task-review-sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c-20261108T102830313Z-10064-9d5262a88acb.json",
+    "latest_report": ".mimosa/reports/task-review-sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c.json",
+    "history_summary": ".mimosa/history/run-20261108T102830313Z-10064-9d5262a88acb.json"
+  }
+}

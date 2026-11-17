@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/de/layout,_N_T_/de/student-life/layout,_N_T_/de/student-life/housing/layout,_N_T_/de/student-life/housing/page,_N_T_/de/student-life/housing"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/de/student-life/housing/__PAGE__",
+    "/de/student-life/housing",
+    "/de/student-life",
+    "/de",
+    "/_index",
+    "/_head"
+  ]
+}

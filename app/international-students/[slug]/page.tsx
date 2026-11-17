@@ -1,0 +1,2 @@
+import { CtaDestination } from "@/components/content/cta-destination"
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const title = slug.split("-").map((word) => word[0]?.toUpperCase() + word.slice(1)).join(" "); return <CtaDestination title={title} description={`Explore ${title.toLowerCase()} support for international students at African Business School (ABS) in Bamako.`} primaryHref="/contact" /> }

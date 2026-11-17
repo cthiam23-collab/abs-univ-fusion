@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/programs/layout,_N_T_/programs/masters/layout,_N_T_/programs/masters/project-management/layout,_N_T_/programs/masters/project-management/certifications/layout,_N_T_/programs/masters/project-management/certifications/page,_N_T_/programs/masters/project-management/certifications"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/programs/masters/project-management/certifications/__PAGE__",
+    "/programs/masters/project-management/certifications",
+    "/programs/masters/project-management",
+    "/programs/masters",
+    "/programs",
+    "/_index",
+    "/_head"
+  ]
+}

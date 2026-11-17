@@ -1,0 +1,559 @@
+{
+  "schema_version": "mimosa-task-review/v2",
+  "run_id": "20261025T114544815Z-38316-b3da6bb9896e",
+  "run_status": "inconclusive",
+  "errors": [
+    {
+      "stage": "scan",
+      "target": "app/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/student-life/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/student-life/facilities/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/student-life/events/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/student-life/athletics/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/library/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/international-students/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/career-services/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/campus-life/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/campus-life/organizations/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/campus-life/housing/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/campus-life/dining/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/alumni/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    },
+    {
+      "stage": "scan",
+      "target": "app/academics/course-catalog/page.tsx",
+      "reason": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT"
+    }
+  ],
+  "coverage": {
+    "schema_version": "mimosa-hook-coverage/v1",
+    "status": "partial",
+    "scope": "hook_observed_diff",
+    "baseline": {
+      "complete": true,
+      "captured_files": 478,
+      "candidate_limit": 5000,
+      "truncated": false,
+      "enumeration_error_count": 0,
+      "snapshot_error_count": 0,
+      "compensated_target_count": 14
+    },
+    "change_tracking": {
+      "touched_observed": 0,
+      "touched_retained": 0,
+      "truncated": false,
+      "bash_mutation": true,
+      "bash_discovered": 14,
+      "bash_discovery_limit": 80,
+      "bash_discovery_truncated": false
+    },
+    "candidates": {
+      "eligible_files": 14,
+      "selected_files": 14,
+      "limit": 20,
+      "truncated": false
+    },
+    "scanning": {
+      "required_files": 14,
+      "scanned_files": 0,
+      "skipped_files": 0,
+      "failed_files": 14,
+      "project_checks_required": 0,
+      "project_checks_completed": 0
+    },
+    "notification": {
+      "eligible_findings": 0,
+      "detailed_findings": 0,
+      "detail_limit": 3,
+      "truncated": false
+    },
+    "reason_counts": {
+      "scanner_failed": 14,
+      "project_check_failed": 14
+    },
+    "reasons": [
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/student-life/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/student-life/facilities/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/student-life/events/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/student-life/athletics/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/library/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/international-students/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/career-services/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/campus-life/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/campus-life/organizations/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/campus-life/housing/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/campus-life/dining/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/alumni/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "scanner_failed",
+        "stage": "scan",
+        "target": "app/academics/course-catalog/page.tsx",
+        "detail": "spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/student-life/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/student-life/facilities/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/student-life/events/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/student-life/athletics/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/library/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/international-students/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/career-services/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/campus-life/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/campus-life/organizations/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/campus-life/housing/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/campus-life/dining/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/alumni/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "scan",
+        "target": "app/academics/course-catalog/page.tsx",
+        "detail": "scanner_failed: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+        "affects_completion": true
+      }
+    ],
+    "reasons_truncated": false
+  },
+  "generated_at": "2026-10-25T11:45:44.815Z",
+  "session_id": "session_41257939fb9a5710318af9e3d5b8b321",
+  "target": ".",
+  "revision": null,
+  "rules_version": "unavailable",
+  "diff_hash": "082d3dcb0e106a27a8b19886acdc7f8c37fbe21a3d82a362d56c475d2422b68c",
+  "diff": {
+    "algorithm": "sha256",
+    "changed_file_count": 14,
+    "changed_files": [
+      {
+        "file": "app/academics/course-catalog/page.tsx",
+        "ranges": [
+          {
+            "start": 237,
+            "end": 237
+          }
+        ],
+        "before_hash": "bf4ea2ea0d975b6db2e3daae5e02933c2ecf6072c1bec40862528a92c9228d4c",
+        "after_hash": "24e202424df81ba31c886488b78b92716a021803d6d2e2f260b0fc957d632356"
+      },
+      {
+        "file": "app/alumni/page.tsx",
+        "ranges": [
+          {
+            "start": 120,
+            "end": 120
+          },
+          {
+            "start": 370,
+            "end": 370
+          }
+        ],
+        "before_hash": "d1908615a3bdef6f1cce6a7395b393dd5be6c0f44f3ed408e04de65598213053",
+        "after_hash": "6288621d8683f833c1f70d22ebd36508e02a4bf93497869897c7b18e4ce03d32"
+      },
+      {
+        "file": "app/campus-life/dining/page.tsx",
+        "ranges": [
+          {
+            "start": 211,
+            "end": 211
+          }
+        ],
+        "before_hash": "18870c3766f76892bae26ee90de7fc9b5b609c47f87f6ab40ecf9895598b69c9",
+        "after_hash": "7ca75b1a1dda4dce5e8674afa340ec0a1368ab8f385f294484c6d1a258260308"
+      },
+      {
+        "file": "app/campus-life/housing/page.tsx",
+        "ranges": [
+          {
+            "start": 251,
+            "end": 251
+          },
+          {
+            "start": 274,
+            "end": 274
+          }
+        ],
+        "before_hash": "3adcaedd4e2e5b60028d9f3cd405a382fd0538a792eefc52e8432f0efc0bc448",
+        "after_hash": "731aca654d24feec858d5fa183dccd9835030ee77f185e0c1c566d28767c2585"
+      },
+      {
+        "file": "app/campus-life/organizations/page.tsx",
+        "ranges": [
+          {
+            "start": 297,
+            "end": 297
+          }
+        ],
+        "before_hash": "66b0ff20a5bfe5cfb5670f53ca6d4a399ea541355e7b729ae6d2ee87971a2907",
+        "after_hash": "7b30940ea47d827deb8c440a97b01eb4492ebd18fb91d8b4b32a4c91e28953cd"
+      },
+      {
+        "file": "app/campus-life/page.tsx",
+        "ranges": [
+          {
+            "start": 335,
+            "end": 335
+          }
+        ],
+        "before_hash": "5acab872e043327dfcdb513236ff35aebe6a267fabb235bff59e8b905c4cfd10",
+        "after_hash": "7b5a48bc9393712c66a87f8544d607fa8b7c694c32076bd4c4b41e938d236cce"
+      },
+      {
+        "file": "app/career-services/page.tsx",
+        "ranges": [
+          {
+            "start": 174,
+            "end": 174
+          },
+          {
+            "start": 437,
+            "end": 437
+          }
+        ],
+        "before_hash": "a70812ba97b50f7fb074d2a974500ecf31c29eaa83073b10150569e47221b09f",
+        "after_hash": "dd9fac2664a39a71e6a6a6bf82f3ac7e603809af8284cc5f971630d8e7408f82"
+      },
+      {
+        "file": "app/international-students/page.tsx",
+        "ranges": [
+          {
+            "start": 146,
+            "end": 146
+          },
+          {
+            "start": 416,
+            "end": 416
+          }
+        ],
+        "before_hash": "0fefd8f9e7478dfbc716c58beaba3ef0ec028e141529d6386402c90659ad64e1",
+        "after_hash": "46f1438ceaf7d7007335433ac6bf2da8a500ce4c310599cf179341dabd6fb9e9"
+      },
+      {
+        "file": "app/library/page.tsx",
+        "ranges": [
+          {
+            "start": 138,
+            "end": 138
+          },
+          {
+            "start": 358,
+            "end": 358
+          }
+        ],
+        "before_hash": "cf6faa6a2b394d76c9a2e661c60492cca79604340794ee5968ddac805286c58b",
+        "after_hash": "df0165b9b9609665d6d8d3e990d937255b48f2bbc8eba7e7c69f220214b3dddd"
+      },
+      {
+        "file": "app/page.tsx",
+        "ranges": [
+          {
+            "start": 51,
+            "end": 51
+          }
+        ],
+        "before_hash": "2c9f1e146ef1e6eb69c8ad24e47b6b304f13b945224107744a7574b568951f6e",
+        "after_hash": "1010889083b2b9821983bb844954e2d6bb7bc2f844660a85be5ea671b59fd99f"
+      },
+      {
+        "file": "app/student-life/athletics/page.tsx",
+        "ranges": [
+          {
+            "start": 100,
+            "end": 100
+          }
+        ],
+        "before_hash": "bf8111c21e9430424edf2faf1620d12c433be266fe29b95b35fa67fdd7ed13df",
+        "after_hash": "059be932b424e71d57994791af81c538a70914f982c0a817eeb9a4ab6ad3f1b7"
+      },
+      {
+        "file": "app/student-life/events/page.tsx",
+        "ranges": [
+          {
+            "start": 200,
+            "end": 200
+          }
+        ],
+        "before_hash": "a556c55742be6122d2274b341a1a38a2bc7ea9054d2663ca6441ecf00d0821aa",
+        "after_hash": "a9507e2d0c12a47d2c483c461f8b71f24b2e201fb9888b55920084ebabc66fae"
+      },
+      {
+        "file": "app/student-life/facilities/page.tsx",
+        "ranges": [
+          {
+            "start": 119,
+            "end": 119
+          }
+        ],
+        "before_hash": "985474b6c6f440a3ebe07231d226bf4479414cf1ff9dda46828c7a68a6925e39",
+        "after_hash": "1b6a097ccdf1c836e2fcf3260d2086749fb5d8696ca0c2f740e2e0e1ab666048"
+      },
+      {
+        "file": "app/student-life/page.tsx",
+        "ranges": [
+          {
+            "start": 170,
+            "end": 170
+          }
+        ],
+        "before_hash": "3643b734519552e6ee14530a5bdfce9f2ae38d4afbe3f2f741e2dd89a1a1f651",
+        "after_hash": "fa39f68b0bdc079ade7bf4939f4b8bf97bddd7b53e55a06fd53baaccb3e94a46"
+      }
+    ]
+  },
+  "timing": {
+    "started_at": "2026-10-25T11:45:38.462Z",
+    "completed_at": "2026-10-25T11:45:44.815Z",
+    "duration_ms": 6353,
+    "measurement": "hook_wall_clock"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "total": 0,
+    "model_calls": 0,
+    "measurement": "known-zero"
+  },
+  "telemetry": {
+    "schemaVersion": "mimosa-gate-telemetry/v1",
+    "profile": "gate",
+    "operation": "Stop",
+    "outcome": "partial/INCONCLUSIVE",
+    "latencyMs": 6353,
+    "peakMemoryBytes": 111423488,
+    "memoryMeasurement": "max-observed-process-rss",
+    "scannedFiles": 0,
+    "cache": {
+      "hits": 0,
+      "misses": 0,
+      "measurement": "not-applicable"
+    },
+    "denyCount": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "total": 0,
+      "modelCalls": 0,
+      "measurement": "known-zero"
+    }
+  },
+  "finding_count": 0,
+  "rewake_finding_count": 0,
+  "evidence_boundary": {
+    "scan": "candidate",
+    "static_fix_verification": "observed_static_only",
+    "runtime_verification": "not_performed"
+  },
+  "finding_events": [],
+  "findings": [],
+  "artifacts": {
+    "immutable_report": ".mimosa/reports/task-review-session_41257939fb9a5710318af9e3d5b8b321-20261025T114544815Z-38316-b3da6bb9896e.json",
+    "latest_report": ".mimosa/reports/task-review-session_41257939fb9a5710318af9e3d5b8b321.json",
+    "history_summary": ".mimosa/history/run-20261025T114544815Z-38316-b3da6bb9896e.json"
+  }
+}

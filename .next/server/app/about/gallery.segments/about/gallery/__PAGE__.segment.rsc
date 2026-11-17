@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[484305,["/_next/static/chunks/05p1c1w365e2z.js","/_next/static/chunks/14gjk~bbtcmva.js","/_next/static/chunks/00tepj_7nyg~l.js","/_next/static/chunks/0-.vg2xj7_tiz.js","/_next/static/chunks/0p~e~0lx7yy3v.js"],"ImageGallery"]
+3:I[866131,["/_next/static/chunks/05p1c1w365e2z.js","/_next/static/chunks/14gjk~bbtcmva.js","/_next/static/chunks/00tepj_7nyg~l.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"container mx-auto py-12","children":[["$","h1",null,{"className":"text-4xl font-bold mb-8","children":"University Gallery"}],["$","p",null,{"className":"text-xl mb-12","children":"Explore life at African Business School (ABS) through our collection of images showcasing academic excellence, cultural diversity, and student achievements."}],["$","$L2",null,{"className":"mb-12","images":[]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/0-.vg2xj7_tiz.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0p~e~0lx7yy3v.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"lwTmN1UG9nac6RleI7ViU"}
+5:null

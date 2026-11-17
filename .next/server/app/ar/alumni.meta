@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/ar/layout,_N_T_/ar/alumni/layout,_N_T_/ar/alumni/page,_N_T_/ar/alumni"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/ar/alumni/__PAGE__",
+    "/ar/alumni",
+    "/ar",
+    "/_index",
+    "/_head"
+  ]
+}

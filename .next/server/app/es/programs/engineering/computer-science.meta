@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/es/layout,_N_T_/es/programs/layout,_N_T_/es/programs/engineering/layout,_N_T_/es/programs/engineering/computer-science/layout,_N_T_/es/programs/engineering/computer-science/page,_N_T_/es/programs/engineering/computer-science"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/es/programs/engineering/computer-science/__PAGE__",
+    "/es/programs/engineering/computer-science",
+    "/es/programs/engineering",
+    "/es/programs",
+    "/es",
+    "/_index",
+    "/_head"
+  ]
+}

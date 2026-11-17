@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/ar/layout,_N_T_/ar/student-resources/layout,_N_T_/ar/student-resources/career-services/layout,_N_T_/ar/student-resources/career-services/page,_N_T_/ar/student-resources/career-services"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/ar/student-resources/career-services/__PAGE__",
+    "/ar/student-resources/career-services",
+    "/ar/student-resources",
+    "/ar",
+    "/_index",
+    "/_head"
+  ]
+}

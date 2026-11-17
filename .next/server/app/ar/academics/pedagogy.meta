@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/ar/layout,_N_T_/ar/academics/layout,_N_T_/ar/academics/pedagogy/layout,_N_T_/ar/academics/pedagogy/page,_N_T_/ar/academics/pedagogy"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/ar/academics/pedagogy/__PAGE__",
+    "/ar/academics/pedagogy",
+    "/ar/academics",
+    "/ar",
+    "/_index",
+    "/_head"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-11-08T10:26:25.657Z",
+  "sessionId": "sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c",
+  "event": "PostToolUse",
+  "toolName": "Edit",
+  "file": "H:\\abs-universite-2-1026\\components\\site-footer.tsx",
+  "outcome": "inconclusive",
+  "coverage": "partial",
+  "findingCount": 0,
+  "durationMs": 6,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}

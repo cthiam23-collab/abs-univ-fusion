@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/ar/layout,_N_T_/ar/programs/layout,_N_T_/ar/programs/international-relations/layout,_N_T_/ar/programs/international-relations/page,_N_T_/ar/programs/international-relations"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/ar/programs/international-relations/__PAGE__",
+    "/ar/programs/international-relations",
+    "/ar/programs",
+    "/ar",
+    "/_index",
+    "/_head"
+  ]
+}

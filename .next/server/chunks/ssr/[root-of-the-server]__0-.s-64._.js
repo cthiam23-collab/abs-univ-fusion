@@ -1,0 +1,3 @@
+module.exports=[193695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},710831,a=>{"use strict";var b=a.i(530324),c=a.i(638914);a.s(["default",0,function(){return(0,b.jsx)(c.DetailPage,{title:"Academic Progress",description:"Stay informed about academic progress, attendance, and support opportunities for your learner.",highlights:["Progress overview","Attendance context","Academic milestones","Support conversations"],primaryHref:"/parent/dashboard",primaryLabel:"Return to Parent Dashboard"})}])},675303,a=>{a.n(a.i(710831))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__0-.s-64._.js.map

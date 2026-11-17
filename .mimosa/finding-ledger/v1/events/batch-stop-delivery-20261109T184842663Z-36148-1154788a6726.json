@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "mimosa-finding-ledger-batch/v1",
+  "batchId": "stop-delivery-20261109T184842663Z-36148-1154788a6726",
+  "runId": "20261109T184842663Z-36148-1154788a6726",
+  "runStatus": "completed",
+  "coverage": {
+    "status": "complete",
+    "reasons": []
+  },
+  "source": {
+    "component": "zcode-hook",
+    "operationId": "StopDelivery"
+  },
+  "revision": null,
+  "diffHash": "ed5debda3bb4a0a1a28d213046815af225cbdd0b8f3b5cd1a3cd09585ffd68c1",
+  "rulesVersion": "unavailable",
+  "sessionHash": "d40ce7f2c6a0cff47fb0e708d4ea31ae25a956287a0293c0a4e2afee7b17a9f7",
+  "reportRef": ".mimosa/reports/task-review-sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c-20261109T184842663Z-36148-1154788a6726.json",
+  "events": [
+    {
+      "eventId": "hook-9c069b3853268f0de3be51bed75fb4f0",
+      "findingId": "mimosa-fc3ca5e3cfe4f5db65b3485c",
+      "type": "finding_blocked",
+      "at": "2026-11-09T18:48:43.849Z",
+      "identity": {
+        "projectRelativeFile": "scripts/generate-mobile-assets.js",
+        "ruleId": "security",
+        "codeEvidenceHash": "180318ca8e2b714ff963dced261da8c87e6d6df2cbfbebba01739d54b7f592eb",
+        "confidence": "stable"
+      },
+      "scope": "direct",
+      "line": 67,
+      "endLine": 67,
+      "reasonCode": "stop_rewake",
+      "reportedToAgent": true,
+      "evidence": {
+        "kind": "source",
+        "boundary": "candidate",
+        "producer": "deterministic",
+        "evidenceHash": "180318ca8e2b714ff963dced261da8c87e6d6df2cbfbebba01739d54b7f592eb"
+      },
+      "sequence": 0
+    }
+  ],
+  "observedFindingIds": [],
+  "verifiedFiles": [],
+  "recordedAt": "2026-11-09T18:48:45.092Z"
+}

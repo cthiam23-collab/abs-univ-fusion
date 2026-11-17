@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/ar/layout,_N_T_/ar/e-campus/layout,_N_T_/ar/e-campus/page,_N_T_/ar/e-campus"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/ar/e-campus/__PAGE__",
+    "/ar/e-campus",
+    "/ar",
+    "/_index",
+    "/_head"
+  ]
+}

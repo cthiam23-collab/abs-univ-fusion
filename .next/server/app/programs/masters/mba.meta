@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/programs/layout,_N_T_/programs/masters/layout,_N_T_/programs/masters/mba/layout,_N_T_/programs/masters/mba/page,_N_T_/programs/masters/mba"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/programs/masters/mba/__PAGE__",
+    "/programs/masters/mba",
+    "/programs/masters",
+    "/programs",
+    "/_index",
+    "/_head"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/es/layout,_N_T_/es/international/layout,_N_T_/es/international/partnerships/layout,_N_T_/es/international/partnerships/page,_N_T_/es/international/partnerships"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/es/international/partnerships/__PAGE__",
+    "/es/international/partnerships",
+    "/es/international",
+    "/es",
+    "/_index",
+    "/_head"
+  ]
+}

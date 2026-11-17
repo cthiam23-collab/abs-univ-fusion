@@ -1,0 +1,3 @@
+module.exports=[193695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},122031,a=>{"use strict";var b=a.i(530324),c=a.i(638914);a.s(["default",0,function(){return(0,b.jsx)(c.DetailPage,{title:"Parent Messages",description:"Keep in touch with African Business School (ABS) through secure family communications and important updates.",highlights:["University announcements","Academic communications","Secure messaging","Support team contacts"],primaryHref:"/parent/dashboard",primaryLabel:"Return to Parent Dashboard"})}])},473660,a=>{a.n(a.i(122031))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__0c5hm9v._.js.map

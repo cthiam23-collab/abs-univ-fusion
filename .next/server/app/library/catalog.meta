@@ -1,0 +1,18 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/library",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/library/layout,_N_T_/library/catalog/layout,_N_T_/library/catalog/page,_N_T_/library/catalog"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/library/catalog/__PAGE__",
+    "/library/catalog",
+    "/library",
+    "/_index",
+    "/_head"
+  ]
+}

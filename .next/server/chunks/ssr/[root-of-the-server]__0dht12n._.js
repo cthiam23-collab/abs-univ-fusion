@@ -1,0 +1,3 @@
+module.exports=[193695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},889352,a=>{"use strict";var b=a.i(530324),c=a.i(638914);a.s(["default",0,function(){return(0,b.jsx)(c.DetailPage,{title:"Parent Finance",description:"Review tuition and payment information in West African CFA francs (FCFA) through the parent portal.",highlights:["Tuition overview in FCFA","Payment history","Outstanding balances","Finance support contacts"],primaryHref:"/parent/dashboard",primaryLabel:"Return to Parent Dashboard"})}])},221056,a=>{a.n(a.i(889352))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__0dht12n._.js.map

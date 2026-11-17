@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/de/layout,_N_T_/de/programs/layout,_N_T_/de/programs/masters/layout,_N_T_/de/programs/masters/project-management/layout,_N_T_/de/programs/masters/project-management/page,_N_T_/de/programs/masters/project-management"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/de/programs/masters/project-management/__PAGE__",
+    "/de/programs/masters/project-management",
+    "/de/programs/masters",
+    "/de/programs",
+    "/de",
+    "/_index",
+    "/_head"
+  ]
+}

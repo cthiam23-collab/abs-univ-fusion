@@ -1,0 +1,2 @@
+import { DetailPage } from "@/components/content/detail-page"
+export default function ParentProgressPage() { return <DetailPage title="Academic Progress" description="Stay informed about academic progress, attendance, and support opportunities for your learner." highlights={["Progress overview", "Attendance context", "Academic milestones", "Support conversations"]} primaryHref="/parent/dashboard" primaryLabel="Return to Parent Dashboard" /> }

@@ -1,0 +1,2 @@
+import { CtaDestination } from "@/components/content/cta-destination"
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; return <CtaDestination title={slug.replaceAll("-", " ")} description="Learn about student housing and residential support near the African Business School (ABS) campus in Bamako." primaryHref="/campus-life/housing" /> }

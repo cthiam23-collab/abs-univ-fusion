@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/de/layout,_N_T_/de/campus/layout,_N_T_/de/campus/page,_N_T_/de/campus"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/de/campus/__PAGE__",
+    "/de/campus",
+    "/de",
+    "/_index",
+    "/_head"
+  ]
+}

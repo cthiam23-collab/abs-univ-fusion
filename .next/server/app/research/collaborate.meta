@@ -1,0 +1,18 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/research",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/research/layout,_N_T_/research/collaborate/layout,_N_T_/research/collaborate/page,_N_T_/research/collaborate"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/research/collaborate/__PAGE__",
+    "/research/collaborate",
+    "/research",
+    "/_index",
+    "/_head"
+  ]
+}

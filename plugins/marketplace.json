@@ -1,0 +1,13 @@
+{
+  "name": "dev-abs-universite-plugins",
+  "plugins": [
+    {
+      "name": "hostinger-api",
+      "source": "./hostinger-api",
+      "version": "0.1.0",
+      "description": "Access Hostinger's API for managing domains, DNS, VPS, databases, email, and more — plus 7 workflow skills for deployment, troubleshooting, WordPress maintenance, and more.",
+      "displayName": "Hostinger API",
+      "category": "developer-tools"
+    }
+  ]
+}

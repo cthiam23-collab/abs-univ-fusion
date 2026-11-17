@@ -1,0 +1,2 @@
+import { DetailPage } from "@/components/content/detail-page"
+export default function ParentMessagesPage() { return <DetailPage title="Parent Messages" description="Keep in touch with African Business School (ABS) through secure family communications and important updates." highlights={["University announcements", "Academic communications", "Secure messaging", "Support team contacts"]} primaryHref="/parent/dashboard" primaryLabel="Return to Parent Dashboard" /> }

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "mimosa-finding-ledger-batch/v1",
+  "batchId": "stop-20261108T113559790Z-49264-db48a6021d61",
+  "runId": "20261108T113559790Z-49264-db48a6021d61",
+  "runStatus": "completed",
+  "coverage": {
+    "status": "complete",
+    "reasons": []
+  },
+  "source": {
+    "component": "zcode-hook",
+    "operationId": "Stop"
+  },
+  "revision": null,
+  "diffHash": "fb4db54166ebfd566d9fa20ed614ffaf23963bfb06620ba2883b662d50f45a27",
+  "rulesVersion": "unavailable",
+  "sessionHash": "d40ce7f2c6a0cff47fb0e708d4ea31ae25a956287a0293c0a4e2afee7b17a9f7",
+  "reportRef": ".mimosa/reports/task-review-sess_8cb2f40e-7e2d-4da6-9668-64d6eb7f771c-20261108T113559790Z-49264-db48a6021d61.json",
+  "events": [],
+  "observedFindingIds": [],
+  "verifiedFiles": [
+    {
+      "file": "translations/es.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "translations/de.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "translations/ar.ts",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "contexts/language-context.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "components/site-header.tsx",
+      "direct": "complete",
+      "projectContext": "partial"
+    }
+  ],
+  "recordedAt": "2026-11-08T11:36:00.889Z"
+}

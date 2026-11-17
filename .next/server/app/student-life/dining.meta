@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/student-life/layout,_N_T_/student-life/dining/layout,_N_T_/student-life/dining/page,_N_T_/student-life/dining"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/student-life/dining/__PAGE__",
+    "/student-life/dining",
+    "/student-life",
+    "/_index",
+    "/_head"
+  ]
+}
