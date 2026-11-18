@@ -15,15 +15,12 @@ FROM node:20-alpine AS builder
 # Install pnpm (required by this project)
 RUN corepack enable && corepack prepare pnpm@12.3.4 --activate
 
-# Allow pnpm to run ignored build scripts (sharp, etc.)
-ENV PNPM_IGNORED_BUILDS=
-
 WORKDIR /app
 
 # Copy dependency manifests and config first (Docker layer caching)
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
-# Allow specific packages with native build scripts (sharp, unrs-resolver)
-RUN pnpm install --frozen-lockfile --allow-scripts sharp unrs-resolver
+# always-allow-scripts=true in .npmrc handles ignored build scripts (sharp, unrs-resolver)
+RUN pnpm install --frozen-lockfile
 
 # Copy source and build
 COPY . .
