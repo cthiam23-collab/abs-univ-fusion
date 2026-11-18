@@ -20,8 +20,8 @@ ENV PNPM_IGNORED_BUILDS=
 
 WORKDIR /app
 
-# Copy only dependency manifests first (Docker layer caching)
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+# Copy dependency manifests and config first (Docker layer caching)
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN pnpm install --frozen-lockfile
 
 # Copy source and build
