@@ -15,6 +15,9 @@ FROM node:20-alpine AS builder
 # Install pnpm (required by this project)
 RUN corepack enable && corepack prepare pnpm@12.3.4 --activate
 
+# Allow pnpm to run ignored build scripts (sharp, etc.)
+ENV PNPM_IGNORED_BUILDS=
+
 WORKDIR /app
 
 # Copy only dependency manifests first (Docker layer caching)
