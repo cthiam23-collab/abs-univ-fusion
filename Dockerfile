@@ -22,7 +22,8 @@ WORKDIR /app
 
 # Copy dependency manifests and config first (Docker layer caching)
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
-RUN pnpm install --frozen-lockfile
+# Allow specific packages with native build scripts (sharp, unrs-resolver)
+RUN pnpm install --frozen-lockfile --allow-scripts sharp unrs-resolver
 
 # Copy source and build
 COPY . .
