@@ -49,13 +49,15 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 # Next.js built-in server runs on port 3000
 EXPOSE 3000
 
-# Install wget and curl for healthcheck (wget for Docker HEALTHCHECK, curl for Coolify deployment healthcheck)
+# Install wget and curl for healthcheck
 RUN apk add --no-cache wget curl
 
-# Health check (HTTP /health)
-# start-period=120s gives Next.js enough time to initialize on cold start
-HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
+# Health check (HTTP /health via 127.0.0.1)
+# Using 127.0.0.1 instead of localhost to avoid Alpine DNS resolution issues
+# curl -f returns 0 on HTTP 2xx/3xx, 22 on HTTP error codes
+# start-period=30s gives Next.js time to initialize; interval=10s for faster detection
+HEALTHCHECK --interval=10s --timeout=5s --start-period=30s --retries=3 \
+  CMD curl -f http://127.0.0.1:3000/health || exit 1
 
 USER nextjs
 
