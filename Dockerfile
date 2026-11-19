@@ -61,4 +61,7 @@ HEALTHCHECK --interval=10s --timeout=5s --start-period=30s --retries=3 \
 
 USER nextjs
 
+# Bind Next.js to 127.0.0.1 so healthcheck curl can reach it
+ENV SERVER_HOSTNAME=127.0.0.1
+
 CMD ["node", "server.js"]
