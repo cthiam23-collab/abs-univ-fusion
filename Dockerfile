@@ -49,8 +49,8 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 # Next.js built-in server runs on port 3000
 EXPOSE 3000
 
-# Install wget for healthcheck
-RUN apk add --no-cache wget
+# Install wget and curl for healthcheck (wget for Docker HEALTHCHECK, curl for Coolify deployment healthcheck)
+RUN apk add --no-cache wget curl
 
 # Health check (HTTP /health)
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
