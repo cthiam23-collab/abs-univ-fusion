@@ -53,7 +53,8 @@ EXPOSE 3000
 RUN apk add --no-cache wget curl
 
 # Health check (HTTP /health)
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+# start-period=120s gives Next.js enough time to initialize on cold start
+HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
 
 USER nextjs
