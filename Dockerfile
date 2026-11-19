@@ -65,3 +65,4 @@ USER nextjs
 ENV SERVER_HOSTNAME=127.0.0.1
 
 CMD ["node", "server.js"]
+
