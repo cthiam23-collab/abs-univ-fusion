@@ -6,16 +6,12 @@ import path from "path"
 export async function fetchMarkdownContent(filename: string, section: string) {
   try {
     // Validate filename to prevent path traversal
-    const normalized = path.normalize(filename)
-    if (normalized.startsWith("..") || path.isAbsolute(normalized)) {
-      return "Invalid filename"
-    }
-    const filePath = path.join(process.cwd(), "public", filename)
-    // Double-check resolved path is within public dir
     const publicDir = path.join(process.cwd(), "public")
-    if (!filePath.startsWith(publicDir + path.sep)) {
+    const resolved = path.resolve(publicDir, filename)
+    if (!resolved.startsWith(publicDir + path.sep) && resolved !== publicDir) {
       return "Invalid filename"
     }
+    const filePath = resolved
     const fileContents = await readFile(filePath, "utf8")
 
     const sections = fileContents.split("---")
