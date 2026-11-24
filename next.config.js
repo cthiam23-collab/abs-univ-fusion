@@ -26,12 +26,15 @@ const nextConfig = {
       },
       // Anciennes URL Joomla encore présentes dans les résultats Google : elles
       // répondaient 404 avec `noindex`, donc « sans contenu » dans la recherche.
-      { source: "/en/formations/:path*", destination: "/en/programs", permanent: true },
+      // Toutes les variantes pointent vers /programs : c'est la seule page
+      // programmes qui existe pour l'instant (les /<locale>/programs n'existent
+      // pas encore), sinon la redirection aboutirait à un 404.
+      { source: "/en/formations/:path*", destination: "/programs", permanent: true },
       { source: "/fr/formations/:path*", destination: "/programs", permanent: true },
       { source: "/formations/:path*", destination: "/programs", permanent: true },
       {
         source: "/:locale(es|de|ar)/formations/:path*",
-        destination: "/:locale/programs",
+        destination: "/programs",
         permanent: true,
       },
     ]
