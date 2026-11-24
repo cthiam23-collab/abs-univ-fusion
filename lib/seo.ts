@@ -1,7 +1,16 @@
 import type { Metadata } from "next"
 import { isTranslated } from "@/lib/i18n"
 
-export const SITE_URL = "https://abs-univ.com"
+/**
+ * Hôte canonique. Le site est servi et indexé sur www.abs-univ.com : l'apex
+ * (abs-univ.com) présente un certificat que les clients refusent, si bien que
+ * toutes les canoniques, le sitemap et les images Open Graph pointaient vers un
+ * hôte non validable. Surchargeable au déploiement via NEXT_PUBLIC_SITE_URL.
+ */
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.abs-univ.com").replace(
+  /\/+$/,
+  "",
+)
 export const SITE_NAME = "ABS — African Business School"
 export const LOCALEalternates = ["fr", "en", "es", "de", "ar"] as const
 export type SeoLocale = (typeof LOCALEalternates)[number]

@@ -18,7 +18,17 @@ export const metadata: Metadata = {
     "Découvrez ABS — African Business School à Bamako : formations, pédagogie, admissions et informations pratiques.",
   applicationName: SITE_NAME,
   authors: [{ name: SITE_NAME, url: SITE_URL }],
-  icons: { icon: "/icon.png" },
+  // /icon.png n'existait pas : le favicon répondait 404 sur toutes les pages.
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-light-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-dark-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
+  manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
     siteName: SITE_NAME,

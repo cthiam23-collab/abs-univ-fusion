@@ -1,0 +1,39 @@
+# ABS — African Business School (Bamako, Mali)
+
+> Établissement privé d'enseignement supérieur à Bamako (Mali), créé en 2016,
+> organisé selon le système LMD (Licence, Master, Doctorat). Domaines :
+> administration des affaires, ingénierie informatique, génie géologique civil
+> et minier, relations et affaires internationales, journalisme et communication.
+> Site officiel : https://www.abs-univ.com
+
+## Faits vérifiables
+
+- Nom : African Business School (ABS) — Université ABS
+- Adresse : Hamdallaye ACI 2000, Rue 338, Porte 06, Bamako, Mali
+- Téléphone : +223 78 14 14 88 / +223 68 14 14 88
+- E-mail : infos@abs-univ.com
+- Langues du site : français (principal), anglais, espagnol, allemand, arabe
+- Campus numérique (LMS) : https://lms.abs-univ.com
+
+## Pages principales
+
+- [Accueil](https://www.abs-univ.com/): présentation de l'école
+- [Programmes](https://www.abs-univ.com/programs): Licence et Master par domaine
+- [Administration des affaires](https://www.abs-univ.com/programs/business-administration)
+- [Ingénierie informatique](https://www.abs-univ.com/programs/engineering)
+- [Génie géologique, civil et minier](https://www.abs-univ.com/programs/geological-civil-mining-engineering)
+- [Relations et affaires internationales](https://www.abs-univ.com/programs/international-relations)
+- [Journalisme et communication](https://www.abs-univ.com/programs/journalism-communication)
+- [Admissions](https://www.abs-univ.com/admissions)
+- [Frais de scolarité et aide financière](https://www.abs-univ.com/financial-aid)
+- [Faculté](https://www.abs-univ.com/faculty)
+- [Vie étudiante](https://www.abs-univ.com/student-life)
+- [Actualités](https://www.abs-univ.com/news)
+- [Contact](https://www.abs-univ.com/contact)
+- [English version](https://www.abs-univ.com/en)
+
+## Notes
+
+- Le sitemap complet est publié sur https://www.abs-univ.com/sitemap.xml
+- Les portails étudiants, parents, personnels et partenaires sont privés et
+  exclus de l'indexation.
