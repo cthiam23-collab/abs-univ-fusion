@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { buildMetadata } from "@/lib/seo"
 import Image from "next/image"
 import Link from "next/link"
+import { ABS_LOGO_DIMENSIONS } from "@/components/common/logo"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import {
@@ -121,8 +122,7 @@ export default function AboutPage() {
             <Image
               src="/images/abs-logo.png"
               alt="Official logo of ABS — African Business School"
-              width={480}
-              height={309}
+              {...ABS_LOGO_DIMENSIONS}
               className="h-auto w-full object-contain"
             />
           </div>

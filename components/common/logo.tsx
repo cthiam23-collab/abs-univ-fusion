@@ -2,6 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 
+/** Dimensions of the official ABS lockup published as /images/abs-logo.png (480×309). */
+export const ABS_LOGO_DIMENSIONS = { width: 480, height: 309 } as const
+
 interface LogoProps {
   size?: "sm" | "md" | "lg"
   showText?: boolean
@@ -29,8 +32,7 @@ export function Logo({ size = "md", showText = true, className }: LogoProps) {
       <Image
         src="/images/abs-logo.png"
         alt="ABS — African Business School"
-        width={480}
-        height={309}
+        {...ABS_LOGO_DIMENSIONS}
         className={cn("object-contain", sizeClasses[size].icon)}
       />
       {showText && (
