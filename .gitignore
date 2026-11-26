@@ -5,9 +5,13 @@ __pycache__/
 *.pyc
 
 # Environment variables
-.env.local
-.env.*.local
-.env.example
+# .env holds real secrets (service role key, JWT secret, database password) and
+# was tracked by mistake. Everything named .env* stays local; only the templates
+# without values are tracked, so a fresh clone still knows which keys to set.
+.env
+.env.*
+!.env.example
+!.env.production.template
 
 # Build output
 dist/
@@ -28,8 +32,3 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Hostinger MCP credentials
-*/credentials.json
