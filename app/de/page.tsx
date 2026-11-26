@@ -70,7 +70,9 @@ export default function HomePage() {
         <div className="container relative mx-auto flex min-h-[620px] items-center px-6 py-20 lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur">
-              <img src={logoUrl} alt="ABS-Logo" className="size-8 rounded-md object-contain" />
+              <span className="-my-1 flex size-12 shrink-0 items-center justify-center rounded-lg bg-white p-1">
+                <img src={logoUrl} alt="ABS-Logo" className="h-full w-full object-contain" />
+              </span>
               <span>{DE_TERRITOIRE}</span>
             </div>
             <p className="mb-4 font-semibold uppercase tracking-[0.28em] text-cyan-300">{DE_SIGNATURE}</p>
