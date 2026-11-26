@@ -30,8 +30,8 @@ export function Logo({ size = "md", showText = true, className }: LogoProps) {
         src="/images/abs-logo.png"
         alt="ABS — African Business School"
         width={480}
-        height={294}
-        className={cn("rounded-md object-contain", sizeClasses[size].icon)}
+        height={309}
+        className={cn("object-contain", sizeClasses[size].icon)}
       />
       {showText && (
         <div className="flex flex-col">

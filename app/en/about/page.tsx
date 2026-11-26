@@ -122,7 +122,7 @@ export default function AboutPage() {
               src="/images/abs-logo.png"
               alt="Official logo of ABS — African Business School"
               width={480}
-              height={294}
+              height={309}
               className="h-auto w-full object-contain"
             />
           </div>
