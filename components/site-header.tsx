@@ -171,7 +171,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 shadow-sm backdrop-blur">
-      <div className="container flex h-16 items-center gap-4 px-4">
+      <div className="container flex h-16 items-center gap-2 px-3 sm:gap-4 sm:px-4">
         <Logo size="sm" className="shrink-0" />
 
         {/* Navigation desktop — menus déroulants en CSS pur (fonctionnent sans JS) */}
@@ -300,7 +300,7 @@ export function SiteHeader() {
           </Link>
           <Link
             href="/apply"
-            className="flex h-9 items-center rounded-md bg-blue-700 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-800"
+            className="flex h-9 items-center rounded-md bg-blue-700 px-3 text-sm font-semibold text-white transition-colors hover:bg-blue-800 sm:px-4"
           >
             {t("nav.apply")}
           </Link>

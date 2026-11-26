@@ -36,7 +36,7 @@ export function Logo({ size = "md", showText = true, className }: LogoProps) {
         className={cn("object-contain", sizeClasses[size].icon)}
       />
       {showText && (
-        <div className="flex flex-col">
+        <div className="hidden flex-col sm:flex">
           <span className={cn("font-bold text-primary", sizeClasses[size].text)}>ABS</span>
           <span className="text-xs text-muted-foreground">African Business School</span>
         </div>
