@@ -18,7 +18,6 @@ const org = {
     "Rigorous training, rooted in African realities and open to skills, professions and international challenges.",
 }
 
-const logoUrl = "/images/abs-logo.png"
 const heroUrl = "/images/campus/IMG-20250212-WA0021.jpg"
 const directorUrl = "/images/documents/dg-seance-travail.jpg"
 
@@ -74,10 +73,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-blue-950/55" />
         <div className="container relative mx-auto flex min-h-[620px] items-center px-6 py-20 lg:px-8">
           <div className="max-w-3xl">
-            <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur">
-              <span className="-my-1 flex size-12 shrink-0 items-center justify-center rounded-lg bg-white p-1">
-                <img src={logoUrl} alt="ABS logo" className="h-full w-full object-contain" />
-              </span>
+            <div className="mb-8 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur">
               <span>{org.territoire}</span>
             </div>
             <p className="mb-4 font-semibold uppercase tracking-[0.28em] text-cyan-300">{org.signature}</p>
