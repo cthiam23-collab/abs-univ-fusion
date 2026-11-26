@@ -20,6 +20,15 @@ export default function manifest(): MetadataRoute.Manifest {
       { src: "/icon.svg", sizes: "any", type: "image/svg+xml" },
       { src: "/icon-light-32x32.png", sizes: "32x32", type: "image/png" },
       { src: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+      // The maskable file carries 20 % padding (abs-branding/build.py), so it is
+      // declared "maskable" alone: advertised as "any" too, the same padded file
+      // would render at 80 % in a slot that expects no padding.
+      {
+        src: "/icon-512-maskable.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable",
+      },
     ],
   }
 }
