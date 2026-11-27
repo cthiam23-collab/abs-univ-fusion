@@ -1,5 +1,5 @@
 import { ORGANIZATION, WHATSAPP_URL } from "@/lib/constants"
-import { SITE_NAME, SITE_URL } from "@/lib/seo"
+import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo"
 
 /**
  * Données structurées Schema.org (JSON-LD) injectées sur toutes les pages :
@@ -20,7 +20,7 @@ export function SeoJsonLd() {
     ],
     url: SITE_URL,
     logo: `${SITE_URL}/images/abs-logo.png`,
-    image: `${SITE_URL}/images/documents/abs-logo-officiel.jpg`,
+    image: `${SITE_URL}${OG_IMAGE}`,
     description:
       "Établissement privé d'enseignement supérieur à Bamako, Mali : Licence et Master en administration des affaires, ingénierie informatique, génie géologique civil et minier, relations internationales, journalisme et communication.",
     foundingDate: "2016",

@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { SeoJsonLd } from "@/components/seo-jsonld"
 import { Providers } from "@/components/providers/providers"
-import { SITE_NAME, SITE_URL } from "@/lib/seo"
+import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: SITE_NAME,
     locale: "fr_FR",
-    images: ["/images/documents/abs-logo-officiel.jpg"],
+    images: [OG_IMAGE],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },

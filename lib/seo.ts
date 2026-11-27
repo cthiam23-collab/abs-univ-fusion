@@ -12,6 +12,14 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.abs-un
   "",
 )
 export const SITE_NAME = "ABS — African Business School"
+
+/**
+ * Image sociale du site (1200x630) : le nouveau lockup publié, mis à l'échelle
+ * sur son fond blanc. Elle remplace l'ancien verrou bleu clair/magenta dans
+ * og:image, twitter:image et le JSON-LD. Construite par abs-branding/build.py.
+ */
+export const OG_IMAGE = "/images/abs-social-1200x630.png"
+const OG_IMAGE_SIZE = { width: 1200, height: 630 }
 export const LOCALEalternates = ["fr", "en", "es", "de", "ar"] as const
 export type SeoLocale = (typeof LOCALEalternates)[number]
 
@@ -56,10 +64,14 @@ export function buildMetadata({ title, description, path, locale = "fr", images,
   }
 
   const ogLocale = LOCALE_MAP[locale]
-  const ogImages = (images ?? ["/images/documents/abs-logo-officiel.jpg"]).map((src) => ({
+  const ogImages = (images ?? [OG_IMAGE]).map((src) => ({
     url: src,
-    width: src.includes("logo") ? 1280 : 1200,
-    height: src.includes("logo") ? 772 : 630,
+    ...(src === OG_IMAGE
+      ? OG_IMAGE_SIZE
+      : {
+          width: src.includes("logo") ? 1280 : 1200,
+          height: src.includes("logo") ? 772 : 630,
+        }),
     alt: SITE_NAME,
   }))
 
@@ -83,7 +95,7 @@ export function buildMetadata({ title, description, path, locale = "fr", images,
       card: "summary_large_image",
       title,
       description,
-      images: images ?? ["/images/documents/abs-logo-officiel.jpg"],
+      images: images ?? [OG_IMAGE],
     },
     robots: noindex ? { index: false, follow: false } : undefined,
   }
