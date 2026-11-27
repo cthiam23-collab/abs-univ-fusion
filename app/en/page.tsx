@@ -18,7 +18,7 @@ const org = {
     "Rigorous training, rooted in African realities and open to skills, professions and international challenges.",
 }
 
-const heroUrl = "/images/campus/IMG-20250212-WA0021.jpg"
+const heroUrl = "/images/campus/african-business-school-campus.jpg"
 const directorUrl = "/images/documents/dg-seance-travail.jpg"
 
 const domains = [

@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight, CheckCircle2, GraduationCap, Newspaper, Users } from "lucide-react"
 import { ORGANIZATION } from "@/lib/constants"
 
-const heroUrl = "/images/campus/IMG-20250212-WA0021.jpg"
+const heroUrl = "/images/campus/african-business-school-campus.jpg"
 const directorUrl = "/images/documents/dg-seance-travail.jpg"
 
 const domains = [
