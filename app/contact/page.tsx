@@ -165,12 +165,12 @@ export default function ContactPage() {
       <section className="bg-slate-50 py-16">
         <div className="container mx-auto px-4">
           <div className="grid items-start gap-8 lg:grid-cols-2">
-            <div>
+            <div className="min-w-0">
               <h2 className="mb-2 text-2xl font-bold text-blue-900">Coordonnées officielles</h2>
               <p className="mb-6 text-slate-600">
                 Utilisez exclusivement les canaux ci-dessous pour joindre l&apos;administration de ABS.
               </p>
-              <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+              <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="bg-blue-900 text-left text-white">

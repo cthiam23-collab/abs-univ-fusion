@@ -18,6 +18,7 @@ const org = {
     "Rigorous training, rooted in African realities and open to skills, professions and international challenges.",
 }
 
+const logoUrl = "/images/abs-logo.png"
 const heroUrl = "/images/campus/african-business-school-campus.jpg"
 const directorUrl = "/images/documents/dg-seance-travail.jpg"
 
@@ -69,11 +70,17 @@ export default function HomePage() {
     <main id="top" className="overflow-hidden">
       {/* Hero banner — V3 §3.1 */}
       <section className="relative min-h-[620px] bg-slate-950 text-white">
-        <img src={heroUrl} alt="The ABS — African Business School campus in Bamako" className="absolute inset-0 h-full w-full object-cover opacity-35" />
+        <picture>
+          <source media="(max-width: 767px)" srcSet="/images/campus/african-business-school-campus-portrait.jpg" />
+          <img src={heroUrl} alt="The ABS — African Business School campus in Bamako" className="absolute inset-0 h-full w-full object-cover opacity-35" />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-blue-950/55" />
         <div className="container relative mx-auto flex min-h-[620px] items-center px-6 py-20 lg:px-8">
           <div className="max-w-3xl">
-            <div className="mb-8 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur">
+            <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur">
+              <span className="flex shrink-0 items-center justify-center rounded-lg bg-white p-1">
+                <img src={logoUrl} alt="ABS logo" className="h-[26px] w-10 object-contain sm:h-9 sm:w-14" />
+              </span>
               <span>{org.territoire}</span>
             </div>
             <p className="mb-4 font-semibold uppercase tracking-[0.28em] text-cyan-300">{org.signature}</p>

@@ -273,7 +273,10 @@ export function SiteHeader() {
         <div className="ml-auto flex items-center gap-2">
           <details className="group relative">
             <summary className="flex h-9 cursor-pointer list-none items-center gap-1 rounded-md px-3 text-sm font-medium hover:bg-slate-100 [&::-webkit-details-marker]:hidden">
-              {languages.find((lang) => lang.code === language)?.flag} {language.toUpperCase()}
+              {/* Pas de drapeau ici : Windows ne rend pas les indicateurs régionaux et
+                  dessine « DE » à la place, ce qui affichait « DE DE » à côté du code.
+                  Le drapeau reste dans les entrées du menu. */}
+              {language.toUpperCase()}
               <ChevronDown className="size-4 transition-transform group-open:rotate-180" />
             </summary>
             <div className="absolute right-0 top-11 z-50 w-44 rounded-md border bg-white py-1 shadow-lg">
@@ -300,7 +303,7 @@ export function SiteHeader() {
           </Link>
           <Link
             href="/apply"
-            className="flex h-9 items-center rounded-md bg-blue-700 px-3 text-sm font-semibold text-white transition-colors hover:bg-blue-800 sm:px-4"
+            className="flex h-9 items-center rounded-md bg-blue-700 px-2 text-sm font-semibold text-white transition-colors hover:bg-blue-800 sm:px-3"
           >
             {t("nav.apply")}
           </Link>
@@ -349,14 +352,14 @@ function DropdownNavItem({
       </button>
       <div
         className={cn(
-          "invisible absolute left-0 top-full z-50 pt-2 opacity-0 transition-all group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100",
-          wide ? "-left-32" : "",
+          "invisible fixed left-1/2 top-12 z-50 -translate-x-1/2 pt-4 opacity-0 transition-all group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100",
+          "max-w-[calc(100vw-2rem)]",
         )}
       >
         <div
           className={cn(
             "max-h-[75vh] overflow-y-auto rounded-lg border border-slate-200 bg-white p-3 shadow-xl",
-            wide ? "w-[640px]" : "w-72",
+            wide ? "w-[640px] max-w-full" : "w-72 max-w-full",
           )}
         >
           {children}

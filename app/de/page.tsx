@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight, CheckCircle2, GraduationCap, Newspaper, Users } from "lucide-react"
 
+const logoUrl = "/images/abs-logo.png"
 const heroUrl = "/images/campus/african-business-school-campus.jpg"
 const directorUrl = "/images/documents/dg-seance-travail.jpg"
 
@@ -64,11 +65,17 @@ export default function HomePage() {
     <main id="top" className="overflow-hidden">
       {/* Bandeau principal — V3 §3.1 */}
       <section className="relative min-h-[620px] bg-slate-950 text-white">
-        <img src={heroUrl} alt="Campus der ABS — African Business School in Bamako" className="absolute inset-0 h-full w-full object-cover opacity-35" />
+        <picture>
+          <source media="(max-width: 767px)" srcSet="/images/campus/african-business-school-campus-portrait.jpg" />
+          <img src={heroUrl} alt="Campus der ABS — African Business School in Bamako" className="absolute inset-0 h-full w-full object-cover opacity-35" />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-blue-950/55" />
         <div className="container relative mx-auto flex min-h-[620px] items-center px-6 py-20 lg:px-8">
           <div className="max-w-3xl">
-            <div className="mb-8 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur">
+            <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur">
+              <span className="flex shrink-0 items-center justify-center rounded-lg bg-white p-1">
+                <img src={logoUrl} alt="ABS-Logo" className="h-[26px] w-10 object-contain sm:h-9 sm:w-14" />
+              </span>
               <span>{DE_TERRITOIRE}</span>
             </div>
             <p className="mb-4 font-semibold uppercase tracking-[0.28em] text-cyan-300">{DE_SIGNATURE}</p>
@@ -112,7 +119,7 @@ export default function HomePage() {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
           <div>
             <p className="font-semibold uppercase tracking-[0.2em] text-blue-700">Campusleben & Aktuelles</p>
-            <h2 className="mt-3 text-4xl font-bold tracking-tight text-slate-950">Das Leben an ABS gestaltet sich auch außerhalb der Lehrveranstaltungen.</h2>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 wrap-anywhere sm:text-4xl">Das Leben an ABS gestaltet sich auch außerhalb der Lehrveranstaltungen.</h2>
             <p className="mt-5 leading-7 text-slate-600">Konferenzen, Begegnungen, Besichtigungen, Projekte, Veranstaltungen und studentische Initiativen tragen zur geistigen Offenheit und zur Professionalisierung bei. Die Aktualitäten der Website zeigen ausschließlich tatsächlich durchgeführte oder offiziell geplante Aktivitäten.</p>
             <Button asChild variant="outline" className="mt-8"><Link href="/about/news">Aktuelles ansehen <Newspaper className="ml-2 size-4" /></Link></Button>
           </div>
